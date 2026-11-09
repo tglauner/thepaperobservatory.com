@@ -1,0 +1,180 @@
+name: Design an SSRN paper in the cloud
+
+on:
+  workflow_dispatch:
+    inputs:
+      ssrn_id:
+        description: Numeric SSRN abstract ID
+        required: true
+        type: string
+      slug:
+        description: Lowercase paper URL slug
+        required: true
+        type: string
+      pdf_url:
+        description: Public HTTPS URL of an authorized, text-readable source PDF
+        required: true
+        type: string
+      source_use_confirmed:
+        description: I may provide this PDF to the cloud model for analysis; no PDF republication is authorized
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: design-ssrn-${{ inputs.ssrn_id }}-${{ inputs.slug }}
+  cancel-in-progress: false
+
+jobs:
+  design:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    environment: paper-generation
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Require model access
+        env:
+          MODEL_KEY_PRESENT: ${{ secrets.OPENAI_API_KEY != '' }}
+          SOURCE_USE_CONFIRMED: ${{ inputs.source_use_confirmed }}
+        run: |
+          if [ "$SOURCE_USE_CONFIRMED" != true ]; then
+            echo '::error::Confirm authorized cloud analysis of the supplied PDF before starting generation.'
+            exit 1
+          fi
+          if [ "$MODEL_KEY_PRESENT" != true ]; then
+            echo '::error::Set OPENAI_API_KEY in the paper-generation environment. This workflow does not export ChatGPT login credentials or silently substitute a model.'
+            exit 1
+          fi
+      - name: Install source extraction and project dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends poppler-utils
+          npm ci --ignore-scripts
+      - name: Prepare the authorized source and prompt
+        env:
+          PAPER_SSRN_ID: ${{ inputs.ssrn_id }}
+          PAPER_SLUG: ${{ inputs.slug }}
+          PAPER_PDF_URL: ${{ inputs.pdf_url }}
+        run: node scripts/cloud-source.mjs
+      - name: Keep a trusted patch collector outside the editable checkout
+        run: cp scripts/cloud-patch.mjs "$RUNNER_TEMP/collect-paper-patch.mjs"
+      - name: Design with GPT-6.1 Sol Ultra
+        id: codex
+        uses: openai/codex-action@bdf19a4a223ec2549a3e2274a0cf61556bc07675 # v1
+        with:
+          openai-api-key: ${{ secrets.OPENAI_API_KEY }}
+          prompt-file: .cloud-input/prompt.md
+          output-file: .cloud-input/review-summary.md
+          model: gpt-6.1-sol
+          effort: ultra
+          codex-version: 0.167.0
+          permission-profile: ':workspace'
+          safety-strategy: drop-sudo
+          codex-args: '["--ephemeral"]'
+      - name: Collect only approved reviewable changes
+        env:
+          PAPER_SLUG: ${{ inputs.slug }}
+        run: node "$RUNNER_TEMP/collect-paper-patch.mjs" collect
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: generated-paper-review
+          path: .cloud-input/review/
+          if-no-files-found: error
+          retention-days: 14
+          include-hidden-files: false
+
+  validate:
+    needs: design
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: generated-paper-review
+          path: .cloud-input/review/
+      - name: Check and apply the generated patch
+        env:
+          PAPER_SLUG: ${{ inputs.slug }}
+        run: |
+          node scripts/cloud-patch.mjs check .cloud-input/review/generated.patch
+          cp scripts/cloud-verify.mjs "$RUNNER_TEMP/verify-public-artifact.mjs"
+          git apply --index .cloud-input/review/generated.patch
+      - run: npm ci --ignore-scripts
+      - name: Validate numerical behavior and the public build
+        env:
+          PAPER_PUBLIC_BUILD: 'true'
+        run: |
+          npm run check
+          node "$RUNNER_TEMP/verify-public-artifact.mjs"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: generated-paper-preview
+          path: dist/
+          if-no-files-found: error
+          retention-days: 14
+
+  review:
+    needs: [design, validate]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          fetch-depth: 0
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: generated-paper-review
+          path: .cloud-input/review/
+      - name: Open a draft review request without model credentials
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PAPER_SSRN_ID: ${{ inputs.ssrn_id }}
+          PAPER_SLUG: ${{ inputs.slug }}
+        run: |
+          node scripts/cloud-patch.mjs check .cloud-input/review/generated.patch
+          branch="ai/ssrn-${PAPER_SSRN_ID}-${GITHUB_RUN_ID}"
+          if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
+            echo 'The review branch already exists; this retry leaves it unchanged.'
+          else
+            git switch -c "$branch"
+            git apply --index .cloud-input/review/generated.patch
+            git config user.name 'The Paper Observatory AI'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m "Design SSRN ${PAPER_SSRN_ID}: ${PAPER_SLUG}"
+            git push origin "$branch"
+          fi
+          existing_pr=$(gh pr list --head "$branch" --state all --json url --jq '.[0].url // empty')
+          if [ -n "$existing_pr" ]; then
+            printf '%s\n' "$existing_pr"
+            exit 0
+          fi
+          cat > "$RUNNER_TEMP/paper-pr.md" <<'BODY'
+          This draft adds an AI-generated educational companion from the authorized SSRN source. The cloud generation used the requested GPT-6.1 Sol / Ultra configuration, and a separate job applied the patch, ran tests and built the public artifact without model credentials.
+
+          Review the source analysis, mathematical identities, citations, accessible controls, mobile layout, course relevance and draft social content. The original PDF and extracted source text are excluded from the patch. The workflow does not merge or publish this draft.
+          BODY
+          gh pr create --draft --base main --head "$branch" --title "Visualize SSRN ${PAPER_SSRN_ID}: ${PAPER_SLUG}" --body-file "$RUNNER_TEMP/paper-pr.md"

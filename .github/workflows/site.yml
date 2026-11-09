@@ -1,0 +1,72 @@
+name: Validate and publish the observatory
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: site-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - name: Check cloud source and free-plan guards
+        run: npm run cloud:self-check
+      - name: Test and build the public website
+        run: npm run check
+        env:
+          PAPER_PUBLIC_BUILD: 'true'
+      - name: Check the publication boundary
+        run: node scripts/cloud-verify.mjs
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: public-site
+          path: dist/
+          if-no-files-found: error
+          retention-days: 14
+
+  deploy:
+    needs: validate
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && vars.CLOUDFLARE_DEPLOY_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: production
+      url: https://thepaperobservatory.com
+    steps:
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: public-site
+          path: dist/
+      - name: Require Cloudflare credentials
+        env:
+          CF_TOKEN_PRESENT: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
+          CF_ACCOUNT_PRESENT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
+        run: |
+          if [ "$CF_TOKEN_PRESENT" != true ] || [ "$CF_ACCOUNT_PRESENT" != true ]; then
+            echo '::error::Set CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID in the production environment.'
+            exit 1
+          fi
+      - name: Install the pinned publishing CLI without credentials
+        run: npm install --prefix "$RUNNER_TEMP/cloudflare-cli" --ignore-scripts --no-audit --no-fund wrangler@4.158.0
+      - name: Deploy the verified static artifact
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: node "$RUNNER_TEMP/cloudflare-cli/node_modules/wrangler/bin/wrangler.js" pages deploy dist --project-name thepaperobservatory --branch main --commit-hash "$GITHUB_SHA"

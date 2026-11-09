@@ -1,0 +1,10 @@
+# Include within the existing selected HTTPS virtual host after an authorized release.
+# Set its DocumentRoot to /var/www/html/paper-observatory and copy only root dist/.
+# Both paper prefixes are real static subdirectories; hash navigation needs no rewrite.
+<Directory /var/www/html/paper-observatory>
+    Require all granted
+    AllowOverride None
+    Options -Indexes -ExecCGI
+    DirectoryIndex index.html
+    AddDefaultCharset UTF-8
+</Directory>

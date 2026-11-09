@@ -1,0 +1,58 @@
+# Project memory — thepaperobservatory.com
+
+## Purpose and scope
+
+The workspace folder is `thepaperobservatory.com`, renamed from `test_risk_on_off_visualization` on 2026-11-09. The Paper Observatory is a fully AI-generated website that turns SSRN papers into interactive explanations for strong undergraduate and early PhD readers. Finance is primary; other papers qualify when unusually suitable for visualization and learning. Each companion offers Foundation and Advanced views.
+
+The owner requested cloud generation, an open GitHub repository and Cloudflare hosting. Initial design preference is GPT-6.1 Sol with Ultra reasoning (`gpt-6.1-sol`, `ultra`); record the actual runtime rather than assuming instructions switch models. Training links, Google advertising after activation, and TikTok/Instagram/YouTube discovery are commercial priorities. `.agents/skills/design-ssrn-paper/SKILL.md` is the reusable initial-design workflow.
+
+## Layout and architecture
+
+- `collection/`: plain HTML/CSS/SVG paper-library landing page.
+- `papers/risk-on-off/`: complete first site, The Risk Observatory, SSRN 2150877, a 50-slide presentation by Marcos López de Prado. Its source, public PDF copy, app, tests, builds, analysis, earlier QA and screenshots live here.
+- `papers/stochastic-flow-diagrams/`: complete second site, The Flow Observatory, SSRN 2379314, *Stochastic Flow Diagrams* by Neil J. Calkin and Marcos López de Prado, Algorithmic Finance 3 (2014), pp.21–42. The PDF includes a cover: physical page = printed page −19.
+- Root npm workspaces share React 19.3.1, KaTeX 0.19.1 and Vite 8.3.6 dependencies. Shared architecture/agent guidance, privacy configuration, `confidential/`, scripts and the single `status/` subsystem stay at the root.
+- Each paper is a separate Vite application with a fixed base prefix. Root build assembles only public static output into `dist/`, with paper sites in matching subdirectories. No API, database, admin, jobs or external runtime services are required.
+- Architecture guidance remains based on sibling `../app_architecture`, `tgir-app` revision `73db307deded2c1cba0ce0b58fd761216b3d470b` (clean fast-forward-only refresh on 2026-11-09 was already current). Static frontend, public GitHub/cloud generation and Cloudflare are explicit owner-selected adaptations; Apache/systemd samples are inapplicable. See `docs/architecture/adoption-2026-11-09.md` and `docs/cloud-publishing.md`.
+- Original PDFs remain private/local inputs and retain their hashes. Public Git and production output exclude them by default until redistribution rights are recorded; production source links use canonical SSRN URLs. A cloud checkout must remain buildable without private source PDFs.
+
+## Commands and URLs
+
+Run from the workspace root:
+
+```bash
+npm ci
+npm start
+npm test
+npm run build
+npm run check
+npm run preview
+```
+
+`npm start` opens the browser; `npm run dev` starts the same collection without opening unless `-- --open` is supplied. Collection development is http://127.0.0.1:5173/; paper URLs are `/risk-on-off/` and `/stochastic-flow-diagrams/`. The supervisor starts direct site servers on ports 5174 and 5175 with the same prefixes. Control-C stops the supervised process group.
+
+Built preview is http://127.0.0.1:4173/ and needs only the assembled `dist/`. Its proxy configuration is explicitly empty: Vite preview otherwise inherits development proxies and can accidentally test the development applications. Use full document navigation/reload after a rebuild rather than changing only a hash, to avoid retaining old CSS in a browser tab.
+
+The user authorized running the local site and opening the browser. Leave the collection development server available after this task; temporary QA servers and automation browsers may be stopped.
+
+## Verified model and provenance facts
+
+- Historical pre-rebrand native suite: 116 passing checks (12 collection/migration, 56 first-site, 41 second-site numerical and 7 second-site content). Root build produces the landing page and both standalone sites.
+- Pre-rebrand collection browser QA (2026-11-08): 70 passing checks, including 16 accessibility views, against the assembled production preview. See root `docs/qa-report.md`, `docs/qa-browser-results.json` and `docs/migration-qa.md`. First-paper regression and mobile/focus/reduced-motion behavior passed.
+- Both original PDFs are preserved byte for byte. First SHA256 `e7a4b30973d60ccdf3a99143ce362cd202afff75d435cb3f87d3994afed1c5de`; second SHA256 `9d140b75c013124d8267d821412cd6ea7dc1a282d06d16e849f45ed452331e54`. At the 2026-11-08 local migration, source/public/child-build/assembled-build copies agreed. Production publishing now excludes uncleared PDFs.
+- First site: distinguish portfolio variance size from component concentration. A 2× mode-volatility shock is a 4× eigenvalue shock. Its earlier 53-browser-check report is historical in that paper's docs.
+- Second site: row=target, column=source; all targets read the same old state. Initial r0 is the imposed shock; later innovations are zero for an isolated impulse. Cumulative effects are additive sums from 0, not compounded returns. Stability uses complex eigenvalue modulus and the companion matrix for multiple lags. A unit spectral radius has multiple possible behaviors; invertibility does not imply diagonalizability. Gaussian outcome bands hold coefficients fixed and are not confidence intervals for estimated parameters.
+- Keep independent `risk-observatory` and `flow-observatory` preference/quiz namespaces. No analytics or external notifications are enabled.
+
+## Skill installation
+
+The canonical skill is `.agents/skills/design-ssrn-paper/`. A personal discovery link at `~/.codex/skills/design-ssrn-paper` points to it on this Mac. Cloud agents use the versioned repository copy. Headless cloud jobs use job/run logs and final status rather than requiring local VS Code/LaTeX status slides. Temporary intake belongs in ignored `.cloud-input/`, never public output or Git.
+
+## Maintenance
+
+- Public MVP repository: https://github.com/tglauner/thepaperobservatory.com (owner `tglauner`, public visibility verified 2026-11-09; initially empty before MVP publication). Use `main` and preserve release tag `v0.1.0` as the MVP baseline.
+- Cloudflare Pages Free is sufficient for the current static MVP: 149 files, 3,576,389 bytes total, largest file 259,112 bytes. Official free-plan limits/pricing were checked 2026-11-09; see `docs/cloud-publishing.md`. The artifact scanner enforces 20,000 files and 25 MiB per file and rejects Functions/Worker entry points. Domain renewal and optional generation are separate costs.
+- Deployment is prepared, not live. Repository deployment variables/secrets were absent at the MVP preparation check. Keep `CLOUDFLARE_DEPLOY_ENABLED` unset until the account, Pages project and `production` secrets are configured. The site build needs no credentials.
+- MVP isolated staged-checkout validation passed `npm ci --ignore-scripts`, all 128 native tests, all three production builds, 10 cloud-source checks, 13 publication/free-plan checks and the 149-file artifact scan without private PDFs or local dependencies.
+
+Read the selected paper's `docs/paper-analysis.md` and shared architecture before changing model claims. Run workspace tests/builds and targeted browser regression checks after structural changes. Current migration and QA evidence belongs in root `docs/`; paper-specific evidence belongs in its paper folder. Public GitHub and Cloudflare publishing are owner requirements; report actual verified repository/deployment state and operate within session authorization. No social posting or external messages are implied. Keep secrets and private content out of public assets and durable memory. The complete status lifecycle stays under root `status/`, and final commands use `--no-notify`.

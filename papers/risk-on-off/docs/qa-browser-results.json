@@ -1,0 +1,403 @@
+{
+  "date": "2026-11-08",
+  "site": "The Risk Observatory",
+  "platform": "macOS; Chrome 156; Node 22.22.1",
+  "target": "Built static site on http://127.0.0.1:4173",
+  "native_tests": {
+    "passed": 56,
+    "failed": 0
+  },
+  "browser_checks": {
+    "passed": 53,
+    "failed": 0,
+    "results": [
+      {
+        "name": "overview equal mode risk = three bets",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "overview: automated accessibility",
+        "passed": true,
+        "detail": [],
+        "retested": true
+      },
+      {
+        "name": "overview: no horizontal overflow",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "ellipsoid keyboard button changes projection",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "perfect opposite correlation cancels equal exposures",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "range keyboard end restores full correlated volatility",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "skip link preserves chapter and focuses content",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "geometry: automated accessibility",
+        "passed": true,
+        "detail": [],
+        "retested": true
+      },
+      {
+        "name": "geometry: no horizontal overflow",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "PCA coordinates diagonalize covariance",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "PCA extreme retains every return point",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "advanced mode opens graduate detail",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "components advanced: automated accessibility",
+        "passed": true,
+        "detail": [],
+        "retested": true
+      },
+      {
+        "name": "components advanced: no horizontal overflow",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "DRP has entropy 1",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "unused fourth mode changes normalized entropy to 2/3",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "exposure scaling preserves entropy",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "concentration advanced: automated accessibility",
+        "passed": true,
+        "detail": [],
+        "retested": true
+      },
+      {
+        "name": "concentration advanced: no horizontal overflow",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "one principal bet has one effective bet",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "default 2x mode-volatility shock gives 2x pure-PC volatility",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "equal mode risk gives sqrt(2) volatility stress ratio",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "rotation changes old portfolio stress sensitivity",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "scenario JSON downloads with a stable name",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "stress advanced: automated accessibility",
+        "passed": true,
+        "detail": [],
+        "retested": true
+      },
+      {
+        "name": "stress advanced: no horizontal overflow",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "six cited source cases visible",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "evidence detail expands",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "evidence advanced: automated accessibility",
+        "passed": true,
+        "detail": [],
+        "retested": true
+      },
+      {
+        "name": "evidence advanced: no horizontal overflow",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "glossary filters concepts",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "glossary advanced: automated accessibility",
+        "passed": true,
+        "detail": [],
+        "retested": true
+      },
+      {
+        "name": "glossary advanced: no horizontal overflow",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "Escape closes glossary",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "quiz provides answer feedback",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "quiz persists after reload",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "quiz advanced: automated accessibility",
+        "passed": true,
+        "detail": [],
+        "retested": true
+      },
+      {
+        "name": "quiz advanced: no horizontal overflow",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "quiz reset clears feedback",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "mobile menu opens",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "mobile navigation changes chapter and closes menu",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "mobile overview: automated accessibility",
+        "passed": true,
+        "detail": [],
+        "retested": true
+      },
+      {
+        "name": "mobile overview: no horizontal overflow",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "mobile concentration: automated accessibility",
+        "passed": true,
+        "detail": [],
+        "retested": true
+      },
+      {
+        "name": "mobile concentration: no horizontal overflow",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "reduced motion disables chart transition",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "no browser runtime errors",
+        "passed": true,
+        "detail": []
+      },
+      {
+        "name": "closed mobile navigation is outside tab order",
+        "passed": true
+      },
+      {
+        "name": "opening mobile navigation moves focus inside",
+        "passed": true
+      },
+      {
+        "name": "mobile navigation Tab wraps to first control",
+        "passed": true
+      },
+      {
+        "name": "mobile navigation Shift-Tab wraps to last control",
+        "passed": true
+      },
+      {
+        "name": "Escape closes mobile navigation and restores toggle focus",
+        "passed": true
+      },
+      {
+        "name": "geometry introduction uses precise correlation wording",
+        "passed": true
+      }
+    ]
+  },
+  "accessibility": {
+    "engine": "axe-core 4.10.3",
+    "tags": [
+      "wcag2a",
+      "wcag2aa"
+    ],
+    "passed_views": 10,
+    "views": [
+      {
+        "name": "overview",
+        "passed": true,
+        "violations": [],
+        "overflow": false
+      },
+      {
+        "name": "geometry",
+        "passed": true,
+        "violations": [],
+        "overflow": false
+      },
+      {
+        "name": "components advanced",
+        "passed": true,
+        "violations": [],
+        "overflow": false
+      },
+      {
+        "name": "concentration advanced",
+        "passed": true,
+        "violations": [],
+        "overflow": false
+      },
+      {
+        "name": "stress advanced",
+        "passed": true,
+        "violations": [],
+        "overflow": false
+      },
+      {
+        "name": "evidence advanced",
+        "passed": true,
+        "violations": [],
+        "overflow": false
+      },
+      {
+        "name": "glossary advanced",
+        "passed": true,
+        "violations": [],
+        "overflow": false
+      },
+      {
+        "name": "quiz advanced",
+        "passed": true,
+        "violations": [],
+        "overflow": false
+      },
+      {
+        "name": "mobile overview",
+        "passed": true,
+        "violations": [],
+        "overflow": false
+      },
+      {
+        "name": "mobile concentration",
+        "passed": true,
+        "violations": [],
+        "overflow": false
+      }
+    ]
+  },
+  "storage_and_network": {
+    "passed": 4,
+    "failed": 0,
+    "storage_unavailable_loads": true,
+    "quiz_works_without_storage": true,
+    "no_runtime_errors": true,
+    "local_runtime_requests_only": true,
+    "observed_requests": 8
+  },
+  "artifact_checks": {
+    "passed": 11,
+    "failed": 0
+  },
+  "http_checks": {
+    "homepage": 200,
+    "paper_pdf": 200
+  },
+  "final_build_assets": {
+    "dist/assets/index-BbdUD2mu.js": {
+      "bytes": 92161,
+      "sha256": "972ea5679341d33c74a3ee107c52993bea1ae6b4f5474a8235e6e45c71292eaf"
+    },
+    "dist/assets/index-C99RsaoX.css": {
+      "bytes": 43540,
+      "sha256": "41f2724d6830f7b52c953ef61994afe4246f27102a8756400914084f109f956d"
+    },
+    "dist/assets/math-typesetting-Bv5fr4tV.css": {
+      "bytes": 29802,
+      "sha256": "5f55619c8af4078ea14d38c87508aae338365a5a17294017f6e0aab807b48b2d"
+    },
+    "dist/assets/math-typesetting-WgMc51F1.js": {
+      "bytes": 259112,
+      "sha256": "e59b3f1cc7e3772ad85fc5a28933994d7afc063e2367d089bf251be066bc8ebd"
+    },
+    "dist/assets/react-runtime-DctBZRDK.js": {
+      "bytes": 218747,
+      "sha256": "943db28dec1aa3688b1f45791f89f13caeca6a8177282aeb209bca41a49cd6de"
+    },
+    "dist/assets/rolldown-runtime-WkwZ5CU-.js": {
+      "bytes": 599,
+      "sha256": "2629f2ad3cb75a57d98de697127f5af7d777ef572bbcdfa6e3ce8f438cd4527e"
+    }
+  },
+  "verification_notes": [
+    "Contrast findings were corrected and affected views were rescanned.",
+    "The final interaction changes after the main run were text colors and a correlation wording correction; keyboard focus and the updated geometry were separately verified.",
+    "No production deployment or remote repository operation occurred."
+  ]
+}

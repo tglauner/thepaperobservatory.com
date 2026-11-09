@@ -1,0 +1,40 @@
+{
+  "revision": "2026-11-09",
+  "hook": "Ten assets can still be one big bet.",
+  "narration": "A long list of holdings can hide a common exposure. In this paper companion, rotate a covariance matrix into its principal components. Then compare how much portfolio variance comes from each component. Equal component contributions give three effective bets in our three-mode example. These are synthetic experiments: the result depends on your covariance assumptions. Open The Risk Observatory and change the inputs yourself.",
+  "shots": [
+    {
+      "seconds": "0–4",
+      "view": "#overview",
+      "cue": "Show the holdings-to-hidden-bets illustration."
+    },
+    {
+      "seconds": "4–14",
+      "view": "#components",
+      "cue": "Switch from asset weights to component risk contributions."
+    },
+    {
+      "seconds": "14–26",
+      "view": "#concentration",
+      "cue": "Compare concentrated and equal component risk; show effective bets."
+    },
+    {
+      "seconds": "26–35",
+      "view": "#stress",
+      "cue": "Change one mode's volatility and end on the source-linked limitation."
+    }
+  ],
+  "carousel": [
+    "Ten assets ≠ ten independent bets",
+    "A covariance matrix contains shared exposures",
+    "Principal components reveal uncorrelated directions",
+    "Variance contributions show where the risk sits",
+    "The result depends on the estimated covariance",
+    "Try the free interactive paper companion"
+  ],
+  "hashtags": [
+    "QuantFinance",
+    "PortfolioRisk",
+    "FinanceEducation"
+  ]
+}

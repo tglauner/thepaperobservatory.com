@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Remarkable research, made explorable. Discover AI-generated educational companions to SSRN papers through interactive diagrams, visual experiments, and two levels of mathematical depth." />
+    <meta name="theme-color" content="#f6f3e9" />
+    <link rel="icon" href="/mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="canonical" href="https://thepaperobservatory.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="The Paper Observatory — Research, made explorable" />
+    <meta property="og:description" content="Step inside a research paper. Build the intuition, explore the mathematics, and see an idea for yourself." />
+    <meta property="og:url" content="https://thepaperobservatory.com/" />
+    <title>The Paper Observatory — Research, made explorable</title>
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body data-paper-library>
+    <a href="#papers" class="skip-link">Skip to the paper collection</a>
+    <div class="journal-strip"><span>AN OPEN WINDOW INTO RESEARCH</span><span>FINANCE, MATHEMATICS &amp; THE IDEAS BETWEEN</span></div>
+    <header class="masthead">
+      <a class="brand" href="/" aria-label="The Paper Observatory home">
+        <svg class="brand-mark" width="44" height="44" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="18"/><ellipse cx="22" cy="22" rx="9" ry="18" transform="rotate(40 22 22)"/><path d="M4 22h36M22 4v36"/><circle class="brand-star" cx="34" cy="9" r="3.5"/></svg>
+        <span>THE PAPER<strong>OBSERVATORY</strong></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#papers" aria-current="page">The collection</a>
+        <a href="#approach">Our approach</a>
+        <a href="/learn/">Courses <span aria-hidden="true">↗</span></a>
+        <a href="/about/">About</a>
+      </nav>
+      <a class="header-link" href="/channels/">Follow the ideas <span aria-hidden="true">↗</span></a>
+    </header>
+    <main>
+      <section class="intro" aria-labelledby="intro-title">
+        <div class="intro-copy">
+          <p class="eyebrow"><span class="small-cross" aria-hidden="true">✳</span> THE INTERACTIVE RESEARCH JOURNAL</p>
+          <h1 id="intro-title">A paper opens<br />a question.<br /><em>Come explore it.</em></h1>
+          <p class="intro-description">Big ideas become clearer when you can move their parts. Step inside remarkable research with visual explanations and experiments you can make your own.</p>
+          <div class="intro-actions"><a class="button button-dark" href="#papers">Explore the collection <span aria-hidden="true">↓</span></a><a class="text-link" href="#approach">How to use the Observatory <span aria-hidden="true">↗</span></a></div>
+          <p class="intro-footnote"><span class="status-dot" aria-hidden="true"></span> Rooted in source papers. Created with AI. Built for understanding.</p>
+        </div>
+        <figure class="hero-exhibit" aria-labelledby="exhibit-title">
+          <div class="exhibit-top"><span>AN IDEA YOU CAN TOUCH</span><span class="figure-number">FIG. 001</span></div>
+          <h2 id="exhibit-title">Two assets. <em>How many risks?</em></h2>
+          <div class="hero-chart">
+            <svg viewBox="0 0 500 322" role="img" aria-labelledby="hero-chart-title hero-chart-description">
+              <title id="hero-chart-title">Covariance geometry of two equal-volatility assets</title>
+              <desc id="hero-chart-description">An ellipse stretches along a shared risk direction as positive correlation rises. At correlation 0.65, this direction holds 82.5 percent of total variance. This is a synthetic teaching model.</desc>
+              <defs><pattern id="hero-grid" width="25" height="25" patternUnits="userSpaceOnUse"><path d="M25 0H0V25" fill="none" stroke="currentColor" stroke-width=".5"/></pattern><marker id="axis-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="currentColor" stroke-width="1"/></marker></defs>
+              <rect class="chart-grid" x="40" y="16" width="420" height="275" fill="url(#hero-grid)"/>
+              <g class="chart-axis"><path d="M55 161H454M250 295V24" marker-end="url(#axis-arrow)"/><text x="416" y="181">ASSET A</text><text x="265" y="32">ASSET B</text><text x="237" y="179">0</text></g>
+              <g transform="translate(250 161) rotate(-45)">
+                <ellipse class="ellipse-fill" data-ellipse="outer" rx="154.14" ry="70.99"/>
+                <ellipse class="ellipse-ring" data-ellipse="middle" rx="115.61" ry="53.24"/>
+                <ellipse class="ellipse-ring" data-ellipse="inner" rx="77.07" ry="35.50"/>
+                <path class="principal-line" data-principal-axis d="M-171 0H171"/>
+                <path class="minor-line" data-minor-axis d="M0 -87V87"/>
+                <g class="ellipse-points" data-ellipse-points></g>
+                <circle class="origin-point" r="4"/>
+              </g>
+              <g class="chart-annotation"><path d="M365 71h38v-16"/><text x="408" y="52" text-anchor="end">THE SHARED</text><text x="408" y="65" text-anchor="end">RISK DIRECTION</text></g>
+              <text class="chart-equation" x="53" y="287">Σ = [1, ρ; ρ, 1]</text>
+              <text class="chart-tag" x="449" y="287" text-anchor="end">SYNTHETIC MODEL</text>
+            </svg>
+          </div>
+          <div class="exhibit-control">
+            <div class="range-label"><label for="hero-correlation">Change the correlation</label><output id="correlation-output" for="hero-correlation">ρ = 0.65</output></div>
+            <input type="range" id="hero-correlation" min="0" max="95" step="1" value="65" aria-describedby="correlation-summary" />
+            <div class="range-ends" aria-hidden="true"><span>UNCORRELATED</span><span>MOVE TOGETHER</span></div>
+            <p id="correlation-summary">One direction now holds <strong data-variance-share>82.5%</strong> of total variance.</p>
+          </div>
+          <figcaption>Same two assets. A different concentration of risk. <a href="/risk-on-off/#geometry">Go inside the idea <span aria-hidden="true">↗</span></a></figcaption>
+        </figure>
+      </section>
+      <div class="reading-line" aria-label="What you will find"><span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 4h5c1 0 2 1 2 2 0-1 1-2 2-2h5v12h-5c-1 0-2 1-2 1s-1-1-2-1H3zM10 6v11"/></svg> Original research, always in view</span><span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h14M6 3v14M14 3v14"/><circle cx="6" cy="7" r="2"/><circle cx="14" cy="13" r="2"/></svg> Ideas you can experiment with</span><span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 15h4V9h5V3h5M3 3h4M3 6h2"/></svg> Foundation &amp; Advanced paths</span></div>
+      <section id="papers" class="collection" aria-labelledby="collection-title">
+        <div class="section-top"><div><p class="eyebrow">THE READING ROOM</p><h2 id="collection-title">Find your next <em>perspective.</em></h2></div><p class="section-note">A growing collection, starting with finance.<br />Chosen for ideas that become clearer when you see them.</p></div>
+        <div class="catalog-toolbar">
+          <div class="subject-filters" role="group" aria-label="Filter papers by subject"><button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">All papers <span>02</span></button><button type="button" class="filter-button" data-filter="finance" aria-pressed="false">Finance</button><button type="button" class="filter-button" data-filter="foundations" aria-pressed="false">Mathematical foundations</button><button type="button" class="filter-button" data-filter="beyond" aria-pressed="false">Beyond finance</button></div>
+          <div class="catalog-search" role="search"><label class="sr-only" for="paper-search">Search papers, authors or ideas</label><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg><input type="search" id="paper-search" placeholder="Find a paper, author or idea…" autocomplete="off" maxlength="160" /></div>
+        </div>
+        <p class="results-label" id="catalog-status" role="status" aria-live="polite" aria-atomic="true"><span data-result-count>2 papers</span><span class="results-detail">OPEN ACCESS TO EVERY COMPANION</span></p>
+        <div class="paper-grid">
+          <article class="paper-card risk" data-paper data-subjects="finance" data-search="Managing Risks in a Risk-On/Risk-Off Environment Marcos López de Prado portfolio finance risk diversification correlation eigenvalues principal components linear algebra PCA 2150877">
+            <a href="/risk-on-off/" class="card-visual" aria-label="Explore Managing Risks in a Risk-On/Risk-Off Environment"><span class="visual-label">001 <span>THE GEOMETRY OF RISK</span></span><svg class="risk-art" viewBox="0 0 560 300" aria-hidden="true"><defs><pattern id="risk-dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".8" fill="#b6cdb7" opacity=".25"/></pattern></defs><rect width="560" height="300" fill="url(#risk-dots)"/><g fill="none" stroke="#b0c8aa" stroke-width=".8" transform="translate(282 151) rotate(-24)"><ellipse rx="184" ry="66"/><ellipse rx="184" ry="46"/><ellipse rx="184" ry="23"/><ellipse rx="151" ry="66"/><ellipse rx="104" ry="66"/><ellipse rx="48" ry="66"/><path d="M-184 0H184M0-66V66"/></g><path d="m83 240 392-177" stroke="#dea77e" stroke-width="1.5" stroke-dasharray="5 5"/><path d="m240 54 88 198" stroke="#c6dac6" stroke-dasharray="4 5"/><circle cx="282" cy="151" r="4" fill="#f1ead4"/><g font-family="Menlo, monospace" font-size="10" fill="#deb18b"><text x="459" y="48">PC₁</text><text x="343" y="260" fill="#c6dac6">PC₂</text></g></svg><span class="visual-caption">MANY ASSETS. ONE HIDDEN BET.</span><span class="visual-arrow" aria-hidden="true">↗</span></a>
+            <div class="card-body"><div class="card-tags"><span>FINANCE</span><span>PORTFOLIO RISK</span><span>4 LABS</span></div><h3><a href="/risk-on-off/">How many bets are you<br class="desktop-break" /> actually making?</a></h3><p>Look past the number of assets. Rotate a portfolio into its hidden risk directions and discover what diversification really measures.</p><div class="paper-source"><span class="source-eyebrow">BASED ON THE RESEARCH</span><strong>Managing Risks in a Risk-On/Risk-Off Environment</strong><span>Marcos López de Prado <span aria-hidden="true">·</span> 50-slide presentation</span></div><div class="card-footer"><a class="explore" href="/risk-on-off/">Enter the Risk Observatory <span aria-hidden="true">↗</span></a><a class="source-link" href="https://ssrn.com/abstract=2150877" aria-label="Original Managing Risks in a Risk-On/Risk-Off Environment on SSRN">SSRN 2150877 <span aria-hidden="true">↗</span></a></div></div>
+          </article>
+          <article class="paper-card flows" data-paper data-subjects="finance foundations" data-search="Stochastic Flow Diagrams Neil J. Calkin Marcos López de Prado Algorithmic Finance 2014 time series mathematical foundations dynamic systems shocks feedback memory linear algebra VAR AR 2379314">
+            <a href="/stochastic-flow-diagrams/" class="card-visual" aria-label="Explore Stochastic Flow Diagrams"><span class="visual-label">002 <span>THE ANATOMY OF AN AFTERSHOCK</span></span><svg class="flow-art" viewBox="0 0 560 300" aria-hidden="true"><defs><pattern id="flow-dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".8" fill="#9cbdc4" opacity=".24"/></pattern><marker id="flow-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#dfb18a"/></marker><marker id="flow-arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#b0cdd0"/></marker></defs><rect width="560" height="300" fill="url(#flow-dots)"/><g fill="none" stroke-width="1.3"><path d="M178 91C234 21 316 23 372 76M178 209C239 280 318 272 372 224" stroke="#dfb18a" stroke-dasharray="4 5" marker-end="url(#flow-arrow)"/><path d="M363 104C284 104 245 196 181 196M363 196C287 196 242 104 181 104" stroke="#b0cdd0" marker-end="url(#flow-arrow-blue)"/><path d="M363 91H181M363 209H181" stroke="#dfb18a" marker-end="url(#flow-arrow)"/></g><g fill="#25474f" stroke="#b0cdd0" stroke-width="1"><ellipse cx="135" cy="98" rx="45" ry="31"/><ellipse cx="135" cy="202" rx="45" ry="31"/><path d="m404 56 42 42-42 42-42-42zm0 104 42 42-42 42-42-42z"/></g><g font-family="Menlo, monospace" font-size="11" fill="#e5e7d7" text-anchor="middle"><text x="135" y="102">Stocks</text><text x="135" y="206">Bonds</text><text x="404" y="102">t − 1</text><text x="404" y="206">t − 1</text></g></svg><span class="visual-caption">ONE SHOCK. MANY AFTERSHOCKS.</span><span class="visual-arrow" aria-hidden="true">↗</span></a>
+            <div class="card-body"><div class="card-tags"><span>DYNAMIC SYSTEMS</span><span>TIME SERIES</span><span>5 LABS</span></div><h3><a href="/stochastic-flow-diagrams/">A shock is only<br class="desktop-break" /> the beginning.</a></h3><p>Turn equations into a map. Follow a disturbance through memory and feedback to see why its echoes fade, persist, or grow.</p><div class="paper-source"><span class="source-eyebrow">BASED ON THE RESEARCH</span><strong>Stochastic Flow Diagrams</strong><span>Neil J. Calkin &amp; Marcos López de Prado <span aria-hidden="true">·</span> 2014</span></div><div class="card-footer"><a class="explore" href="/stochastic-flow-diagrams/">Enter the Flow Observatory <span aria-hidden="true">↗</span></a><a class="source-link" href="https://ssrn.com/abstract=2379314" aria-label="Original Stochastic Flow Diagrams on SSRN">SSRN 2379314 <span aria-hidden="true">↗</span></a></div></div>
+          </article>
+        </div>
+        <div class="empty-state" data-empty-state hidden><span class="empty-symbol" aria-hidden="true">⌕</span><h3>No papers in this view yet.</h3><p data-empty-description>Try another subject or a different search. The collection currently contains two companions to research in finance and mathematical foundations.</p><button type="button" class="button button-dark" data-clear-filters>Show all papers <span aria-hidden="true">↗</span></button></div>
+        <noscript><p class="noscript-note">The full collection is shown above. Enable JavaScript to search, filter, and use the introductory experiment.</p></noscript>
+      </section>
+      <section id="approach" class="approach" aria-labelledby="approach-title"><div class="approach-intro"><p class="eyebrow">A LITTLE LESS DISTANCE FROM THE IDEA</p><h2 id="approach-title">Read. Change.<br /><em>Understand.</em></h2><p>You don’t need to understand every equation to begin. You do need a place to ask what it means.</p><a class="text-link" href="/about/">About the Observatory <span aria-hidden="true">↗</span></a></div><div class="approach-steps"><article class="approach-step"><span class="step-number">01</span><div><h3>Find the intuition</h3><p>Start on the Foundation path: clear language, visual models, and questions that make the idea concrete.</p></div><svg viewBox="0 0 54 54" aria-hidden="true"><circle cx="27" cy="27" r="18"/><path d="M9 27h36M27 9v36M14 14l26 26"/></svg></article><article class="approach-step"><span class="step-number">02</span><div><h3>Make an experiment</h3><p>Move a parameter. Send a shock. Compare outcomes. Learn what changes, and the assumptions behind it.</p></div><svg viewBox="0 0 54 54" aria-hidden="true"><path d="M6 39h42M10 39V24h9v15M23 39V14h9v25M36 39V7h9v32"/></svg></article><article class="approach-step"><span class="step-number">03</span><div><h3>Go back to the source</h3><p>Switch to Advanced for the mathematics, then follow the citations. Every companion keeps the original research close.</p></div><svg viewBox="0 0 54 54" aria-hidden="true"><path d="M12 7h23l8 8v32H12zM35 7v10h8M19 25h17M19 31h17M19 37h10"/></svg></article></div></section>
+      <aside class="learning-note" aria-labelledby="learning-title"><div><span class="eyebrow">KEEP THE QUESTION GOING</span><h2 id="learning-title">An idea is a beginning.<br /><em>Build on it.</em></h2><p>Continue with courses from TG Investments &amp; Research, or explore more visual explanations on video.</p></div><div class="learning-links"><a href="/learn/">Explore the courses <span aria-hidden="true">↗</span></a><a href="/channels/">Watch &amp; follow the ideas <span aria-hidden="true">↗</span></a></div></aside>
+      <aside class="evidence-note"><span class="evidence-mark" aria-hidden="true">✳</span><div><h2>Made with AI. Grounded in the paper.</h2><p>These educational companions are generated with AI from source papers. Interactive reconstructions and synthetic teaching examples are identified separately from the authors’ findings. They can contain errors: follow the source, question the assumptions, and use the experiments to learn.</p><a href="/about/#editorial-standard">Read our editorial standard <span aria-hidden="true">↗</span></a></div></aside>
+    </main>
+    <footer class="site-footer"><div class="footer-top"><a class="brand" href="/" aria-label="The Paper Observatory home"><svg class="brand-mark" width="40" height="40" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="18"/><ellipse cx="22" cy="22" rx="9" ry="18" transform="rotate(40 22 22)"/><path d="M4 22h36M22 4v36"/><circle class="brand-star" cx="34" cy="9" r="3.5"/></svg><span>THE PAPER<strong>OBSERVATORY</strong></span></a><p>Research, made explorable.</p><nav aria-label="Footer navigation"><a href="/#papers">The collection</a><a href="/learn/">Courses</a><a href="/channels/">Channels</a><a href="/about/">About &amp; sources</a><a href="https://github.com/tglauner/thepaperobservatory.com">GitHub <span aria-hidden="true">↗</span></a></nav></div><div class="footer-bottom"><span>© <span data-current-year>2026</span> TG Investments &amp; Research</span><span>Educational material. Not investment advice.</span><a href="/privacy/">Privacy &amp; disclosures <span aria-hidden="true">↗</span></a></div></footer>
+  </body>
+</html>

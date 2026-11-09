@@ -1,0 +1,44 @@
+# Private workspace material
+confidential/
+.env
+.env.*
+!.env.example
+docs/*.pdf
+docs/*.doc
+docs/*.docx
+docs/latex/build/
+status/*
+!status/README.md
+!status/status_slide.py
+
+# Local dependencies, builds, and QA artifacts
+node_modules/
+dist/
+.venv/
+__pycache__/
+*.pyc
+.playwright/
+.playwright-cli/
+test-results/
+playwright-report/
+output/playwright/
+papers/*/output/
+papers/*/docs/*.pdf
+papers/*/docs/*.docx
+.DS_Store
+
+# Third-party papers stay local unless redistribution rights are recorded
+**/*.pdf
+.cloud-input/
+.cloud-output/
+.wrangler/
+
+# Derived site/support content is regenerated from shared metadata and concepts
+collection/learn/index.html
+collection/about/index.html
+collection/channels/index.html
+collection/privacy/index.html
+collection/public/share-packs/
+content/social/*.json
+collection/public/robots.txt
+collection/public/sitemap.xml

@@ -1,0 +1,10 @@
+# Optional Apache directory include for a later explicitly requested release.
+# Add this include to the existing HTTPS virtual host after deploying dist/ here.
+# The application is static; it needs no reverse proxy or systemd service.
+<Directory /var/www/html/risk-on-off>
+    Require all granted
+    AllowOverride None
+    Options -Indexes -ExecCGI
+    DirectoryIndex index.html
+    AddDefaultCharset UTF-8
+</Directory>

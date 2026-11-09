@@ -1,0 +1,40 @@
+{
+  "revision": "2026-11-09",
+  "hook": "A shock can fade while its effect remains.",
+  "narration": "Push one variable in a two-variable system. Each period, the same signed links pass part of the previous changes into the next changes. In the paper's stable example those changes fade. But adding them over time leaves a lasting displacement. Now change the feedback: persistence and explosive growth behave differently. These are reconstructions of declared model examples, not forecasts. Try the sliders in The Flow Observatory, and read the original paper.",
+  "shots": [
+    {
+      "seconds": "0–5",
+      "view": "#network",
+      "cue": "Select a signed source-to-target connection."
+    },
+    {
+      "seconds": "5–17",
+      "view": "#impulse",
+      "cue": "Step through the stable source impulse; compare rates and cumulative effects."
+    },
+    {
+      "seconds": "17–27",
+      "view": "#feedback",
+      "cue": "Change the feedback and highlight the eigenvalue relative to the unit circle."
+    },
+    {
+      "seconds": "27–38",
+      "view": "#evidence",
+      "cue": "End on assumptions, original source and free experiment link."
+    }
+  ],
+  "carousel": [
+    "One shock. Many echoes.",
+    "Signed links describe next-period changes",
+    "Stable changes can fade toward zero",
+    "Cumulative effects can remain",
+    "Feedback changes the long-run response",
+    "Try the model; keep prediction separate from causation"
+  ],
+  "hashtags": [
+    "TimeSeries",
+    "QuantFinance",
+    "LearnWithModels"
+  ]
+}

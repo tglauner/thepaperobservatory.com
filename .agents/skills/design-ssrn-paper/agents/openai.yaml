@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design an SSRN paper companion"
+  short_description: "Build a source-grounded Paper Observatory exhibit"
+  default_prompt: "Use $design-ssrn-paper to analyze this SSRN document and design its initial Paper Observatory companion."

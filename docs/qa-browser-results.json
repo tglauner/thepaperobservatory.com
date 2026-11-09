@@ -1,0 +1,363 @@
+{
+  "verified_on": "2026-11-08",
+  "target": "assembled production build served locally on port 4173",
+  "native_tests": 116,
+  "browser_checks": 70,
+  "accessibility_views": 16,
+  "accessibility_standard": "axe-core WCAG 2 A / AA automated rules, plus keyboard interaction checks; not a complete manual accessibility audit",
+  "passed": 70,
+  "failed": 0,
+  "results": [
+    {
+      "name": "library contains two real paper sites",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "library desktop: accessibility",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "library desktop: no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "library link opens second site",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "second site uses built JavaScript",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "second source PDF is namespaced",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "flow overview: accessibility",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "flow overview: no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "advanced detail opens",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "signed coefficient times negative source gives positive contribution",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "selected link has pressed state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "removing a link zeroes only selected contribution",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "skip link preserves route and focuses main",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "network advanced: accessibility",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "network advanced: no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stable cumulative Stocks response approaches minus .75",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "cumulative chart labels additive quantity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "persistent source example accumulates Stocks minus3 at t10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "animation advances whole periods",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced motion disables autoplay",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "response JSON downloads",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "impulse advanced: accessibility",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "impulse advanced: no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "complex modulus classifies growing spiral as explosive",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "transient amplifier stays asymptotically stable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "equal-move shock misses explosive source mode",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "feedback advanced: accessibility",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "feedback advanced: no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "second-lag echo arrives at period2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "alternating boundary cumulative response is zero at period5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "memory advanced: accessibility",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "memory advanced: no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "zero innovation variance collapses simulated outcome band",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "ensemble reseed increments seed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "uncertainty advanced: accessibility",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "uncertainty advanced: no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "six source evidence cases present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "physical PDF links retain correct prefix",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence advanced: accessibility",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "evidence advanced: no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "glossary search filters terms",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "glossary advanced: accessibility",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "glossary advanced: no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "one Escape closes a populated glossary search",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "quiz reports the correct source answer",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "quiz persists across reload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "quiz advanced: accessibility",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "quiz advanced: no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "quiz reset clears response",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "back link returns to library",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "first paper preserved at new URL",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "first paper source PDF is namespaced",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "first-paper numerical behavior remains three effective bets",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "risk overview migrated: accessibility",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "risk overview migrated: no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "library mobile: accessibility",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "library mobile: no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "flow network mobile: accessibility",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "flow network mobile: no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "closed mobile menu is outside tab order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile menu opens with focus inside",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile menu contains forward tab focus",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile Escape restores menu toggle focus",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "flow feedback mobile: accessibility",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "flow feedback mobile: no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "flow uncertainty mobile: accessibility",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "flow uncertainty mobile: no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "risk geometry migrated mobile: accessibility",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "risk geometry migrated mobile: no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no browser runtime exceptions",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "migration_report": "migration-qa.md"
+}

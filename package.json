@@ -1,0 +1,35 @@
+{
+  "name": "thepaperobservatory.com",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AI-generated interactive SSRN paper companions, built in the cloud and published on Cloudflare.",
+  "workspaces": [
+    "papers/*"
+  ],
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "node scripts/serve.mjs dev",
+    "start": "node scripts/serve.mjs dev --open",
+    "preview": "node scripts/serve.mjs preview",
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.js && npm run test --workspaces --if-present",
+    "check": "npm test && npm run build",
+    "dev:risk": "npm run dev --workspace papers/risk-on-off",
+    "dev:flows": "npm run dev --workspace papers/stochastic-flow-diagrams",
+    "social:build": "node scripts/social-packs.mjs",
+    "pretest": "node scripts/render-pages.mjs",
+    "cloud:verify": "node scripts/cloud-verify.mjs",
+    "cloud:self-check": "node scripts/cloud-source.mjs --self-test && node scripts/cloud-verify.mjs --self-test"
+  },
+  "devDependencies": {
+    "vite": "8.3.6"
+  },
+  "homepage": "https://thepaperobservatory.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tglauner/thepaperobservatory.com.git"
+  }
+}

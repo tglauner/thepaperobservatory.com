@@ -1,0 +1,11 @@
+{
+  "folders": [
+    {
+      "name": "thepaperobservatory.com",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "window.title": "The Paper Observatory \u2014 ${activeEditorShort}${separator}${appName}"
+  }
+}

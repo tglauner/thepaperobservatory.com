@@ -1,0 +1,8 @@
+{
+  "chatgpt.openOnStartup": true,
+  "explorer.autoRevealExclude": {
+    "**/status/**": true
+  },
+  "pdf-preview.default.sidebar": false,
+  "pdf-preview.default.scale": "page-fit"
+}

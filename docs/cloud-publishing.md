@@ -4,7 +4,9 @@ The Paper Observatory targets **https://thepaperobservatory.com**, with a public
 
 ## Current state
 
-Cloud configuration and the workflows below are implemented. A read-only check on 2026-11-09 found GitHub CLI access for `tglauner`; Cloudflare Wrangler reported that no Cloudflare account was authenticated. No Cloudflare resource, custom domain or deployment was created by this work. The cloud model workflow has not been invoked with a billable API key. The requested model configuration is preserved exactly; successful account access is not assumed.
+The first production Pages release was deployed on 2026-11-10 from verified website commit `9d6bede3c11b4f54231c6fe633456c9830e322c3`. The production alias is https://thepaperobservatory.pages.dev/ and deployment ID is `cc9f9890-d2e9-4abe-b7f2-082f8948182b`. The apex [thepaperobservatory.com](https://thepaperobservatory.com/) is Active with SSL enabled in Cloudflare. Canonical-domain browser visits and educational controls passed, and a tagged verification visit reached the production analytics database. DNS caches can still take time to update after first registration.
+
+The existing DigitalOcean collector is configured for the new domain and exact Pages hostname, with the dashboard registration installed and reporting authentication enforced. Its live unit is `visitor-analytics.service`. Website publishing still uses only static files; no additional paid service, Worker or database was added. Unattended GitHub publishing remains disabled until scoped production secrets are configured; the initial release used authorized Wrangler OAuth.
 
 The public MVP source repository is [tglauner/thepaperobservatory.com](https://github.com/tglauner/thepaperobservatory.com). The repository excludes source PDFs unless explicit redistribution permission is established. Local originals remain intact; production links point to each paper's SSRN source page.
 

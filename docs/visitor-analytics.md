@@ -37,12 +37,9 @@ ANALYTICS_ENABLED=0 npm run build
 
 ## Production activation
 
-Integration is prepared; neither this website nor the shared collector was deployed by this change. A read-only OPTIONS check found the live tracker returning HTTP 200, but the live collector rejecting `Origin: https://thepaperobservatory.com` with HTTP 400. An authorized collector deployment must:
+The coordinated rollout on 2026-11-10 installed the manual widget and added `thepaperobservatory.com` plus `thepaperobservatory.pages.dev` to the existing collector’s allowed origins, preserving every previous entry. It attached the existing protected administrator settings to the verified live `visitor-analytics.service` unit. The collector health and allowed-origin checks passed, and anonymous reporting API access returned HTTP 401. Existing analytics data and credentials were preserved.
 
-1. Add `thepaperobservatory.com` to the existing collector's effective `ALLOWED_ORIGINS`, preserving every existing allowed domain. Include any actual Pages preview hostname only if preview tracking is wanted; never allow all `pages.dev` tenants.
-2. Publish the manual `paper-observatory` widget added to sibling `www.tglauner.com/visitor_analytics/collector/config/site_widgets.json`. Static Cloudflare sites cannot be discovered from the droplet's Apache vhosts.
-3. Restart the collector under its existing authenticated deployment procedure, then repeat the non-recording OPTIONS check below.
-4. Deploy the verified website artifact to Cloudflare and inspect genuine traffic in the dashboard. Keep database, reporting credentials and collector code off Cloudflare and out of this public repository.
+The website is deployed to Cloudflare Pages. The apex domain is Active with SSL enabled, and real-browser collection on the canonical host was verified in production SQLite using the explicit `deployment-check` / `launch-2026-11-10` tag. The dashboard remains at the existing TGIR URL and requires its existing administrator login.
 
 ```bash
 curl -i -X OPTIONS https://tglauner.com/collect \

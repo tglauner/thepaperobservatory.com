@@ -6,6 +6,10 @@ Tim requested one coordinated deployment of the static website to Cloudflare and
 
 The website stays on Cloudflare Pages Free. The existing TGIR collector and dashboard stay on the current DigitalOcean droplet. Do not move the collector to Cloudflare, create a Worker/database, or point `tglauner.com` at the new website.
 
+## Deployment progress — 2026-11-10
+
+Account registration, domain purchase, deployment OAuth and initial Pages publishing are complete. DigitalOcean analytics has been configured and verified. The apex domain is Active with SSL enabled; browser interactions and production visitor collection passed. Some resolvers may retain old negative DNS entries while initial registration propagates. The setup steps below remain as reference, rather than new requests for owner action.
+
 ## Owner steps
 
 1. Open https://dash.cloudflare.com/sign-up, create an account and verify the email address.

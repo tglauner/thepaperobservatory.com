@@ -6,7 +6,7 @@ Each paper has its own analysis, application, tests and build under `papers/<slu
 
 The publishing model is **cloud generation → open GitHub source → cloud verification/build → Cloudflare hosting**. Local preview remains available. See the [cloud publishing runbook](docs/cloud-publishing.md) for verified deployment state, setup and rollback; a configured target is not a claim that the domain is live.
 
-MVP source: [public GitHub repository](https://github.com/tglauner/thepaperobservatory.com). The current static site fits Cloudflare Pages Free; see the runbook's measured [free hosting assessment](docs/cloud-publishing.md#free-hosting-assessment--2026-11-09). Deployment is prepared and remains disabled until account setup.
+MVP source: [public GitHub repository](https://github.com/tglauner/thepaperobservatory.com). The current static site fits Cloudflare Pages Free; see the runbook's measured [free hosting assessment](docs/cloud-publishing.md#free-hosting-assessment--2026-11-09). The first release is live at [thepaperobservatory.com](https://thepaperobservatory.com/) with a [Cloudflare Pages fallback](https://thepaperobservatory.pages.dev/); unattended GitHub publishing remains disabled until production secrets are configured.
 
 | Website | Source | Collection URL |
 | --- | --- | --- |
@@ -61,7 +61,7 @@ The root npm workspace installs shared dependencies through one lockfile. React 
 
 The original PDFs remain byte-identical to the supplied files in local/private storage. They are excluded from public Git and production artifacts by default unless redistribution rights are recorded. Local development can use each site's reading copy; production source links fall back to the canonical SSRN page. Source references distinguish physical PDF pages from printed journal pages: in the second article, printed page q corresponds to PDF page q − 19 because the PDF begins with a cover.
 
-Visitor measurement uses the existing [TGIR analytics service](docs/visitor-analytics.md), with local and production collectors configured separately. Production origin registration is pending; the Cloudflare site remains static.
+Visitor measurement uses the existing [TGIR analytics service](docs/visitor-analytics.md), with local and production collectors configured separately. Production origin registration and the dashboard widget are deployed; the Cloudflare site remains static.
 
 ## Test and build the whole website
 

@@ -26,7 +26,7 @@ Changing these settings requires rebuilding. A normal production preview uses th
 
 Deployment completed **2026-11-10**. The live DigitalOcean unit is **`visitor-analytics.service`**; the similarly named failed legacy units must not be used. The manual dashboard widget and allowed origins for the apex and exact `thepaperobservatory.pages.dev` hostname are installed. Existing sites and visitor data were preserved.
 
-The service loads existing protected administrator credentials from `/etc/visitor-collector-admin.env`, plus `/etc/visitor-analytics-observatory.env` through its `90-observatory.conf` drop-in. Keep credentials off Git and logs. Chrome saves a login only after successful sign-in and an owner-approved save action.
+The service loads existing protected administrator credentials from `/etc/visitor-collector-admin.env`, plus `/etc/visitor-analytics-observatory.env` through its `90-observatory.conf` drop-in. Keep credentials off Git and logs. The dashboard’s own saved credentials are tab-scoped session storage. Persistent sign-in requires a separate, owner-approved save in Chrome’s password manager.
 
 Non-recording health checks:
 

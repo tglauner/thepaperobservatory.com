@@ -26,6 +26,8 @@ jobs:
           node-version: '22'
           cache: npm
       - run: npm ci --ignore-scripts
+      - name: Check the credential-free MCP configuration installer
+        run: python3 scripts/configure-cloudflare-mcp.py --self-test
       - name: Check cloud source and free-plan guards
         run: npm run cloud:self-check
       - name: Test and build the public website

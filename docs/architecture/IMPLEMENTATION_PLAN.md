@@ -8,7 +8,7 @@ The library homepage links both applications. Root commands install once, launch
 
 The first site preserves its four risk experiments. The second site provides five experiments on network reading, isolated impulses, feedback stability, lag memory and stochastic innovations, plus article evidence, glossary and quiz. Both offer Foundation and Advanced paths and link source pages from the relevant explanations.
 
-The pre-rebrand local migration passed 116 individual native checks and all three builds, plus 70 browser checks covering 16 accessibility views. Those are historical evidence. Rebranding, shared navigation, source-publication rules and cloud integration require a fresh relevant test/build/browser pass.
+Initial setup was completed on 2026-11-10: 137 native tests, all three builds, publication checks, live-domain controls and production visitor collection passed. Earlier migration/accessibility QA remains historical evidence in the retained reports.
 
 ## Acceptance checks for this collection
 
@@ -43,4 +43,4 @@ Use an open GitHub source repository and cloud builds. Cloudflare is the hosting
 
 Course destinations must be real and related to the learning task. Advertising requires verified publisher/configuration/consent readiness. Social links must identify real owned accounts; draft content does not imply permission to publish it. No fake account, empty sign-up flow or revenue promise belongs in the finished entrance.
 
-Before declaring this expansion complete, run the native suites and all builds, record at least 20 individual passing architecture/integration checks, exercise the entrance/shared routes and regress existing paper controls at desktop/mobile sizes. Verify the built artifact's public boundary and actual repository/deployment state independently of the design copy.
+For future material changes, run the native suites and all builds, exercise affected routes/controls, and check the public boundary. Architecture integrations retain the minimum 20 named passing checks and relevant desktop/mobile regression checks.

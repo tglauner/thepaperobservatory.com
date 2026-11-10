@@ -1,114 +1,63 @@
-# Cloud generation and publication
+# Publishing and operations
 
-The Paper Observatory targets **https://thepaperobservatory.com**, with a public GitHub repository, cloud-generated paper companions and a static Cloudflare Pages website. Cloud hosting overrides this project's earlier DigitalOcean deployment choice. The inherited Architecture Library standards still govern source ownership, privacy, reproducible builds, evidence, accessibility and verification.
+## Live setup
 
-## Current state
+Initial setup completed **2026-11-10**.
 
-The first production Pages release was deployed on 2026-11-10 from verified website commit `9d6bede3c11b4f54231c6fe633456c9830e322c3`. The production alias is https://thepaperobservatory.pages.dev/ and deployment ID is `cc9f9890-d2e9-4abe-b7f2-082f8948182b`. The apex [thepaperobservatory.com](https://thepaperobservatory.com/) is Active with SSL enabled in Cloudflare. Canonical-domain browser visits and educational controls passed, and a tagged verification visit reached the production analytics database. DNS caches can still take time to update after first registration.
+| Component | Verified configuration |
+| --- | --- |
+| Public source | https://github.com/tglauner/thepaperobservatory.com |
+| Website | https://thepaperobservatory.com — Active, SSL enabled |
+| Cloudflare Pages | Project `thepaperobservatory`, branch `main` |
+| Fallback | https://thepaperobservatory.pages.dev |
+| Visitor collection | Existing DigitalOcean collector; [analytics runbook](visitor-analytics.md) |
 
-The existing DigitalOcean collector is configured for the new domain and exact Pages hostname, with the dashboard registration installed and reporting authentication enforced. Its live unit is `visitor-analytics.service`. Website publishing still uses only static files; no additional paid service, Worker or database was added. Unattended GitHub publishing remains disabled until scoped production secrets are configured; the initial release used authorized Wrangler OAuth.
+The first website release used commit `9d6bede3c11b4f54231c6fe633456c9830e322c3`, CI run `42747011869` and deployment `cc9f9890-d2e9-4abe-b7f2-082f8948182b`. Production browser controls and a tagged analytics visit passed.
 
-The public MVP source repository is [tglauner/thepaperobservatory.com](https://github.com/tglauner/thepaperobservatory.com). The repository excludes source PDFs unless explicit redistribution permission is established. Local originals remain intact; production links point to each paper's SSRN source page.
+## Hosting and release boundary
 
-## Free hosting assessment — 2026-11-09
+The static site fits **Cloudflare Pages Free**: the verified release contains 149 files, with the largest asset about 0.25 MiB. The [free limits](https://developers.cloudflare.com/pages/platform/limits/) checked during setup were 20,000 files and 25 MiB per file; [static requests are free](https://developers.cloudflare.com/pages/functions/pricing/#static-asset-requests). Domain renewal and optional cloud development/generation are separate costs.
 
-The current MVP fits **Cloudflare Pages Free**. At the MVP release, the verified public build contained 149 files totaling 3,576,389 bytes (3.41 MiB); its largest file is 259,112 bytes (0.25 MiB). All educational calculations run in the visitor's browser. There are no Pages Functions, Workers, database, storage service or runtime AI calls in the Cloudflare site. Subsequent visitor analytics integration uses the existing TGIR collector separately; see [visitor analytics](visitor-analytics.md).
+Publish only the assembled artifact. The scanner rejects private paths, PDFs, symlinks, oversized assets, source trees and Functions/Worker entry points. Keep original papers, `.env`, `confidential/`, status output and temporary inputs private. No Cloudflare backend, database or runtime AI call is needed.
 
-Cloudflare's [Pages limits](https://developers.cloudflare.com/pages/platform/limits/) allow 20,000 files per Free site, 25 MiB per file, 500 builds per month and 100 custom domains. Its [static asset pricing](https://developers.cloudflare.com/pages/functions/pricing/#static-asset-requests) makes static requests free and unlimited. We build in GitHub Actions and upload only `dist/`; do not also enable a second automatic Cloudflare Git build pipeline.
+## Validate and release
 
-The publication scanner enforces the free file-count and per-file size limits and rejects Functions/advanced Worker entry points. CI runs the scanner's boundary checks before building. Future features must be reassessed before adding billed services or exceeding these limits. This is an expectation under the current published plan, not a guarantee that provider terms will never change.
-
-Website hosting is expected to cost $0/month. Domain registration/renewal and optional AI generation or Codespaces usage are separate from hosting; none are required to serve this MVP. No paid Cloudflare service is needed or enabled. Deployment stays disabled until the Cloudflare account and deployment secrets are configured below.
-
-## Development in the cloud
-
-Open the public repository in GitHub Codespaces. `.devcontainer/devcontainer.json` installs the locked Node dependencies with `npm ci`, forwards the library's port 5173 and supports the same commands as a local checkout:
+From the workspace root:
 
 ```bash
-npm start
 npm run check
+npm run cloud:self-check
+npm run cloud:verify
 ```
 
-The source contains no runtime model call. Visitors use static, deterministic educational applications, without paying model inference costs per visit. Model calls occur during design, in a separate cloud job. A local preview remains available for review and troubleshooting.
+GitHub `site.yml` tests and builds each PR and `main` push, then retains the verified `public-site` artifact for 14 days. Releases use Wrangler **4.158.0**; MCP is not required. Check `npx --yes wrangler@4.158.0 whoami` before publishing, and use `login` if needed.
 
-## Public site builds
-
-`.github/workflows/site.yml` runs on pull requests and pushes to `main`. It installs Node 22 dependencies without package lifecycle scripts, runs all native tests and production builds with `PAPER_PUBLIC_BUILD=true`, and runs `scripts/cloud-verify.mjs` before storing the immutable `public-site` artifact for 14 days.
-
-The build copies `infra/cloudflare/_headers` into the public artifact. It sets conservative MIME, referrer, framing, device-permission and HTTPS headers without a Content Security Policy that would unexpectedly break configured Google ads or local font assets.
-
-The publication check rejects private/source directories, environment files, credential/database/document files, symlinks, source maps, PDFs and assets exceeding the Cloudflare Pages per-file limit. Only `dist/` is uploaded. A rejected artifact is never deployed.
-
-Pull requests build without Cloudflare or model credentials. There is no `pull_request_target` trigger. Every third-party action is pinned to a reviewed commit, and CLI versions are explicit.
-
-For the owner’s first account setup and coordinated DigitalOcean analytics rollout, follow [First launch](first-launch.md). The live analytics unit was verified as `visitor-analytics.service`; older inherited service-name examples must not be used for this launch.
-
-## Connect Cloudflare
-
-The production project name is `thepaperobservatory`, with production branch `main`. An authorized agent can perform initial setup after account access is available:
+For an authorized release, deploy a successful `main` CI artifact:
 
 ```bash
-npx --yes wrangler@4.158.0 login
-npx --yes wrangler@4.158.0 whoami
-npx --yes wrangler@4.158.0 pages project create thepaperobservatory --production-branch main
+(
+set -e
+run_id=$(gh run list --workflow site.yml --branch main --status success --limit 1 --json databaseId --jq '.[0].databaseId // empty')
+test -n "$run_id"
+mkdir -p .cloud-output
+release_dir=$(mktemp -d ".cloud-output/release-${run_id}.XXXXXX")
+gh run download "$run_id" --name public-site --dir "$release_dir"
+node scripts/cloud-verify.mjs "$release_dir"
+release_sha=$(gh run view "$run_id" --json headSha --jq '.headSha')
+npx --yes wrangler@4.158.0 pages deploy "$release_dir" --project-name thepaperobservatory --branch main --commit-hash "$release_sha"
+)
 ```
 
-Project creation is a one-time operation. If the project already exists, inspect and reuse it rather than recreate it. The checked-in `infra/cloudflare/wrangler.jsonc` describes the same static `dist/` output for Wrangler use.
+Record the returned deployment ID and commit. Check HTTPS, the library, both paper routes and controls, SSRN links and collector responses at the live URL. Identify verification visits as test traffic. Remove only that temporary release directory after verification. Reuse the existing project and domain; no new project or paid service is needed.
 
-Create the GitHub `production` environment and store `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` as its secrets. Scope the API token to Cloudflare Pages editing in the intended account. Keep the token out of local command history, Git and public logs. Add the repository variable `CLOUDFLARE_DEPLOY_ENABLED=true` after setup. The deploy job remains disabled until that variable is set; once enabled, missing credentials cause a clear error.
+## Automatic deployment and generation
 
-After a successful build on `main`, a separate job downloads the verified artifact and invokes the pinned Wrangler CLI. Only that deployment step receives Cloudflare credentials. It does not check out or execute application source. Use a protected `production` environment if a human release gate is desired.
+CI validation is enabled. Automatic deployment is intentionally off. To enable it later, place a scoped Pages API token and account ID in the GitHub `production` environment as `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`, then set `CLOUDFLARE_DEPLOY_ENABLED=true`. Credentials are available only to the deploy step. Never put them in Git or browser assets.
 
-Add `thepaperobservatory.com` and any chosen `www` hostname through the Cloudflare Pages project's Custom domains settings. Domain registration/ownership, DNS and TLS must be verified before claiming the public site is live; a local folder name does not register a domain. Do not use Wrangler's temporary preview account for the production domain.
+`design-paper.yml` is a separate manual workflow. It needs `OPENAI_API_KEY` in the `paper-generation` environment, an SSRN ID/slug, an authorized public PDF URL and confirmed cloud-analysis rights. It requests `gpt-6.1-sol` / `ultra` without fallback, validates the generated patch without model credentials and opens a draft PR. It does not merge, publish PDFs, activate ads or post socially. A billable generation run has not been exercised during initial setup. See the [design skill](../.agents/skills/design-ssrn-paper/SKILL.md) and workflow for source-intake and review safeguards.
 
-To deploy a previously verified artifact manually after authorization:
+## Rollback
 
-```bash
-npx --yes wrangler@4.158.0 pages deploy dist --project-name thepaperobservatory --branch main
-```
+A failed validation must not replace production. Retain the previous Pages release and use **Pages → Deployments → Rollback** when available, then revert the responsible source change through Git. Do not rewrite public history or delete older deployments. The first release has no earlier website release to restore.
 
-## Generate an initial paper website
-
-`.github/workflows/design-paper.yml` is a trusted, manual-only workflow on `main`. It uses the repo-scoped `$design-ssrn-paper` skill and the existing shared catalog and layout. It does not allow public issue comments or fork PRs to spend model credits.
-
-Create a GitHub `paper-generation` environment and put `OPENAI_API_KEY` in that environment's secrets. Set an environment review gate if desired. The workflow supplies the secret only to the official Codex action's protected proxy; it never exports the key as a job-level variable. Do not copy a personal ChatGPT/Codex `auth.json` into a public repository or runner.
-
-Run **Design an SSRN paper in the cloud** in GitHub Actions, entering:
-
-- The numeric SSRN abstract ID and a lowercase paper slug.
-- A public HTTPS URL to an authorized, text-readable PDF. A SSRN landing page is not a PDF URL. If SSRN returns an access challenge, supply a permitted accessible copy; the workflow does not bypass access controls.
-- Confirmation that the document may be supplied to the cloud model for analysis. This confirmation does not grant PDF republication rights.
-
-The source helper rejects credential-bearing URLs, private/loopback IP targets, non-PDF responses, oversized input and unreadable extraction. It accepts public IPv4 DNS destinations, follows at most three validated HTTPS redirects and downloads at most 20 MiB. Download URLs are not printed or copied into the public provenance record. `poppler-utils` extracts the source into ignored `.cloud-input/`, alongside a SHA-256 and a stable job reference. Source files remain on the ephemeral runner and are excluded from uploaded artifacts and Git.
-
-The official Codex action is pinned with **`gpt-6.1-sol` and `ultra`**, using CLI 0.167.0. Ultra is a Codex model/client option; direct API reasoning settings are not interchangeable. The account/provider must support the exact request. If it fails, the workflow stops and reports the provider error; there is no silent fallback to another model or effort. ChatGPT subscription access does not by itself configure API-key billing or entitlement.
-
-Generation has read-only GitHub permissions, workspace-only file access and dropped sudo privileges. The model cannot publish. A trusted collector accepts changes only to the new paper, its social draft pack, the paper catalog, entrance UI and package manifests. It rejects policy, workflow, monetization configuration, other-paper changes, symlinks, PDFs and private paths.
-
-A fresh validation job without model credentials checks and applies the patch, installs dependencies, runs the test/build commands and verifies the publication boundary. It saves a 14-day preview artifact. A third job with GitHub write permissions creates an `ai/ssrn-<id>-<run-id>` branch and a **draft** PR. A retry leaves an existing review branch unchanged. The workflow does not auto-merge, activate ads or post to social accounts. Repository Settings > Actions must allow GitHub Actions to create pull requests for the final step to succeed; otherwise the validated artifact remains available for an authorized agent to apply.
-
-The generation job times out after 90 minutes; it does not loop or repeatedly spend model credits after an error. Retry only after inspecting the failure reason. Review mathematical identities, source references, model provenance, screenshots, learning value, course relevance and source-rights handling before merging.
-
-## Verification and rollback
-
-On 2026-11-09, an isolated public-checkout simulation excluded every PDF, private directory and installed dependency, then ran a fresh `npm ci --ignore-scripts`, all 127 tests, all three builds and the publication scanner successfully. The scanner accepted 146 intended static files, including nested paper assets, local fonts and Cloudflare headers. A separate HTTPS/PDF-extraction check reached the insufficient-text guard for a deliberately tiny public test PDF. This verifies the implemented path without claiming that a billable model run or owned-account Cloudflare deployment has occurred.
-
-```bash
-node scripts/cloud-source.mjs --self-test
-node scripts/cloud-verify.mjs --self-test
-npm run check
-PAPER_PUBLIC_BUILD=true npm run build
-node scripts/cloud-verify.mjs
-```
-
-After publication, verify HTTPS, the library, both paper routes, source links and browser console behavior at the real public URL. Cloudflare's deployment result and assigned URL are the authority for whether publication occurred.
-
-A failed build never replaces the current release. Use Cloudflare Pages' rollback control to restore the prior successful production deployment, then revert the responsible source change through GitHub. Do not rewrite public Git history or delete previous production deployments as part of ordinary rollback. A failed paper-design run leaves `main` and the live website unchanged.
-
-## Primary references
-
-- [Cloudflare Pages CLI commands](https://developers.cloudflare.com/workers/wrangler/commands/pages/).
-- [Cloudflare Pages build configuration](https://developers.cloudflare.com/pages/configuration/build-configuration/).
-- [Official Codex GitHub Action](https://learn.chatgpt.com/docs/github-action).
-- [Codex non-interactive mode and API-key boundaries](https://learn.chatgpt.com/docs/non-interactive-mode).
-- [Codex model and reasoning selection](https://learn.chatgpt.com/docs/models?surface=cli).
+Collector configuration backups are listed in the [analytics runbook](visitor-analytics.md). Preserve its database, credentials, existing origins and registrations during any rollback.

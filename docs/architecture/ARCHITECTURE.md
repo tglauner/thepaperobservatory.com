@@ -25,7 +25,7 @@ Both applications use React and Vite, with deterministic browser-side numerical 
 
 The root npm workspace (`papers/*`) shares compatible dependency installations and one lockfile. Install once with root `npm ci`. Each application still has an explicit package manifest, base URL, tests and independent build.
 
-All current features are read-only educational computation. There is no API, mutable server data, admin login, database, job queue or worker. A FastAPI server and persistence layer would add operations without supporting a current requirement. Jobs and artifact tables become relevant if a future server pipeline is requested. If a database is later needed, use the user's PostgreSQL-on-the-existing-droplet preference.
+All current features are read-only educational computation. The website has no API, mutable server data, admin login, database, job queue or worker. Visitor analytics sends events to the existing external TGIR collector; see `docs/visitor-analytics.md`. A FastAPI server and persistence layer would add operations without supporting a current requirement. Jobs and artifact tables become relevant if a future server pipeline is requested. If a database is later needed, use the user's PostgreSQL-on-the-existing-droplet preference.
 
 Browser learning depth, visited chapters and quiz answers may use local storage with a safe fallback. The two sites use independent `risk-observatory` and `flow-observatory` namespaces. Direct development ports are different origins from the collection proxy, so their saved browser state is separate.
 

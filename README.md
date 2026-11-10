@@ -61,6 +61,8 @@ The root npm workspace installs shared dependencies through one lockfile. React 
 
 The original PDFs remain byte-identical to the supplied files in local/private storage. They are excluded from public Git and production artifacts by default unless redistribution rights are recorded. Local development can use each site's reading copy; production source links fall back to the canonical SSRN page. Source references distinguish physical PDF pages from printed journal pages: in the second article, printed page q corresponds to PDF page q − 19 because the PDF begins with a cover.
 
+Visitor measurement uses the existing [TGIR analytics service](docs/visitor-analytics.md), with local and production collectors configured separately. Production origin registration is pending; the Cloudflare site remains static.
+
 ## Test and build the whole website
 
 ```bash

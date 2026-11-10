@@ -10,7 +10,7 @@ The public MVP source repository is [tglauner/thepaperobservatory.com](https://g
 
 ## Free hosting assessment — 2026-11-09
 
-The current MVP fits **Cloudflare Pages Free**. The verified public build contains 149 files totaling 3,576,389 bytes (3.41 MiB); its largest file is 259,112 bytes (0.25 MiB). All educational calculations run in the visitor's browser. There are no Pages Functions, Workers, database, storage service or runtime AI calls.
+The current MVP fits **Cloudflare Pages Free**. At the MVP release, the verified public build contained 149 files totaling 3,576,389 bytes (3.41 MiB); its largest file is 259,112 bytes (0.25 MiB). All educational calculations run in the visitor's browser. There are no Pages Functions, Workers, database, storage service or runtime AI calls in the Cloudflare site. Subsequent visitor analytics integration uses the existing TGIR collector separately; see [visitor analytics](visitor-analytics.md).
 
 Cloudflare's [Pages limits](https://developers.cloudflare.com/pages/platform/limits/) allow 20,000 files per Free site, 25 MiB per file, 500 builds per month and 100 custom domains. Its [static asset pricing](https://developers.cloudflare.com/pages/functions/pricing/#static-asset-requests) makes static requests free and unlimited. We build in GitHub Actions and upload only `dist/`; do not also enable a second automatic Cloudflare Git build pipeline.
 

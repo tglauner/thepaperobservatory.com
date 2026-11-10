@@ -39,6 +39,8 @@ The publication check rejects private/source directories, environment files, cre
 
 Pull requests build without Cloudflare or model credentials. There is no `pull_request_target` trigger. Every third-party action is pinned to a reviewed commit, and CLI versions are explicit.
 
+For the owner’s first account setup and coordinated DigitalOcean analytics rollout, follow [First launch](first-launch.md). The live analytics unit was verified as `visitor-analytics.service`; older inherited service-name examples must not be used for this launch.
+
 ## Connect Cloudflare
 
 The production project name is `thepaperobservatory`, with production branch `main`. An authorized agent can perform initial setup after account access is available:

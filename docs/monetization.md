@@ -4,7 +4,7 @@ Monetization is a product requirement. The learning content remains usable witho
 
 The dated [90-day monetization plan](monetization-plan.md) sets priorities, experiments, measurement and illustrative economics. Routine implementation and daily email reporting are delegated to the [growth agent](growth-agent.md); the plan is not evidence that a commercial integration is active.
 
-The owner-approved course scope is Interest Rate Derivatives, MBS/ABS and FRTB. The Value at Risk course is excluded from Observatory promotions and monetization planning; removal from the deployed catalog is pending implementation.
+The owner-approved course scope is Interest Rate Derivatives, MBS/ABS and FRTB. The Value at Risk course is excluded from Observatory promotions and monetization planning; it was removed from the deployed catalog on 2026-11-10.
 
 ## Revenue sequence
 

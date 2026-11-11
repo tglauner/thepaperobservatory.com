@@ -12,8 +12,8 @@ Positioning: **Understand quantitative finance research by changing the model yo
 
 ## Starting position
 
-- Live: two paper companions, nine experiments, commercial disclosures, campaign links and visitor analytics. The deployed catalog still includes the excluded VaR course; removing it is part of the proposed implementation.
-- Both deployed paper footers currently recommend VaR because the first matching course wins. Replace this with explicit selection among the three in-scope courses; do not force a recommendation where the learning connection is weak.
+- Live: two paper companions, nine experiments, commercial disclosures, campaign links and visitor analytics. The excluded VaR course was removed from the deployed catalog on 2026-11-10.
+- Explicit recommendations are live: Risk → FRTB as a broader continuation; Flow → no course. Do not force a recommendation where the learning connection is weak.
 - Traffic is launch-sized, includes setup visits and has no established organic baseline. Course clicks are observable; attributable, retained course earnings have not been verified.
 - Social packs are drafts; no official social profiles are configured. Advertising is disabled. There is no newsletter, membership or checkout.
 

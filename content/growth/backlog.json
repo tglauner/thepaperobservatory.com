@@ -4,9 +4,9 @@
     {
       "id": "course-scope",
       "priority": 1,
-      "status": "in_progress",
+      "status": "complete",
       "outcome": "Exclude VaR; explicitly recommend FRTB for Risk and no course for Flow; retain rates, MBS/ABS and FRTB in the library.",
-      "evidence": "VaR removed; explicit Risk-to-FRTB and Flow-to-none selection passed 141 tests, all builds, publication scan and local Chrome checks. Production release not yet verified."
+      "evidence": "Source 892c0def3a1a4e8b43669c19c903cc0c4b1fd8c7; CI 42937071048 passed 141 tests, all builds and publication checks. Published https://575361ab.thepaperobservatory.pages.dev on 2026-11-10; apex course library and both recommendations verified in Chrome."
     },
     {
       "id": "course-journey",

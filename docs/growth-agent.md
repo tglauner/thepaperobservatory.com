@@ -5,7 +5,7 @@ The owner requested independent monetization work and a daily email on 2026-11-1
 ## Operating settings
 
 - Target: the existing GitHub repository and Cloudflare website.
-- Approved schedule: daily at **09:00 America/New_York**, using a cloud task so the Mac is not required. Saved-task verification is pending.
+- Active cloud schedule: **Paper Observatory growth agent**, daily at **09:00 America/New_York**, first scheduled run **2026-11-11**. The Mac is not required.
 - Report: the connected owner's Gmail address; one email per reporting date.
 - Approved additional spending ceiling: **$10 per calendar month** for model and automation charges; prefer included access. Verify current charges and the next run's maximum cost before billable work. Unknown cost means no new billable work.
 - Course scope: Interest Rate Derivatives, MBS/ABS and FRTB; VaR is excluded.
@@ -13,7 +13,9 @@ The owner requested independent monetization work and a daily email on 2026-11-1
 
 ## Verified setup state
 
-The skill passed its validator and an independent behavioral dry-run. The owner approved activation and the $10 monthly ceiling. The cloud task prompt is prepared in ChatGPT's Scheduled interface; saved-task verification is pending. A first status email for 2026-11-10 was sent through connected Gmail and confirmed in the owner's inbox. This verifies email delivery from setup, not a scheduled cloud run.
+The skill passed its validator and an independent behavioral dry-run. The owner approved activation and the $10 monthly ceiling. The existing cloud task was verified active in ChatGPT's Scheduled interface and its saved prompt was updated to the approved budget, without creating another task. A first status email for 2026-11-10 was sent through connected Gmail and confirmed in the owner's inbox. This verifies email delivery from setup, not a completed scheduled cloud run.
+
+A manual run trigger was issued during activation. The displayed update confirmed configuration rather than completed monetization work or connected-account access; end-to-end cloud execution remains unverified. Review the first scheduled result before treating unattended implementation and email as proven.
 
 The $10 ceiling is an operating rule, not a provider-enforced billing limit. No additional paid integration is currently configured.
 

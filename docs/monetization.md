@@ -2,6 +2,10 @@
 
 Monetization is a product requirement. The learning content remains usable without a purchase, account or advertisement interaction. The initial commercial priority is relevant training; advertising and social distribution add revenue and discovery after their accounts and integrations are verified.
 
+The dated [90-day monetization plan](monetization-plan.md) sets priorities, experiments, measurement and illustrative economics. Routine implementation and daily email reporting are delegated to the [growth agent](growth-agent.md); the plan is not evidence that a commercial integration is active.
+
+The owner-approved course scope is Interest Rate Derivatives, MBS/ABS and FRTB. The Value at Risk course is excluded from Observatory promotions and monetization planning; removal from the deployed catalog is pending implementation.
+
 ## Revenue sequence
 
 | Channel | Implementation direction | Activation condition |

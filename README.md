@@ -60,6 +60,7 @@ Original PDFs remain byte-identical in private/local storage. Public Git and pro
 - [Visitor analytics and local checks](docs/visitor-analytics.md)
 - [Architecture](docs/architecture/ARCHITECTURE.md)
 - [Monetization and distribution](docs/monetization.md)
+- [Daily growth agent](docs/growth-agent.md)
 - [Risk paper analysis](papers/risk-on-off/docs/paper-analysis.md)
 - [Flow paper analysis](papers/stochastic-flow-diagrams/docs/paper-analysis.md)
 

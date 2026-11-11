@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "course-scope",
+      "priority": 1,
+      "status": "in_progress",
+      "outcome": "Exclude VaR; explicitly recommend FRTB for Risk and no course for Flow; retain rates, MBS/ABS and FRTB in the library.",
+      "evidence": "VaR removed; explicit Risk-to-FRTB and Flow-to-none selection passed 141 tests, all builds, publication scan and local Chrome checks. Production release not yet verified."
+    },
+    {
+      "id": "course-journey",
+      "priority": 2,
+      "status": "pending",
+      "outcome": "Verify the three course destinations and onward enrollment links, current offers and a tagged Risk-to-FRTB journey. Separate observed clicks from unverified purchases."
+    },
+    {
+      "id": "funnel-measurement",
+      "priority": 3,
+      "status": "pending",
+      "outcome": "Establish useful engagement and course-click reporting without overwriting incoming campaigns. Use authorized aggregate analytics; report missing access accurately."
+    },
+    {
+      "id": "distribution-drafts",
+      "priority": 4,
+      "status": "pending",
+      "outcome": "Prepare one substantive demonstration and two short derivatives for each current exhibit, with source caveats and canonical campaign links. Publish only to a separately authorized account."
+    },
+    {
+      "id": "search-discovery",
+      "priority": 5,
+      "status": "pending",
+      "outcome": "Improve learner-question discovery and verify canonical URLs, crawlable explanations and sitemap consistency. Check Search Console only if its account is connected."
+    },
+    {
+      "id": "demand-review",
+      "priority": 6,
+      "status": "pending",
+      "outcome": "Review actual traffic, earnings and content costs before expanding papers, paid teaching packs, newsletters or sponsors. Create a source-grounded next experiment when evidence supports it."
+    }
+  ]
+}

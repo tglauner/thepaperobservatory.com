@@ -10,11 +10,23 @@ export const site = Object.freeze({
 });
 
 export const courses = Object.freeze([
-  { id: "var", title: "Value at Risk", category: "Portfolio risk", description: "Connect covariance, simulation and historical scenarios to portfolio loss estimates.", url: "https://tglauner.com/value_at_risk/", topics: ["risk-on-off", "stochastic-flow-diagrams"] },
-  { id: "rates", title: "Mastering Interest Rate Derivatives", category: "Rates & derivatives", description: "Build intuition for curves, swaps, options and the risks behind the valuation.", url: "https://tglauner.com/mastering_interest_rate_derivatives/", topics: ["stochastic-flow-diagrams", "risk-on-off"] },
-  { id: "mbs", title: "Mastering MBS and ABS", category: "Structured finance", description: "Explore securitization, cash flows, prepayments and structured-product analytics.", url: "https://tglauner.com/mastering_mbs_and_abs/", topics: [] },
-  { id: "frtb", title: "Fundamental Review of the Trading Book", category: "Market risk capital", description: "Connect market-risk measurement to the standardized and internal-model approaches.", url: "https://tglauner.com/frtb_fundamentals/", topics: ["risk-on-off"] },
+  { id: "rates", title: "Mastering Interest Rate Derivatives", category: "Rates & derivatives", description: "Build intuition for curves, swaps, options and the risks behind the valuation.", url: "https://tglauner.com/mastering_interest_rate_derivatives/" },
+  { id: "mbs", title: "Mastering MBS and ABS", category: "Structured finance", description: "Explore securitization, cash flows, prepayments and structured-product analytics.", url: "https://tglauner.com/mastering_mbs_and_abs/" },
+  { id: "frtb", title: "Fundamental Review of the Trading Book", category: "Market risk capital", description: "Connect market-risk measurement to the standardized and internal-model approaches.", url: "https://tglauner.com/frtb_fundamentals/" },
 ]);
+
+const recommendedCourses = Object.freeze({
+  "risk-on-off": "frtb",
+  "stochastic-flow-diagrams": null,
+});
+
+export function recommendedCourseForPaper(slug, catalog = courses) {
+  const id = Object.hasOwn(recommendedCourses, slug) ? recommendedCourses[slug] : null;
+  if (!id) return null;
+  const course = catalog.find(item => item.id === id);
+  if (!course) throw new Error(`Recommended course is missing: ${id}`);
+  return course;
+}
 
 export function campaignUrl(url, { source = "observatory", medium = "referral", campaign = "course-library", content } = {}) {
   const parsed = new URL(url);

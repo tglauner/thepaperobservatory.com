@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { papers, getPaper, sourceUrl } from "./catalog.js";
-import { site, courses, campaignUrl } from "./site-config.js";
+import { site, recommendedCourseForPaper, campaignUrl } from "./site-config.js";
 import { advertisingConfig, mountAdvertisement } from "./advertising.js";
 import "./observatory.css";
 
@@ -24,7 +24,7 @@ export function Advertisement() {
 export function PaperContinuation({ slug }) {
   const paper = getPaper(slug);
   const related = papers.find(item => item.slug !== slug);
-  const course = courses.find(item => item.topics.includes(slug));
+  const course = recommendedCourseForPaper(slug);
   const [shareStatus, setShareStatus] = useState("");
   const [manualLink, setManualLink] = useState(false);
   const canonical = `${site.origin}/${slug}/`;

@@ -12,7 +12,8 @@
       "id": "course-journey",
       "priority": 2,
       "status": "pending",
-      "outcome": "Verify the three course destinations and onward enrollment links, current offers and a tagged Risk-to-FRTB journey. Separate observed clicks from unverified purchases."
+      "outcome": "Verify the three course destinations and onward enrollment links, current offers and a tagged Risk-to-FRTB journey. Separate observed clicks from unverified purchases.",
+      "evidence": "2026-11-11: Three TGIR course pages and matching Udemy destinations opened. Coupon validity, checkout price, tagged production journey and referral attribution remain unverified; production route inaccessible to web retrieval."
     },
     {
       "id": "funnel-measurement",
@@ -23,8 +24,9 @@
     {
       "id": "distribution-drafts",
       "priority": 4,
-      "status": "pending",
-      "outcome": "Prepare one substantive demonstration and two short derivatives for each current exhibit, with source caveats and canonical campaign links. Publish only to a separately authorized account."
+      "status": "in_progress",
+      "outcome": "Prepare one substantive demonstration and two short derivatives for each current exhibit, with source caveats and canonical campaign links. Publish only to a separately authorized account.",
+      "evidence": "Six source-grounded draft posts and two short-video storyboards prepared in content/growth/distribution-drafts-2026-11-11.md; publication, destination confirmation and verification remain pending."
     },
     {
       "id": "search-discovery",

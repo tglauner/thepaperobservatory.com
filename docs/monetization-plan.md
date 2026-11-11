@@ -1,6 +1,6 @@
 # Monetization plan
 
-**2026-11-10 · The owner has delegated routine implementation and daily email reporting to an autonomous agent.** Execution uses existing authorized access and a $0 additional spending limit until the owner sets another budget. Scheduling and integrations must be verified separately; new accounts, paid services and commercial agreements are not activated by this plan.
+**2026-11-10 · The owner has delegated routine implementation and daily email reporting to an autonomous agent.** Execution uses existing authorized access, preferably included usage, with an approved ceiling of $10 per calendar month in additional model/automation charges. Scheduling and integrations must be verified separately; new accounts, paid services and commercial agreements are not activated by this plan.
 
 ## Recommendation
 

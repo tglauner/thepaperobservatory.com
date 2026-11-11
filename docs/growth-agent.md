@@ -5,15 +5,17 @@ The owner requested independent monetization work and a daily email on 2026-11-1
 ## Operating settings
 
 - Target: the existing GitHub repository and Cloudflare website.
-- Prepared schedule: daily at **09:00 America/New_York**, using a cloud task so the Mac is not required. Activation awaits the owner's one-time approval.
+- Approved schedule: daily at **09:00 America/New_York**, using a cloud task so the Mac is not required. Saved-task verification is pending.
 - Report: the connected owner's Gmail address; one email per reporting date.
-- Initial additional spending limit: **$0**, pending any explicit owner change.
+- Approved additional spending ceiling: **$10 per calendar month** for model and automation charges; prefer included access. Verify current charges and the next run's maximum cost before billable work. Unknown cost means no new billable work.
 - Course scope: Interest Rate Derivatives, MBS/ABS and FRTB; VaR is excluded.
 - Routine work: implement bounded improvements, verify through tests/build/CI/browser checks, complete useful distribution drafts and maintain the backlog. Merge/publish only when the required access and verification actually exist.
 
 ## Verified setup state
 
-The skill passed its validator and an independent behavioral dry-run. The cloud task prompt is prepared in ChatGPT's Scheduled interface; no recurring task has been created while activation approval is pending. A first status email for 2026-11-10 was sent through connected Gmail and confirmed in the owner's inbox. This verifies email delivery from setup, not a scheduled cloud run.
+The skill passed its validator and an independent behavioral dry-run. The owner approved activation and the $10 monthly ceiling. The cloud task prompt is prepared in ChatGPT's Scheduled interface; saved-task verification is pending. A first status email for 2026-11-10 was sent through connected Gmail and confirmed in the owner's inbox. This verifies email delivery from setup, not a scheduled cloud run.
+
+The $10 ceiling is an operating rule, not a provider-enforced billing limit. No additional paid integration is currently configured.
 
 The first work item is live: source `892c0def3a1a4e8b43669c19c903cc0c4b1fd8c7`, CI run `42937071048`, immutable release https://575361ab.thepaperobservatory.pages.dev. VaR is absent from the course library; Risk explicitly recommends FRTB and Flow has no course recommendation. Validation passed 141 tests, all three builds, 23 cloud source/publication checks, the 149-file publication scan and local/live Chrome checks. The previous release remains available for rollback.
 

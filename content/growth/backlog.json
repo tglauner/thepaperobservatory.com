@@ -12,7 +12,8 @@
       "id": "course-journey",
       "priority": 2,
       "status": "pending",
-      "outcome": "Verify the three course destinations and onward enrollment links, current offers and a tagged Risk-to-FRTB journey. Separate observed clicks from unverified purchases."
+      "outcome": "Verify the three course destinations and onward enrollment links, current offers and a tagged Risk-to-FRTB journey. Separate observed clicks from unverified purchases.",
+      "evidence": "2026-11-12: Cloud browser verified the live Risk footer opens the matching FRTB page with outbound campaign parameters, and the live Flow footer has no course recommendation. Three TGIR pages and matching Udemy destinations opened on 2026-11-11. Tagged inbound attribution, coupon validity and retained earnings remain unverified."
     },
     {
       "id": "funnel-measurement",
@@ -23,8 +24,9 @@
     {
       "id": "distribution-drafts",
       "priority": 4,
-      "status": "pending",
-      "outcome": "Prepare one substantive demonstration and two short derivatives for each current exhibit, with source caveats and canonical campaign links. Publish only to a separately authorized account."
+      "status": "in_progress",
+      "outcome": "Prepare one substantive demonstration and two short derivatives for each current exhibit, with source caveats and canonical campaign links. Publish only to a separately authorized account.",
+      "evidence": "Six source-grounded drafts and two storyboards are in content/growth/distribution-drafts-2026-11-11.md (PR #1). Live Risk and Flow entry routes were inspected on 2026-11-12; social publication requires a separately authorized account and scope."
     },
     {
       "id": "search-discovery",

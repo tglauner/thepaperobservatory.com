@@ -105,7 +105,7 @@ test('catalog paper links resolve to declared application subfolders', () => {
   const catalog = read('collection/index.html');
   const links = [...catalog.matchAll(/<a\b[^>]*\bhref="([^\"]+)"/g)].map(match => match[1]);
   for (const site of sites) assert.ok(links.includes(`/${site.slug}/`), site.slug);
-  const supportRoutes = new Set(['learn', 'about', 'channels', 'privacy']);
+  const supportRoutes = new Set(['learn', 'about', 'channels', 'privacy', 'next']);
   const paperLinks = links.filter(href => href.startsWith('/') && href.split('/')[1] && !href.startsWith('/#'));
   for (const href of paperLinks) {
     const slug = href.split('/')[1];

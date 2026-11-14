@@ -1,0 +1,782 @@
+{
+  "as_of": "2026-11-14",
+  "scope": "Independent primary-source seed discovery; not a top-cited ranking and not a full-text reading report.",
+  "source_notes": [
+    "SSRN search-index text exposes primary metadata and abstract. Delivery URLs often resolve to HTML metadata rather than a PDF.",
+    "Dates written and last revised are stored separately from posted dates; latest versions often differ materially from initial versions.",
+    "Author/institution/arXiv/NBER fulltext URLs are candidates; source bytes and version identity must be verified before claiming full reading.",
+    "SSRN citations and downloads are distinct; counts are intentionally null here to avoid mixing indices.",
+    "FinGPT arXiv ID included as a candidate from established identity; verify target before acquisition."
+  ],
+  "papers": [
+    {
+      "ssrn_id": "4412788",
+      "title": "Can ChatGPT Forecast Stock Price Movements? Return Predictability and Large Language Models",
+      "authors": [
+        "Alejandro Lopez-Lira",
+        "Yuehua Tang"
+      ],
+      "ssrn_posted_date": "2023-04-10",
+      "date_written": "2023-04-10",
+      "last_revised": "2026-05-06",
+      "topic": "LLM news signals",
+      "canonical_url": "https://ssrn.com/abstract=4412788",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4412788",
+      "fulltext_candidate_urls": [
+        "https://arxiv.org/abs/2304.07619"
+      ],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "Distinguish initial non-tradable reaction from subsequent drift; vary delay and costs."
+    },
+    {
+      "ssrn_id": "4452704",
+      "title": "AI-Powered Trading, Algorithmic Collusion, and Price Efficiency",
+      "authors": [
+        "Winston Wei Dou",
+        "Itay Goldstein",
+        "Yan Ji"
+      ],
+      "ssrn_posted_date": "2023-05-23",
+      "date_written": "2025-04-15",
+      "last_revised": "2025-07-15",
+      "topic": "RL strategic interactions",
+      "canonical_url": "https://ssrn.com/abstract=4452704",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4452704",
+      "fulltext_candidate_urls": [
+        "https://www.nber.org/papers/w34054"
+      ],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "Let learners manipulate noise, exploration and trader numbers; show two collusion mechanisms, not evidence of actual market collusion."
+    },
+    {
+      "ssrn_id": "4117882",
+      "title": "Structural Deep Learning in Conditional Asset Pricing",
+      "authors": [
+        "Jianqing Fan",
+        "Zheng Tracy Ke",
+        "Yuan Liao",
+        "Andreas Neuhierl"
+      ],
+      "ssrn_posted_date": "2022-06-02",
+      "date_written": "2022-05-23",
+      "last_revised": "2026-02-28",
+      "topic": "Structural asset pricing",
+      "canonical_url": "https://ssrn.com/abstract=4117882",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4117882",
+      "fulltext_candidate_urls": [],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "Decompose predictions into risk-related returns and mispricing; vary economic state and nonlinear exposure."
+    },
+    {
+      "ssrn_id": "4228606",
+      "title": "Asset Pricing and Deep Learning",
+      "authors": [
+        "Chen Zhang"
+      ],
+      "ssrn_posted_date": "2022-09-30",
+      "date_written": "2022-09-24",
+      "last_revised": null,
+      "topic": "Deep asset pricing",
+      "canonical_url": "https://ssrn.com/abstract=4228606",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4228606",
+      "fulltext_candidate_urls": [
+        "https://arxiv.org/abs/2209.12014"
+      ],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "Explore how network architecture changes estimated risk premia, using labeled toy surfaces."
+    },
+    {
+      "ssrn_id": "4584928",
+      "title": "Large Language Models and Financial Market Sentiment",
+      "authors": [
+        "Shaun Alexander Bond",
+        "Hayden Klok",
+        "Min Zhu"
+      ],
+      "ssrn_posted_date": "2023-10-23",
+      "date_written": "2023-09-26",
+      "last_revised": "2025-01-16",
+      "topic": "Market-level NLP",
+      "canonical_url": "https://ssrn.com/abstract=4584928",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4584928",
+      "fulltext_candidate_urls": [],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "Compare a market-level contrarian sentiment relation with firm-level headline signals; expose aggregation and horizon."
+    },
+    {
+      "ssrn_id": "4963618",
+      "title": "Re(Visiting) Large Language Models in Finance",
+      "authors": [
+        "Eghbal Rahimikia",
+        "Felix Drinkall"
+      ],
+      "ssrn_posted_date": "2024-10-03",
+      "date_written": "2024-09-21",
+      "last_revised": "2026-08-27",
+      "topic": "Temporal validity of LLMs",
+      "canonical_url": "https://ssrn.com/abstract=4963618",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4963618",
+      "fulltext_candidate_urls": [],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "A timeline lab compares temporally aligned model vintages against future-informed embeddings without assuming leakage always raises profits."
+    },
+    {
+      "ssrn_id": "4489826",
+      "title": "FinGPT: Open-Source Financial Large Language Models",
+      "authors": [
+        "Hongyang Yang",
+        "Xiao-Yang Liu",
+        "Christina Dan Wang"
+      ],
+      "ssrn_posted_date": "2023-07-03",
+      "date_written": "2023-06-09",
+      "last_revised": null,
+      "topic": "Financial foundation models",
+      "canonical_url": "https://ssrn.com/abstract=4489826",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4489826",
+      "fulltext_candidate_urls": [
+        "https://arxiv.org/abs/2306.06031"
+      ],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "Build a transparent data-to-adaptation pipeline puzzle rather than a live API-dependent chatbot."
+    },
+    {
+      "ssrn_id": "4511540",
+      "title": "Large Language Models and Generative AI in Finance: An Analysis of ChatGPT, Bard, and Bing AI",
+      "authors": [
+        "David Krause"
+      ],
+      "ssrn_posted_date": "2023-10-27",
+      "date_written": "2023-07-15",
+      "last_revised": null,
+      "topic": "Finance LLM overview",
+      "canonical_url": "https://ssrn.com/abstract=4511540",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4511540",
+      "fulltext_candidate_urls": [],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "Compare model-evaluation metrics against financially meaningful failure modes; broad review needs selection of one mechanism."
+    },
+    {
+      "ssrn_id": "4706629",
+      "title": "Sentiment trading with large language models",
+      "authors": [
+        "Kemal Kirtac",
+        "Guido Germano"
+      ],
+      "ssrn_posted_date": "2024-01-25",
+      "date_written": "2024-01-25",
+      "last_revised": "2025-03-13",
+      "topic": "News trading NLP",
+      "canonical_url": "https://ssrn.com/abstract=4706629",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4706629",
+      "fulltext_candidate_urls": [],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "Show return and Sharpe sensitivity to turnover, costs and time split; do not promise reported historical performance will recur."
+    },
+    {
+      "ssrn_id": "4346152",
+      "title": "Democratizing Financial Knowledge with ChatGPT by OpenAI: Unleashing the Power of Technology",
+      "authors": [
+        "Thomas Yue",
+        "David Au",
+        "Chi Chung Au",
+        "Kwan Yuen Iu"
+      ],
+      "ssrn_posted_date": "2023-02-02",
+      "date_written": "2023-02-02",
+      "last_revised": "2024-11-05",
+      "topic": "Explainability communication",
+      "canonical_url": "https://ssrn.com/abstract=4346152",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4346152",
+      "fulltext_candidate_urls": [],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "Pair true feature contributions with alternate natural-language explanations; teach explanation faithfulness rather than fluency."
+    },
+    {
+      "ssrn_id": "4144780",
+      "title": "Accuracy of Explanations of Machine Learning Models for Credit Decision",
+      "authors": [
+        "Andr\u00e9s Alonso",
+        "Jos\u00e9 Manuel Carb\u00f3"
+      ],
+      "ssrn_posted_date": "2022-06-27",
+      "date_written": "2022-06-23",
+      "last_revised": null,
+      "topic": "Credit explainability",
+      "canonical_url": "https://ssrn.com/abstract=4144780",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4144780",
+      "fulltext_candidate_urls": [
+        "https://www.bde.es/wbe/en/publicaciones/analisis-economico-investigacion/documentos-trabajo/accuracy-explanations-machine-learning-models-credit-decision.html"
+      ],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "A synthetic credit-model factory reveals ground truth, then tests whether explanation techniques recover it."
+    },
+    {
+      "ssrn_id": "4602452",
+      "title": "Can ChatGPT assist in picking stocks?",
+      "authors": [
+        "Matthias Pelster",
+        "Joel Val"
+      ],
+      "ssrn_posted_date": "2023-11-10",
+      "date_written": "2023-10-13",
+      "last_revised": "2023-11-29",
+      "topic": "LLM live investment experiment",
+      "canonical_url": "https://ssrn.com/abstract=4602452",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4602452",
+      "fulltext_candidate_urls": [],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "Compare ratings before/after dated earnings surprises; distinguish correlation, prediction and tradable decision quality."
+    },
+    {
+      "ssrn_id": "4283403",
+      "title": "The Time Is Now: Advancing Fairness in Lending Through Machine Learning",
+      "authors": [
+        "Vitaly Meursault",
+        "Daniel Moulton",
+        "Larry Santucci",
+        "Nathan Schor"
+      ],
+      "ssrn_posted_date": "2022-11-22",
+      "date_written": "2022-11-01",
+      "last_revised": null,
+      "topic": "Credit fairness",
+      "canonical_url": "https://ssrn.com/abstract=4283403",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4283403",
+      "fulltext_candidate_urls": [
+        "https://doi.org/10.21799/frbp.wp.2022.39"
+      ],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "An approval frontier lab lets users change scoring accuracy and thresholds, seeing profit and fairness move separately; policy exercise, not legal advice."
+    },
+    {
+      "ssrn_id": "4835311",
+      "title": "Financial Statement Analysis with Large Language Models",
+      "authors": [
+        "Alex Kim",
+        "Maximilian Muhn",
+        "Valeri Nikolaev"
+      ],
+      "ssrn_posted_date": "2024-05-21",
+      "date_written": "2024-05-20",
+      "last_revised": null,
+      "topic": "LLM accounting analysis",
+      "canonical_url": "https://ssrn.com/abstract=4835311",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4835311",
+      "fulltext_candidate_urls": [
+        "https://arxiv.org/abs/2407.17866"
+      ],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "An anonymous financial-statement detective asks users to predict earnings before revealing models, uncertainty and benchmarks."
+    },
+    {
+      "ssrn_id": "4399406",
+      "title": "Can ChatGPT Decipher Fedspeak?",
+      "authors": [
+        "Anne Artrip (earlier version: Anne Lundgaard Hansen)",
+        "Sophia Kazinnik"
+      ],
+      "ssrn_posted_date": "2023-04-07",
+      "date_written": "2024-04-10",
+      "last_revised": "2024-04-11",
+      "topic": "Central-bank NLP",
+      "canonical_url": "https://ssrn.com/abstract=4399406",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4399406",
+      "fulltext_candidate_urls": [
+        "https://resources.newyorkfed.org/medialibrary/media/research/conference/2023/FinTech/400pm_Hansen_Paper_Kazinnik_2023.pdf?hash=9B1647BD6876D0F3959C6919BA3F82DE&sc_lang=en"
+      ],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "A hawk-dove lab changes context around the same words; compare human/model labels and reasons. Author name changed across versions."
+    },
+    {
+      "ssrn_id": "4604628",
+      "title": "On the use of artificial intelligence in financial regulations and the impact on financial stability",
+      "authors": [
+        "Jon Danielsson",
+        "Andreas Uthemann"
+      ],
+      "ssrn_posted_date": null,
+      "date_written": "2023-10",
+      "last_revised": null,
+      "topic": "AI systemic risk",
+      "canonical_url": "https://ssrn.com/abstract=4604628",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4604628",
+      "fulltext_candidate_urls": [
+        "https://arxiv.org/abs/2310.11293"
+      ],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN identity verified but first posted date needs direct verification.",
+      "provisional_visual_direction": "Compare individually optimal bank actions with crowded system outcomes; frame simulation as a teaching extension to a conceptual paper."
+    },
+    {
+      "ssrn_id": "4519182",
+      "title": "ChatGPT, Generative AI, and Investment Advisory",
+      "authors": [
+        "Fangzhou Lu",
+        "Lei Huang",
+        "Sixuan Li"
+      ],
+      "ssrn_posted_date": "2023-07-27",
+      "date_written": "2023-07-24",
+      "last_revised": "2024-12-16",
+      "topic": "LLM portfolio advice",
+      "canonical_url": "https://ssrn.com/abstract=4519182",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4519182",
+      "fulltext_candidate_urls": [],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "Expose the recommendation pipeline from document to rationale to weights, with risk/cost audit and no live investment advice."
+    },
+    {
+      "ssrn_id": "4288770",
+      "title": "Constructing Time-Series Momentum Portfolios with Deep Multi-Task Learning",
+      "authors": [
+        "Joel Ong",
+        "Dorien Herremans"
+      ],
+      "ssrn_posted_date": "2022-11-29",
+      "date_written": null,
+      "last_revised": null,
+      "topic": "Multitask portfolio learning",
+      "canonical_url": "https://ssrn.com/abstract=4288770",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4288770",
+      "fulltext_candidate_urls": [],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "Control signal quality and volatility-estimation error jointly; let users discover why an auxiliary task can help portfolio construction."
+    },
+    {
+      "ssrn_id": "4360788",
+      "title": "High (on) Sharpe Ratios? Assessing the Performance of Data-Instigated Factor Models",
+      "authors": [
+        "Sara Easterwood",
+        "Bradley S. Paye"
+      ],
+      "ssrn_posted_date": "2023-02-21",
+      "date_written": "2025-12-15",
+      "last_revised": "2025-12-16",
+      "topic": "Data-snooping and model evaluation",
+      "canonical_url": "https://ssrn.com/abstract=4360788",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4360788",
+      "fulltext_candidate_urls": [],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "A contaminated holdout lab lets users accidentally reuse anomaly-discovery data, then measures how optimism collapses on genuinely untouched data."
+    },
+    {
+      "ssrn_id": "4416687",
+      "title": "Expected Returns and Large Language Models",
+      "authors": [
+        "Yifei Chen",
+        "Bryan T. Kelly",
+        "Dacheng Xiu"
+      ],
+      "ssrn_posted_date": "2023-04-21",
+      "date_written": "2022-11-22",
+      "last_revised": "2026-02-24",
+      "topic": "Text embeddings and return prediction",
+      "canonical_url": "https://ssrn.com/abstract=4416687",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4416687",
+      "fulltext_candidate_urls": [],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "A semantic signal lab contrasts word counts and meaning, then varies capitalization, horizon, turnover and information cutoff."
+    },
+    {
+      "ssrn_id": "4521096",
+      "title": "ChatGPT and Corporate Policies",
+      "authors": [
+        "Manish Jha",
+        "Jialin Qian",
+        "Michael Weber",
+        "Baozhong Yang"
+      ],
+      "ssrn_posted_date": null,
+      "date_written": null,
+      "last_revised": null,
+      "topic": "LLM corporate policy measurement",
+      "canonical_url": "https://ssrn.com/abstract=4521096",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4521096",
+      "fulltext_candidate_urls": [
+        "https://www.nber.org/system/files/working_papers/w32161/w32161.pdf"
+      ],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN identity verified but first posted date needs direct verification.",
+      "provisional_visual_direction": "Turn earnings-call statements into five-level investment scores; test measurement validation against subsequent capex and CFO-survey benchmarks."
+    },
+    {
+      "ssrn_id": "5287110",
+      "title": "(Generative) AI in Financial Economics",
+      "authors": [
+        "Hongwei Mo",
+        "Shumiao Ouyang"
+      ],
+      "ssrn_posted_date": "2025-06-13",
+      "date_written": "2025-05-01",
+      "last_revised": "2026-10-07",
+      "topic": "Finance AI survey",
+      "canonical_url": "https://ssrn.com/abstract=5287110",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5287110",
+      "fulltext_candidate_urls": [],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "Use a mechanism map to choose between AI as measurement tool, economic shock and autonomous agent; review is a gateway rather than one experiment."
+    },
+    {
+      "ssrn_id": "4941906",
+      "title": "What Does ChatGPT Make of Historical Stock Returns? Extrapolation and Miscalibration in LLM Stock Return Forecasts",
+      "authors": [
+        "Shuaiyu Chen",
+        "T. Clifton Green",
+        "Huseyin Gulen",
+        "Dexin Zhou"
+      ],
+      "ssrn_posted_date": "2024-09-23",
+      "date_written": "2024-08-30",
+      "last_revised": "2025-09-09",
+      "topic": "LLM behavioral finance",
+      "canonical_url": "https://ssrn.com/abstract=4941906",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4941906",
+      "fulltext_candidate_urls": [
+        "https://arxiv.org/abs/2409.11540"
+      ],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "Ask users to forecast synthetic paths before swapping price/return presentation; reveal extrapolation and confidence-interval calibration."
+    },
+    {
+      "ssrn_id": "4754678",
+      "title": "Lookahead Bias in Pretrained Language Models",
+      "authors": [
+        "Suproteem K. Sarkar",
+        "Keyon Vafa"
+      ],
+      "ssrn_posted_date": "2024-04-11",
+      "date_written": "2024-06-28",
+      "last_revised": "2024-10-18",
+      "topic": "Training leakage",
+      "canonical_url": "https://ssrn.com/abstract=4754678",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4754678",
+      "fulltext_candidate_urls": [],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "A time-machine audit uses unpredictable future facts to show how memorization can impersonate forecasting and why prompts are not a guarantee."
+    },
+    {
+      "ssrn_id": "4699231",
+      "title": "Unusual Financial Communication: ChatGPT, Earnings Calls, and Financial Markets",
+      "authors": [
+        "Lars Beckmann",
+        "Heiner Beckmeyer",
+        "Ilias Filippou",
+        "Stefan Menze",
+        "Guofu Zhou"
+      ],
+      "ssrn_posted_date": "2024-02-08",
+      "date_written": "2024-01-15",
+      "last_revised": "2025-07-18",
+      "topic": "Communication norms NLP",
+      "canonical_url": "https://ssrn.com/abstract=4699231",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4699231",
+      "fulltext_candidate_urls": [],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "Keep factual content fixed but vary conversational style; teach the distinction between how and what is said, then reveal association not causation."
+    },
+    {
+      "ssrn_id": "4480947",
+      "title": "The Promise and Peril of Generative AI: Evidence from GPT as Sell-Side Analysts",
+      "authors": [
+        "Edward Xuejun Li",
+        "Min Shen",
+        "Zhiyuan Tu",
+        "Dexin Zhou"
+      ],
+      "ssrn_posted_date": "2023-06-25",
+      "date_written": "2025-12-29",
+      "last_revised": "2025-12-30",
+      "topic": "LLM analyst reliability",
+      "canonical_url": "https://ssrn.com/abstract=4480947",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4480947",
+      "fulltext_candidate_urls": [],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "An analyst-output triage game asks whether confidence, metric selection and narrative focus reliably predict actual reasoning quality."
+    },
+    {
+      "ssrn_id": "4223091",
+      "title": "Identifying Factors via Automatic Debiased Machine Learning",
+      "authors": [
+        "Esfandiar Maasoumi",
+        "Jianqiu Wang",
+        "Zhuo Wang",
+        "Ke Wu"
+      ],
+      "ssrn_posted_date": "2022-09-28",
+      "date_written": "2022-09-19",
+      "last_revised": "2025-02-18",
+      "topic": "Debiased ML asset pricing",
+      "canonical_url": "https://ssrn.com/abstract=4223091",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4223091",
+      "fulltext_candidate_urls": [],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "A factor-zoo confounding lab compares naive importance with orthogonalized effects under a known synthetic SDF."
+    },
+    {
+      "ssrn_id": "4500944",
+      "title": "Interactions in Asset Pricing",
+      "authors": [
+        "Guillaume Chevalier",
+        "Guillaume Coqueret",
+        "Martial Laguerre",
+        "Thomas Raffinot"
+      ],
+      "ssrn_posted_date": "2023-07-17",
+      "date_written": "2026-03-26",
+      "last_revised": "2026-03-26",
+      "topic": "Interpretable nonlinear asset pricing",
+      "canonical_url": "https://ssrn.com/abstract=4500944",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4500944",
+      "fulltext_candidate_urls": [],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "A rule-map lab lets users find when a firm characteristic changes its predictive relation as macroeconomic state changes."
+    },
+    {
+      "ssrn_id": "4501707",
+      "title": "Financial Machine Learning",
+      "authors": [
+        "Bryan T. Kelly",
+        "Dacheng Xiu"
+      ],
+      "ssrn_posted_date": "2023-07-13",
+      "date_written": "2023-07-01",
+      "last_revised": null,
+      "topic": "Financial ML survey",
+      "canonical_url": "https://ssrn.com/abstract=4501707",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4501707",
+      "fulltext_candidate_urls": [
+        "https://www.nber.org/system/files/working_papers/w31502/w31502.pdf"
+      ],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "A methodological map connecting prediction, economic objectives and generalization. Deduplicate SSRN4520856 and4519264."
+    },
+    {
+      "ssrn_id": "4071852",
+      "title": "Stock Market Anomalies and Machine Learning Across the Globe",
+      "authors": [
+        "Vitor Azevedo",
+        "Sebastian Kaiser",
+        "Sebastian M\u00fcller"
+      ],
+      "ssrn_posted_date": "2022-04-13",
+      "date_written": "2022-02-03",
+      "last_revised": "2023-07-20",
+      "topic": "International ML return prediction",
+      "canonical_url": "https://ssrn.com/abstract=4071852",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4071852",
+      "fulltext_candidate_urls": [
+        "https://mediatum.ub.tum.de/download/1763552/1763552.pdf"
+      ],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "A specification garden reveals how feature reduction, model class, target and rolling window alter out-of-sample results."
+    },
+    {
+      "ssrn_id": "4520596",
+      "title": "Artificial Intelligence (AI)-Enabled Credit Scoring in Banking and Fintech: In Search of Maximum Prediction Accuracy",
+      "authors": [
+        "Marc Schmitt",
+        "Marc Roper"
+      ],
+      "ssrn_posted_date": "2023-08-03",
+      "date_written": "2023-07-25",
+      "last_revised": null,
+      "topic": "Credit superlearner",
+      "canonical_url": "https://ssrn.com/abstract=4520596",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4520596",
+      "fulltext_candidate_urls": [],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "Combine fallible base models and discover when an ensemble helps, while separating accuracy from calibration and fairness."
+    },
+    {
+      "ssrn_id": "4589282",
+      "title": "A Joint Factor Model for Bonds, Stocks, and Options",
+      "authors": [
+        "Turan G. Bali",
+        "Heiner Beckmeyer",
+        "Amit Goyal"
+      ],
+      "ssrn_posted_date": "2023-10-31",
+      "date_written": "2023-11-08",
+      "last_revised": "2025-08-19",
+      "topic": "Latent-factor learning",
+      "canonical_url": "https://ssrn.com/abstract=4589282",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4589282",
+      "fulltext_candidate_urls": [],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "Linked bond-stock-option panels reveal common and residual latent factors; ML relevance comes from IPCA and must be judged against scope."
+    },
+    {
+      "ssrn_id": "4574814",
+      "title": "Generative AI: Overview, Economic Impact, and Applications in Asset Management",
+      "authors": [
+        "Martin Luk"
+      ],
+      "ssrn_posted_date": "2023-09-18",
+      "date_written": "2023-09-18",
+      "last_revised": "2023-09-19",
+      "topic": "Generative AI asset management review",
+      "canonical_url": "https://ssrn.com/abstract=4574814",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4574814",
+      "fulltext_candidate_urls": [],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "A pipeline failure map offers a gateway but needs one narrowly chosen, sourced mechanism for an exhibit."
+    },
+    {
+      "ssrn_id": "5133162",
+      "title": "Interpretable Bayesian machine learning for assessing the effects of climate news shocks on firm-level returns",
+      "authors": [
+        "Luca Barbaglia",
+        "Lorenzo Frattarolo",
+        "Niko Hauzenberger",
+        "Dominik Hirschb\u00fchl",
+        "Florian Huber",
+        "Luca Onorante",
+        "Michael Pfarrhofer",
+        "Luca Tiozzo Pezzoli"
+      ],
+      "ssrn_posted_date": "2025-02-11",
+      "date_written": "2026-04-29",
+      "last_revised": "2026-04-30",
+      "topic": "Bayesian climate-risk ML",
+      "canonical_url": "https://ssrn.com/abstract=5133162",
+      "metadata_evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5133162",
+      "fulltext_candidate_urls": [],
+      "read_status": "abstract_and_metadata_only",
+      "citation_count": null,
+      "citation_note": "Not measured by scout; use one consistent citation index in final ranking.",
+      "eligibility_note": "SSRN posted date verified from indexed primary page; earlier non-SSRN first release still needs checking.",
+      "provisional_visual_direction": "An asymmetric shock map varies sector and emissions, separating estimated conditional association from a causal intervention."
+    }
+  ],
+  "excluded_or_unresolved": [
+    {
+      "ssrn_id": "3950568",
+      "title": "Asset Pricing and Machine Learning: A Critical Review",
+      "ssrn_posted_date": "2021-10-27",
+      "reason": "First SSRN posting before rolling five-year cutoff; 2022 revision does not reset date."
+    },
+    {
+      "ssrn_id": "3686164",
+      "title": "Predicting Corporate Bond Returns: Merton Meets Machine Learning",
+      "ssrn_posted_date": "2020-09-17",
+      "reason": "First SSRN posting before cutoff; revised2022 is not a new paper."
+    },
+    {
+      "ssrn_id": "3840538",
+      "title": "From Man vs. Machine to Man + Machine: The Art and AI of Stock Analyses",
+      "ssrn_posted_date": "2021-05-06",
+      "reason": "First SSRN posting before cutoff; deduplicate NBER version3847545."
+    },
+    {
+      "ssrn_id": "3924420",
+      "title": "Economic Models or Machine Learning Techniques? Evidence from Asset Pricing Models",
+      "ssrn_posted_date": "2021-09-20",
+      "reason": "2022 duplicate version must not hide earlier2021 release."
+    },
+    {
+      "ssrn_id": "4639568",
+      "title": "Machine Learning approach for Credit Scoring",
+      "ssrn_posted_date": "2023-12-01",
+      "date_written": "2020-07-20",
+      "reason": "Date written2020 despite SSRN posting2023; earliest-public-release eligibility unresolved; do not silently treat as recent."
+    }
+  ]
+}

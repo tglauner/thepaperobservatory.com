@@ -21,7 +21,7 @@ test('catalog identifiers, namespaces and ports cannot collide', () => {
   for (const paper of papers) {
     assert.match(paper.slug,/^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$/);
     assert.match(paper.sourceHash,/^[a-f0-9]{64}$/);
-    assert.ok(!['learn','channels','privacy','about','assets'].includes(paper.slug));
+    assert.ok(!['learn','channels','privacy','about','assets','next'].includes(paper.slug));
     assert.ok(paper.sourcePages > 0 && paper.labs > 0);
   }
 });

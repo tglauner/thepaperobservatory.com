@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Help choose the next Paper Observatory experiments. Explore 100 finance and AI research candidates and vote for up to three of 20 shortlisted papers." />
+  <meta name="theme-color" content="#f6f3e9" />
+  <link rel="icon" href="/mark.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://thepaperobservatory.com/next/" />
+  <meta property="og:title" content="What should we explore next? — The Paper Observatory" />
+  <meta property="og:description" content="20 research ideas. Three choices. Help turn finance and AI papers into experiments you can learn from." />
+  <meta property="og:url" content="https://thepaperobservatory.com/next/" />
+  <meta property="og:type" content="website" />
+  <title>Choose the next experiments — The Paper Observatory</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="./next.css" />
+  <script type="module" src="./next.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#shortlist">Skip to voting shortlist</a>
+  <div class="journal-strip"><span>THE NEXT CHAPTER IS OPEN</span><span>RESEARCH → INTUITION → EXPERIMENT</span></div>
+  <header class="masthead">
+    <a class="brand" href="/"><img src="/mark.svg" width="44" height="44" alt="" /><span>THE PAPER<strong>OBSERVATORY</strong></span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a href="/#papers">The collection</a><a href="/next/" aria-current="page">Choose what’s next</a><a href="/learn/">Courses</a><a href="/about/">About</a></nav>
+  </header>
+  <main>
+    <section class="next-intro">
+      <div><p class="eyebrow">THE COMMUNITY READING DESK / ROUND 01</p><h1>What should we<br /><em>explore next?</em></h1><p class="next-deck">Help turn the next research paper into an aha moment. Explore the ideas, find a question that intrigues you, and choose up to three.</p><div class="intro-actions"><a class="button button-dark" href="#shortlist">Meet the 20 candidates ↓</a><a class="text-link" href="#archive">Browse all 100 research leads ↗</a></div></div>
+      <aside class="round-note"><span class="eyebrow">YOUR CURIOSITY SETS THE DIRECTION</span><div class="round-numbers"><strong>20<span>IDEAS TO CHOOSE FROM</span></strong><strong>03<span>CHOICES PER BALLOT</span></strong></div><p>Not a contest for the most famous paper. Vote for the experiment you would actually want to try.</p><p class="small-note">Community preferences inform our next builds. Editorial evidence and feasibility still matter. The five highlighted picks are recommendations, not completed exhibits.</p></aside>
+    </section>
+    <section id="shortlist" class="voting-section" aria-labelledby="shortlist-title">
+      <div class="section-top"><div><p class="eyebrow">20 POSSIBLE WINDOWS INTO AN IDEA</p><h2 id="shortlist-title">Choose your <em>next discovery.</em></h2></div><button id="share-poll" class="button" type="button">Copy voting link ↗</button></div>
+      <p class="vote-instructions">Select up to three papers, then save your ballot. All choices carry equal weight; this is approval voting, not a ranked ballot. You can revise or withdraw your choices from this browser.</p>
+      <div class="vote-toolbar">
+        <label class="research-search">Search the shortlist<input id="shortlist-search" type="search" placeholder="An idea, method, author…" maxlength="160" /></label>
+        <label>Order by<select id="shortlist-sort"><option value="editorial">Editorial learning potential</option><option value="votes">Community votes</option><option value="citations">Indexed citations</option><option value="title">Paper title</option></select></label>
+        <p id="community-summary" role="status">Loading community results…</p>
+      </div>
+      <div class="research-table-wrap"><table class="research-table"><caption class="sr-only">Twenty shortlisted papers. Open an idea to read its proposed experiment, evidence and caveat.</caption><thead><tr><th scope="col">Your pick</th><th scope="col">The question &amp; the research</th><th scope="col">Citations</th><th scope="col">Votes</th></tr></thead><tbody id="shortlist-rows"></tbody></table></div>
+      <p id="shortlist-empty" class="research-empty" hidden>No ideas match that search. Try another word.</p>
+      <noscript><p>JavaScript is required to load the research table and vote. No votes are submitted without your action.</p></noscript>
+      <div class="ballot-panel"><div><strong id="ballot-count">0 of 3 selected</strong><p id="ballot-choices">Your curiosity starts here.</p></div><div class="ballot-actions"><button id="clear-ballot" class="button" type="button" disabled>Clear choices</button><button id="save-ballot" class="button button-dark" type="button" disabled>Save my ballot</button></div><p id="ballot-status" role="status" aria-live="polite">Connecting to the voting service…</p></div>
+      <p class="voting-privacy">No account or email needed. A random ballot key stays in this browser; the server stores its hash and your selected paper IDs. Network-based limits reduce automated abuse. Anonymous voting cannot guarantee one person per ballot. <a href="/privacy/#community-voting">How votes and privacy work</a>.</p>
+      <button id="refresh-results" class="text-link" type="button">Refresh community results</button>
+    </section>
+    <section id="archive" class="archive-section" aria-labelledby="archive-title">
+      <div class="section-top"><div><p class="eyebrow">THE WIDER RESEARCH HORIZON</p><h2 id="archive-title">100 leads. <em>More to discover.</em></h2></div><span class="archive-stamp">FINANCE × AI / NOV 2026 SNAPSHOT</span></div>
+      <p class="archive-disclosure">A citation-ranked <strong>candidate list</strong>, not a verified global “top 100.” Dates, substantive relevance and versions remain under review. Citations are all-time OpenAlex counts from 14 November 2026, not SSRN downloads. Some shortlist choices come from the wider research search and are outside this first-100 excerpt.</p>
+      <div class="vote-toolbar"><label class="research-search">Search all 100<input id="archive-search" type="search" placeholder="Paper title, author or SSRN ID…" maxlength="160" /></label><label>Review filter<select id="archive-filter"><option value="all">All research leads</option><option value="shortlist">Open for voting</option><option value="reviewed">Source sections reviewed</option><option value="unverified">Needs date verification</option></select></label><p id="archive-count" role="status"></p></div>
+      <div class="research-table-wrap"><table class="research-table archive-table"><caption class="sr-only">One hundred citation-ranked research candidates, with source and evidence status.</caption><thead><tr><th scope="col">Index rank</th><th scope="col">Paper &amp; authors</th><th scope="col">Citations</th><th scope="col">Research status</th></tr></thead><tbody id="archive-rows"></tbody></table></div>
+      <p class="research-empty" id="archive-empty" hidden>No papers match this search and filter.</p>
+      <div class="archive-pagination" aria-label="Research archive pages"><button id="archive-previous" class="button" type="button">← Previous 20</button><span id="archive-page" role="status"></span><button id="archive-next" class="button" type="button">Next 20 →</button></div>
+    </section>
+    <section class="method-note"><p class="eyebrow">A VOTE FOR UNDERSTANDING</p><h2>An interesting result is a start.<br /><em>A learnable mechanism is the goal.</em></h2><p>The shortlist balances visual mechanisms, meaningful interaction, misconceptions, evidence and static-site feasibility. Every proposed experiment is an educational design, not a claim that the source paper ran that experiment. Source-section review is not an independent peer review or a promise to reproduce every result.</p><a href="https://github.com/tglauner/thepaperobservatory.com/tree/main/docs/research/finance-ai-2026-11-14">Inspect the research method and evidence ↗</a></section>
+  </main>
+  <footer class="site-footer next-footer"><a href="/">← Back to the paper collection</a><span>AI-generated. Source-linked. Open to exploration.</span><a href="/privacy/">Privacy &amp; disclosures</a></footer>
+</body>
+</html>

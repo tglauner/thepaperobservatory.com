@@ -1,0 +1,14 @@
+[
+  {
+    "ssrn_id": "4283403",
+    "lookup_url": "https://api.openalex.org/works/https://doi.org/10.2139/ssrn.4283403",
+    "error": "HTTP Error 404: Not Found",
+    "citation_count": null
+  },
+  {
+    "ssrn_id": "4416687",
+    "lookup_url": "https://api.openalex.org/works/https://doi.org/10.2139/ssrn.4416687",
+    "error": "HTTP Error 404: Not Found",
+    "citation_count": null
+  }
+]

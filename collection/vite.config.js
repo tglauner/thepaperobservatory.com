@@ -12,7 +12,7 @@ export default defineConfig({
   },
   build: {
     outDir: "../dist", emptyOutDir: true,
-    rolldownOptions: { input: ["index.html", "404.html", "learn/index.html", "about/index.html", "channels/index.html", "privacy/index.html"].map(file => fileURLToPath(new URL(file, import.meta.url))) },
+    rolldownOptions: { input: ["index.html", "404.html", "next/index.html", "learn/index.html", "about/index.html", "channels/index.html", "privacy/index.html"].map(file => fileURLToPath(new URL(file, import.meta.url))) },
   },
   preview: { host: "127.0.0.1", port: 4173, strictPort: true, proxy: {} },
 });

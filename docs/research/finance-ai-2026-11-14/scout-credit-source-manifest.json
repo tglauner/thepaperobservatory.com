@@ -1,0 +1,20 @@
+{
+  "run_id": "finance-ai-2026-11-14",
+  "reading_is_separate_from_acquisition": true,
+  "sources": [
+    {
+      "ssrn_id": "4287319",
+      "title": "A supervised machine learning algorithm for detecting and predicting fraud in credit card transactions",
+      "openalex_id": "https://openalex.org/W4315977370",
+      "reading_status": "not_read",
+      "attempts": [],
+      "source_url": "https://ir.knust.edu.gh/server/api/core/bitstreams/5b468cf2-cae5-4a1f-a8b5-006cd0a30f5f/content",
+      "resolved_url": "https://ir.knust.edu.gh/server/api/core/bitstreams/5b468cf2-cae5-4a1f-a8b5-006cd0a30f5f/content",
+      "sha256": "bbc8b76d0a2b4a74642721514e71797c4bd3a89a5135b589b080a1f6723ae156",
+      "bytes": 2856330,
+      "acquisition_status": "text_extracted",
+      "physical_page_count": 12,
+      "extracted_characters": 73947
+    }
+  ]
+}

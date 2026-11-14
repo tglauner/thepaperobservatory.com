@@ -1,0 +1,4 @@
+interface:
+  display_name: "Discover Observatory Papers"
+  short_description: "Find, read and rank papers for visual learning"
+  default_prompt: "Use $discover-research-papers to find recent finance and AI papers, verify their citations, and rank source-grounded interactive exhibit ideas."

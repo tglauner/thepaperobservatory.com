@@ -18,7 +18,7 @@ The first website release used commit `9d6bede3c11b4f54231c6fe633456c9830e322c3`
 
 The static site fits **Cloudflare Pages Free**: the verified release contains 149 files, with the largest asset about 0.25 MiB. The [free limits](https://developers.cloudflare.com/pages/platform/limits/) checked during setup were 20,000 files and 25 MiB per file; [static requests are free](https://developers.cloudflare.com/pages/functions/pricing/#static-asset-requests). Domain renewal and optional cloud development/generation are separate costs.
 
-Publish only the assembled artifact. The scanner rejects private paths, PDFs, symlinks, oversized assets, source trees and Functions/Worker entry points. Keep original papers, `.env`, `confidential/`, status output and temporary inputs private. No Cloudflare backend, database or runtime AI call is needed.
+Publish only the assembled artifact. The scanner rejects private paths, PDFs, symlinks, oversized assets, source trees and Functions/Worker entry points. Keep original papers, `.env`, `confidential/`, status output and temporary inputs private. The anonymous community-voting feature is the documented exception: an isolated Worker/D1 service, deployed separately from the static artifact; see [community voting](community-voting.md). No runtime AI call is needed. The public artifact scanner still rejects backend source.
 
 ## Validate and release
 

@@ -1,0 +1,447 @@
+{
+  "as_of": "2026-11-14",
+  "method": "Independent web lookup of SSRN primary page indexed metadata; read the paper header Posted field, not Date Written, Last Revised, reference-list dates, or Crossref DOI creation. These are SSRN posting dates; an earlier non-SSRN release still requires review.",
+  "records": [
+    {
+      "ssrn_id": "3911278",
+      "ssrn_posted_date": "2021-08-28",
+      "date_status": "exclude_before_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3911278",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4362034",
+      "ssrn_posted_date": "2023-02-28",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4362034",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "3974946",
+      "ssrn_posted_date": "2021-12-06",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3974946",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4029950",
+      "ssrn_posted_date": "2022-03-03",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4029950",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4287319",
+      "ssrn_posted_date": "2022-11-28",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4287319",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4085812",
+      "ssrn_posted_date": "2022-04-20",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4085812",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "3816803",
+      "ssrn_posted_date": "2021-04-01",
+      "date_status": "exclude_before_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3816803",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4481659",
+      "ssrn_posted_date": "2023-06-16",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4481659",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4528225",
+      "ssrn_posted_date": "2023-08-12",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4528225",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4913363",
+      "ssrn_posted_date": "2024-08-19",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4913363",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4489831",
+      "ssrn_posted_date": "2023-07-03",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4489831",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4429658",
+      "ssrn_posted_date": "2023-05-07",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4429658",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4452175",
+      "ssrn_posted_date": "2023-06-03",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4452175",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4680203",
+      "ssrn_posted_date": "2024-01-08",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4680203",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4841493",
+      "ssrn_posted_date": "2024-05-29",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4841493",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4644253",
+      "ssrn_posted_date": "2023-12-01",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4644253",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4179536",
+      "ssrn_posted_date": "2022-08-09",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4179536",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4094652",
+      "ssrn_posted_date": "2022-04-27",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4094652",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4128509",
+      "ssrn_posted_date": "2022-06-13",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4128509",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4323643",
+      "ssrn_posted_date": "2023-01-13",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4323643",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4293977",
+      "ssrn_posted_date": "2022-12-13",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4293977",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4088029",
+      "ssrn_posted_date": "2022-04-20",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4088029",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4390529",
+      "ssrn_posted_date": "2023-03-16",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4390529",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4376481",
+      "ssrn_posted_date": "2023-03-02",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4376481",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4359926",
+      "ssrn_posted_date": "2023-02-15",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4359926",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4464002",
+      "ssrn_posted_date": "2023-05-31",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4464002",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4640316",
+      "ssrn_posted_date": "2023-12-01",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4640316",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "5263710",
+      "ssrn_posted_date": "2025-05-21",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5263710",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4603206",
+      "ssrn_posted_date": "2023-11-02",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4603206",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4440012",
+      "ssrn_posted_date": "2023-05-06",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4440012",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4069942",
+      "ssrn_posted_date": "2022-03-29",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4069942",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4506769",
+      "ssrn_posted_date": "2023-07-11",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4506769",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "5240924",
+      "ssrn_posted_date": "2025-05-07",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5240924",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "5250770",
+      "ssrn_posted_date": "2025-05-14",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5250770",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "5198675",
+      "ssrn_posted_date": "2025-04-03",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5198675",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4799209",
+      "ssrn_posted_date": "2024-04-18",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4799209",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4754568",
+      "ssrn_posted_date": "2024-04-09",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4754568",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4141663",
+      "ssrn_posted_date": "2022-06-28",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4141663",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4842268",
+      "ssrn_posted_date": "2024-05-29",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4842268",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4316106",
+      "ssrn_posted_date": "2023-01-02",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4316106",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4986017",
+      "ssrn_posted_date": "2024-10-29",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4986017",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4542162",
+      "ssrn_posted_date": "2023-08-16",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4542162",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4711378",
+      "ssrn_posted_date": "2024-01-31",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4711378",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4163664",
+      "ssrn_posted_date": "2022-07-15",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4163664",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "5605630",
+      "ssrn_posted_date": "2025-10-16",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5605630",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4253139",
+      "ssrn_posted_date": "2022-10-31",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4253139",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4006840",
+      "ssrn_posted_date": "2022-01-14",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4006840",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4711266",
+      "ssrn_posted_date": "2024-02-01",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4711266",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4923415",
+      "ssrn_posted_date": "2024-08-12",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4923415",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4475689",
+      "ssrn_posted_date": "2023-06-18",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4475689",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "5217340",
+      "ssrn_posted_date": "2025-04-28",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5217340",
+      "evidence_type": "indexed SSRN primary metadata"
+    },
+    {
+      "ssrn_id": "4568964",
+      "ssrn_posted_date": "2023-09-14",
+      "date_status": "posted_in_window",
+      "evidence_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4568964",
+      "evidence_type": "indexed SSRN primary metadata"
+    }
+  ],
+  "version_family_notes": [
+    {
+      "ssrn_ids": [
+        "3809564",
+        "3816803"
+      ],
+      "title": "The Voice of Monetary Policy",
+      "earliest_ssrn_version_posted_date": "2021-03-22",
+      "evidence_url": "https://papers.ssrn.com/sol3/Delivery.cfm/DP15932.pdf?abstractid=3816803&mirid=1",
+      "note": "Primary CEPR page has posted1Apr2021 and explicitly lists earlier NBER version posted22Mar2021; paper family is before window. Crossref creation17Nov2021 does not establish eligibility."
+    },
+    {
+      "ssrn_ids": [
+        "4359926",
+        "4440012"
+      ],
+      "note": "Same managerial-myopia/financial-asset-allocation paper family; primary earlier SSRN record4359926 posted15Feb2023, later4440012posted6May2023. Count one work."
+    },
+    {
+      "ssrn_ids": [
+        "4069942",
+        "4826002"
+      ],
+      "note": "Identifying Monetary Policy Shocks: A Natural Language Approach primary version list includes CEPR4069942posted29Mar2022 and laterposted14May2024 version; use earliest study release, not2024record as first."
+    },
+    {
+      "ssrn_ids": [
+        "4711266"
+      ],
+      "title": "Machine Learning for Continuous-Time Finance",
+      "earlier_release_date": "2018-09-24",
+      "earlier_release_evidence_url": "https://memento.epfl.ch/public/upload/files/PaperDuarte.pdf",
+      "additional_evidence_url": "https://memento.epfl.ch/event/machine-learning-for-continuous-time-finance/",
+      "note": "Primary EPFL-hosted paper with identical title dated September 24, 2018, plus EPFL seminar on February 14, 2020, predates the requested first-release window. The later 2024 CESifo/SSRN version should not be treated as first release without establishing a distinct work."
+    },
+    {
+      "ssrn_ids": [
+        "4754568"
+      ],
+      "ssrn_title": "Forecasting Commercial Customers Credit Risk Through Early Warning Signals Data: A Machine Learning based Approach",
+      "journal_title": "An analytical approach to credit risk assessment using machine learning models",
+      "note": "Title changed between SSRN and journal metadata. SSRN authors Marcos Machado, Joerg Osterrieder, Daniel Chen match the journal record; report version-specific title rather than treating these as different papers."
+    }
+  ],
+  "unresolved_lookup_ids": [
+    "4100283",
+    "4425527",
+    "4720591",
+    "5232395",
+    "4562266",
+    "4384954",
+    "4416227",
+    "4120313",
+    "4454940",
+    "4739227",
+    "4109461"
+  ],
+  "topic_review_exclusions": [
+    {
+      "ssrn_id": "4847308",
+      "reason": "Cybersecurity audit is not a substantive financial-reporting audit in abstract; financial benefit generic. Exclude strictfinance."
+    },
+    {
+      "ssrn_id": "4015233",
+      "reason": "Wind-power/day-ahead trading paper is primarily energy forecasting engineering; commoditymarket adjacency requires explicit broadscope, not defaultfinance."
+    }
+  ],
+  "topic_review_borderline": [
+    {
+      "ssrn_id": "4179536",
+      "reason": "AI ESGgovernance protocol includes companyvaluation/risk but is primarily broadresponsibleAI disclosure; eligibility depends including sustainablecorporatereporting."
+    },
+    {
+      "ssrn_id": "4913363",
+      "reason": "Entrepreneur/investorstrategyevaluation concerns venture/entrepreneurialdecisionmaking but finance is nottheprincipaloutcome; includebroadentrepreneurialfinance only."
+    }
+  ]
+}

@@ -1,0 +1,1239 @@
+[
+  {
+    "ssrn_id": "4489826",
+    "proposed_exhibit_title": "The data freshness machine",
+    "experiment_concept": "Route a dated news packet through collection, cleaning, adaptation and evaluation; move a model's cutoff and count what becomes stale.",
+    "learning_outcome": "Fresh financial data, task accuracy and profitable information are different achievements.",
+    "caveat": "Use a tiny disclosed classifier and prerecorded outputs; the local model is not FinGPT or a replication of reported returns.",
+    "score_components": {
+      "mechanism": 4,
+      "interaction": 4,
+      "misconception_transfer": 4,
+      "source_fidelity": 4,
+      "feasibility": 4,
+      "collection_value": 4
+    },
+    "score_total": 80,
+    "score_provisional": false,
+    "read_status": "full_text_sections_reviewed",
+    "evidence_pages": [
+      1,
+      2,
+      8
+    ],
+    "review_scope": "Selected physical pages and cited sections only; no assertion of complete appendix review",
+    "evidence_confidence": "medium",
+    "build_readiness": "needs_reproduction_work"
+  },
+  {
+    "ssrn_id": "4412788",
+    "proposed_exhibit_title": "You understood the news. Did you arrive in time?",
+    "experiment_concept": "Commit to a direction, place an execution flag on a price timeline, then vary delay, cost and competing information processors.",
+    "learning_outcome": "A correct description of an initial price reaction is different from a tradable forecast of later drift.",
+    "caveat": "Preserve portfolio-day versus individual-stock definitions; synthetic latency paths cannot be presented as estimated historical returns.",
+    "score_components": {
+      "mechanism": 5,
+      "interaction": 5,
+      "misconception_transfer": 5,
+      "source_fidelity": 5,
+      "feasibility": 3,
+      "collection_value": 5
+    },
+    "score_total": 96,
+    "score_provisional": false,
+    "read_status": "full_text_sections_reviewed",
+    "evidence_pages": [
+      1,
+      2,
+      9,
+      19,
+      20,
+      33,
+      51
+    ],
+    "review_scope": "Selected physical pages and cited sections only; no assertion of complete appendix review",
+    "evidence_confidence": "medium",
+    "build_readiness": "needs_reproduction_work"
+  },
+  {
+    "ssrn_id": "4913363",
+    "proposed_exhibit_title": "The investment committee with two scorecards",
+    "experiment_concept": "Rank anonymized startup strategies; reveal separate entrepreneur, investor and model evaluations, then change evaluation criteria.",
+    "learning_outcome": "Agreement with an evaluator is not evidence that a strategy will create future firm value.",
+    "caveat": "The study concerns generated/evaluated strategies; toy payoffs and long-run competitive effects are extensions, not measured treatment effects.",
+    "score_components": {
+      "mechanism": 4,
+      "interaction": 4,
+      "misconception_transfer": 4,
+      "source_fidelity": 3,
+      "feasibility": 4,
+      "collection_value": 4
+    },
+    "score_total": 77,
+    "score_provisional": false,
+    "read_status": "full_text_sections_reviewed",
+    "evidence_pages": [
+      1,
+      3
+    ],
+    "review_scope": "Selected physical pages and cited sections only; no assertion of complete appendix review",
+    "evidence_confidence": "medium",
+    "build_readiness": "needs_reproduction_work"
+  },
+  {
+    "ssrn_id": "4029950",
+    "proposed_exhibit_title": "The sentence is not the construct",
+    "experiment_concept": "Classify a short disclosure using sentiment, readability and forward-lookingness; inspect how three measurements disagree.",
+    "learning_outcome": "A computable textual score does not automatically measure the financial concept a researcher intends.",
+    "caveat": "Full text is still needed for the selected examples and construct-validity procedure; invent no benchmark performance.",
+    "score_components": {
+      "mechanism": 4,
+      "interaction": 4,
+      "misconception_transfer": 5,
+      "source_fidelity": 2,
+      "feasibility": 4,
+      "collection_value": 4
+    },
+    "score_total": 78,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4287319",
+    "proposed_exhibit_title": "The 96% detector and the overflowing review queue",
+    "experiment_concept": "Rebuild Table 7 as 96,961 transaction tiles; sort alerts, allocate reviewer capacity, then vary a labeled synthetic prevalence and loss ratio.",
+    "learning_outcome": "High accuracy and recall can coexist with about 9% precision when fraud is rare; costs determine whether the detector is useful.",
+    "caveat": "Table 7 implies recall about95.8%, differing from Table8's97%; show the recomputation, retain source values, and do not infer a threshold curve from one matrix.",
+    "score_components": {
+      "mechanism": 5,
+      "interaction": 5,
+      "misconception_transfer": 5,
+      "source_fidelity": 4,
+      "feasibility": 5,
+      "collection_value": 5
+    },
+    "score_total": 97,
+    "score_provisional": false,
+    "read_status": "full_text_sections_reviewed",
+    "evidence_pages": [
+      2,
+      4,
+      8,
+      10
+    ],
+    "review_scope": "Selected physical pages and cited sections only; no assertion of complete appendix review",
+    "evidence_confidence": "medium",
+    "build_readiness": "needs_reproduction_work"
+  },
+  {
+    "ssrn_id": "4085812",
+    "proposed_exhibit_title": "Which banking problem did you actually ask?",
+    "experiment_concept": "Choose credit allocation, efficiency or mergers; fit the question to prediction, optimization and causal evidence cards.",
+    "learning_outcome": "An accurate forecast does not itself specify a desirable banking decision.",
+    "caveat": "This is a survey map; all numerical mini-problems would be explicit educational examples grounded in cited methods.",
+    "score_components": {
+      "mechanism": 3,
+      "interaction": 3,
+      "misconception_transfer": 4,
+      "source_fidelity": 4,
+      "feasibility": 5,
+      "collection_value": 4
+    },
+    "score_total": 73,
+    "score_provisional": false,
+    "read_status": "full_text_sections_reviewed",
+    "evidence_pages": [
+      1,
+      3
+    ],
+    "review_scope": "Selected physical pages and cited sections only; no assertion of complete appendix review",
+    "evidence_confidence": "medium",
+    "build_readiness": "needs_reproduction_work"
+  },
+  {
+    "ssrn_id": "4528225",
+    "proposed_exhibit_title": "From a plausible answer to a checked financial claim",
+    "experiment_concept": "Move statements into evidence, inference or unsupported-claim trays and unlock the source needed to justify each.",
+    "learning_outcome": "A useful financial AI workflow needs a verification route, not merely a fluent answer.",
+    "caveat": "Abstract/title-based proposal; read the full paper before attributing specific mechanisms or demonstrations.",
+    "score_components": {
+      "mechanism": 3,
+      "interaction": 3,
+      "misconception_transfer": 4,
+      "source_fidelity": 1,
+      "feasibility": 4,
+      "collection_value": 3
+    },
+    "score_total": 60,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4481659",
+    "proposed_exhibit_title": "What is memory buying the forecast?",
+    "experiment_concept": "Slide a time-series window over a synthetic regime change and compare memory lengths against a last-value baseline.",
+    "learning_outcome": "More temporal memory can preserve stale information as well as signal.",
+    "caveat": "The exact TRNN architecture and evaluation split require full-text verification; this is a proposed teaching reconstruction.",
+    "score_components": {
+      "mechanism": 4,
+      "interaction": 4,
+      "misconception_transfer": 4,
+      "source_fidelity": 1,
+      "feasibility": 4,
+      "collection_value": 3
+    },
+    "score_total": 69,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4489831",
+    "proposed_exhibit_title": "Good news relative to what?",
+    "experiment_concept": "Predict sentiment for a numerical release, reveal expectations, then adjust actual-versus-expected values and compare curated labels.",
+    "learning_outcome": "Financial sentiment depends on numerical context and the classification task, not just positive-sounding words.",
+    "caveat": "Examples and labels are task dependent; articleFigure1 contains surprising labels worth discussing, not silently correcting; a rule-based toy is not a tuned LLM.",
+    "score_components": {
+      "mechanism": 5,
+      "interaction": 5,
+      "misconception_transfer": 5,
+      "source_fidelity": 4,
+      "feasibility": 5,
+      "collection_value": 4
+    },
+    "score_total": 95,
+    "score_provisional": false,
+    "read_status": "full_text_sections_reviewed",
+    "evidence_pages": [
+      1,
+      3
+    ],
+    "review_scope": "Selected physical pages and cited sections only; no assertion of complete appendix review",
+    "evidence_confidence": "medium",
+    "build_readiness": "needs_reproduction_work"
+  },
+  {
+    "ssrn_id": "4452175",
+    "proposed_exhibit_title": "Did the model improve, or did its tools?",
+    "experiment_concept": "Give identical original accounting questions to a bare-response path and a calculator/tool path; toggle examples and error checks.",
+    "learning_outcome": "Model version, prompting, tools and question sampling all affect a benchmark comparison.",
+    "caveat": "Do not present published multiple-choice thresholds as proof of professional competence; use original questions, not licensed exam banks.",
+    "score_components": {
+      "mechanism": 4,
+      "interaction": 5,
+      "misconception_transfer": 5,
+      "source_fidelity": 4,
+      "feasibility": 5,
+      "collection_value": 4
+    },
+    "score_total": 90,
+    "score_provisional": false,
+    "read_status": "full_text_sections_reviewed",
+    "evidence_pages": [
+      4,
+      14,
+      21,
+      26
+    ],
+    "review_scope": "Selected physical pages and cited sections only; no assertion of complete appendix review",
+    "evidence_confidence": "medium",
+    "build_readiness": "needs_reproduction_work"
+  },
+  {
+    "ssrn_id": "4429658",
+    "proposed_exhibit_title": "An answer that never answers",
+    "experiment_concept": "Underline what an analyst actually asked; mark a manager's response as answer, partial answer or evasion; compare label policies and disagreement.",
+    "learning_outcome": "Construct definitions and error types matter more than one headline accuracy number.",
+    "caveat": "Full paper and original labels are needed before showing study confusion matrices; drafted dialogue is a labeled teaching example.",
+    "score_components": {
+      "mechanism": 5,
+      "interaction": 5,
+      "misconception_transfer": 5,
+      "source_fidelity": 2,
+      "feasibility": 5,
+      "collection_value": 5
+    },
+    "score_total": 91,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4362034",
+    "proposed_exhibit_title": "Four gauges that disagree",
+    "experiment_concept": "Probe one synthetic score distribution with robustness, accuracy, group fairness and explanation views; inspect their Lorenz-style geometry.",
+    "learning_outcome": "There is no universal trustworthiness number that resolves every stakeholder's tradeoff.",
+    "caveat": "Read exact SAFE metric definitions before implementing them; generic gauges must not be mislabeled as the authors' metric.",
+    "score_components": {
+      "mechanism": 5,
+      "interaction": 4,
+      "misconception_transfer": 5,
+      "source_fidelity": 2,
+      "feasibility": 4,
+      "collection_value": 5
+    },
+    "score_total": 85,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4680203",
+    "proposed_exhibit_title": "The AI finance claim map",
+    "experiment_concept": "Sort research into AI as application, research instrument and institutional change; click through to a narrower falsifiable question.",
+    "learning_outcome": "A survey organizes questions; it does not establish that all proposed applications work.",
+    "caveat": "Retain survey dates and emerging-evidence limits; do not turn its catalog into a validated leaderboard.",
+    "score_components": {
+      "mechanism": 3,
+      "interaction": 3,
+      "misconception_transfer": 4,
+      "source_fidelity": 4,
+      "feasibility": 5,
+      "collection_value": 4
+    },
+    "score_total": 73,
+    "score_provisional": false,
+    "read_status": "full_text_sections_reviewed",
+    "evidence_pages": [
+      1,
+      3
+    ],
+    "review_scope": "Selected physical pages and cited sections only; no assertion of complete appendix review",
+    "evidence_confidence": "medium",
+    "build_readiness": "needs_reproduction_work"
+  },
+  {
+    "ssrn_id": "4408511",
+    "proposed_exhibit_title": "Why did the banking customer trust it?",
+    "experiment_concept": "Compare a causal-looking path diagram with actual survey associations; adjust a hypothetical missing common cause.",
+    "learning_outcome": "Satisfaction and acceptance associations do not identify the effect of adding an AI chatbot.",
+    "caveat": "The structural-equation survey is observational; causal controls are explicitly a teaching extension and cannot be paper-estimated intervention effects.",
+    "score_components": {
+      "mechanism": 3,
+      "interaction": 3,
+      "misconception_transfer": 5,
+      "source_fidelity": 2,
+      "feasibility": 4,
+      "collection_value": 3
+    },
+    "score_total": 67,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4835311",
+    "proposed_exhibit_title": "The nameless company",
+    "experiment_concept": "Predict earnings direction from balanced synthetic statements; click ratios to reveal numerators and denominators, then unmask the name and compare benchmarks.",
+    "learning_outcome": "Arithmetic correctness, an earnings-direction forecast and an investment return are different targets.",
+    "caveat": "Pin the 2024 v1 source; no blanket GPT-beats-analysts claim, no assumption of universal immunity to leakage, and no redistribution of commercial fundamentals data.",
+    "score_components": {
+      "mechanism": 5,
+      "interaction": 5,
+      "misconception_transfer": 5,
+      "source_fidelity": 4,
+      "feasibility": 4,
+      "collection_value": 5
+    },
+    "score_total": 95,
+    "score_provisional": false,
+    "read_status": "full_text_sections_reviewed",
+    "evidence_pages": [
+      11,
+      25,
+      28,
+      29,
+      48,
+      54
+    ],
+    "review_scope": "Selected physical pages and cited sections only; no assertion of complete appendix review",
+    "evidence_confidence": "medium",
+    "build_readiness": "needs_reproduction_work"
+  },
+  {
+    "ssrn_id": "4790321",
+    "proposed_exhibit_title": "The auditor's evidence budget",
+    "experiment_concept": "Allocate limited review time across a miniature ledger; compare sampling, anomaly scores and independently verified exceptions.",
+    "learning_outcome": "Examining every transaction is different from establishing that each transaction is valid.",
+    "caveat": "The paper is a conceptual framework; the ledger and scoring model are educational extensions, not an empirical replication.",
+    "score_components": {
+      "mechanism": 3,
+      "interaction": 4,
+      "misconception_transfer": 4,
+      "source_fidelity": 3,
+      "feasibility": 5,
+      "collection_value": 4
+    },
+    "score_total": 74,
+    "score_provisional": false,
+    "read_status": "full_text_sections_reviewed",
+    "evidence_pages": [
+      1,
+      4,
+      8,
+      16
+    ],
+    "review_scope": "Selected physical pages and cited sections only; no assertion of complete appendix review",
+    "evidence_confidence": "medium",
+    "build_readiness": "needs_reproduction_work"
+  },
+  {
+    "ssrn_id": "4706629",
+    "proposed_exhibit_title": "The sentiment score meets the trading clock",
+    "experiment_concept": "Send the same curated headline scores through different execution delays and turnover budgets; compare signal accuracy with net outcomes.",
+    "learning_outcome": "A strong classification score does not guarantee robust implementable portfolio performance.",
+    "caveat": "Pin the LSE published copy; synthetic cost sweeps cannot validate the paper's backtest or eliminate possible temporal-contamination questions.",
+    "score_components": {
+      "mechanism": 5,
+      "interaction": 5,
+      "misconception_transfer": 5,
+      "source_fidelity": 3,
+      "feasibility": 4,
+      "collection_value": 4
+    },
+    "score_total": 90,
+    "score_provisional": false,
+    "read_status": "full_text_sections_reviewed",
+    "evidence_pages": [
+      1,
+      3
+    ],
+    "review_scope": "Selected physical pages and cited sections only; no assertion of complete appendix review",
+    "evidence_confidence": "medium",
+    "build_readiness": "needs_reproduction_work"
+  },
+  {
+    "ssrn_id": "3974946",
+    "proposed_exhibit_title": "Would you approve the same report with an AI label?",
+    "experiment_concept": "Evaluate the same fictional financial report with author identity masked, then reveal AI or human labels and compare confidence.",
+    "learning_outcome": "Perceived reporting quality, actual correctness and willingness to adopt need separate measures.",
+    "caveat": "Read the study design before attributing causal treatment effects; no real executive decisions or personal profiling.",
+    "score_components": {
+      "mechanism": 4,
+      "interaction": 4,
+      "misconception_transfer": 4,
+      "source_fidelity": 2,
+      "feasibility": 5,
+      "collection_value": 4
+    },
+    "score_total": 76,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4841493",
+    "proposed_exhibit_title": "The financial agent's audit trail",
+    "experiment_concept": "Pass a question through data retrieval, calculation and report nodes; inject a stale number or missing citation and trace its propagation.",
+    "learning_outcome": "A multi-agent workflow is only as reliable as its evidence and checks; more agents do not guarantee truth.",
+    "caveat": "Use a deterministic staged simulator; it is not a functioning FinRobot deployment or a live financial adviser.",
+    "score_components": {
+      "mechanism": 4,
+      "interaction": 5,
+      "misconception_transfer": 4,
+      "source_fidelity": 4,
+      "feasibility": 5,
+      "collection_value": 4
+    },
+    "score_total": 86,
+    "score_provisional": false,
+    "read_status": "full_text_sections_reviewed",
+    "evidence_pages": [
+      1,
+      3
+    ],
+    "review_scope": "Selected physical pages and cited sections only; no assertion of complete appendix review",
+    "evidence_confidence": "medium",
+    "build_readiness": "needs_reproduction_work"
+  },
+  {
+    "ssrn_id": "4644253",
+    "proposed_exhibit_title": "An immutable ledger can preserve a wrong answer",
+    "experiment_concept": "Send a fabricated transaction through a signed ledger and an anomaly detector; distinguish provenance, detection and economic truth.",
+    "learning_outcome": "Tamper evidence and correctness are separate properties.",
+    "caveat": "Full text is not yet inspected; use this as a proposed conceptual test, not a claimed paper result or security guarantee.",
+    "score_components": {
+      "mechanism": 4,
+      "interaction": 4,
+      "misconception_transfer": 4,
+      "source_fidelity": 1,
+      "feasibility": 4,
+      "collection_value": 3
+    },
+    "score_total": 69,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4179536",
+    "proposed_exhibit_title": "Who bears the costs of a financial AI system?",
+    "experiment_concept": "Place an AI capability on an ESG impact map, allocate energy/privacy/governance costs and identify which disclosures are evidence.",
+    "learning_outcome": "An AI label is not an ESG benefit; impacts depend on deployment and stakeholder boundaries.",
+    "caveat": "Broad corporate disclosure/governance relevance; no single welfare score or proof of sustainable investment performance.",
+    "score_components": {
+      "mechanism": 3,
+      "interaction": 4,
+      "misconception_transfer": 4,
+      "source_fidelity": 2,
+      "feasibility": 4,
+      "collection_value": 3
+    },
+    "score_total": 67,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4094652",
+    "proposed_exhibit_title": "The beautiful price forecast that loses to yesterday",
+    "experiment_concept": "Compare visual fit in price levels with return errors and a last-price baseline; reveal a chronological holdout.",
+    "learning_outcome": "Visually tracking a persistent price level can conceal weak incremental predictive information.",
+    "caveat": "Full-text dataset, split and target definitions require verification; toy diagnostics do not refute or reproduce the empirical paper.",
+    "score_components": {
+      "mechanism": 5,
+      "interaction": 5,
+      "misconception_transfer": 5,
+      "source_fidelity": 1,
+      "feasibility": 5,
+      "collection_value": 4
+    },
+    "score_total": 86,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4088029",
+    "proposed_exhibit_title": "Same premium, different explanation",
+    "experiment_concept": "Compare interpretable rating rules with a black-box surrogate on synthetic insurance profiles; exchange correlated features and inspect explanation stability.",
+    "learning_outcome": "An explanation can describe a prediction without establishing a causal or fair premium.",
+    "caveat": "No real insurance pricing advice; verify the paper's precise explanation methods before reproducing them.",
+    "score_components": {
+      "mechanism": 5,
+      "interaction": 5,
+      "misconception_transfer": 5,
+      "source_fidelity": 2,
+      "feasibility": 4,
+      "collection_value": 5
+    },
+    "score_total": 89,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4323643",
+    "proposed_exhibit_title": "The paper written by the model",
+    "experiment_concept": "Pair a polished financial-AI paragraph with its cited evidence; identify what the text demonstrates and what it merely asserts.",
+    "learning_outcome": "Fluency can demonstrate text generation while leaving the financial claims untested.",
+    "caveat": "The foreword explicitly says ChatGPT wrote the paper; treat it as a meta-literacy exhibit, not evidence validating all its applications.",
+    "score_components": {
+      "mechanism": 3,
+      "interaction": 4,
+      "misconception_transfer": 5,
+      "source_fidelity": 4,
+      "feasibility": 5,
+      "collection_value": 4
+    },
+    "score_total": 81,
+    "score_provisional": false,
+    "read_status": "full_text_sections_reviewed",
+    "evidence_pages": [
+      1,
+      2,
+      6
+    ],
+    "review_scope": "Selected physical pages and cited sections only; no assertion of complete appendix review",
+    "evidence_confidence": "medium",
+    "build_readiness": "needs_reproduction_work"
+  },
+  {
+    "ssrn_id": "4293977",
+    "proposed_exhibit_title": "Predict, measure, or explain?",
+    "experiment_concept": "Put a finance question through three doors: predicting an outcome, creating a measure and extending an econometric tool; reveal different validation needs.",
+    "learning_outcome": "Prediction quality and causal explanation are not interchangeable research goals.",
+    "caveat": "Broad review makes an excellent methods orientation but should link to narrower mechanism papers rather than imitate their results.",
+    "score_components": {
+      "mechanism": 4,
+      "interaction": 4,
+      "misconception_transfer": 5,
+      "source_fidelity": 4,
+      "feasibility": 5,
+      "collection_value": 5
+    },
+    "score_total": 88,
+    "score_provisional": false,
+    "read_status": "full_text_sections_reviewed",
+    "evidence_pages": [
+      1,
+      2,
+      43
+    ],
+    "review_scope": "Selected physical pages and cited sections only; no assertion of complete appendix review",
+    "evidence_confidence": "medium",
+    "build_readiness": "needs_reproduction_work"
+  },
+  {
+    "ssrn_id": "4128509",
+    "proposed_exhibit_title": "The feature-importance weather map",
+    "experiment_concept": "Move a rolling time window and forecast horizon; show how macro and technical importance rankings can change.",
+    "learning_outcome": "Feature importance is conditional on time, horizon, model and correlated alternatives.",
+    "caveat": "Use labeled synthetic windows unless the exact paper dataset is reproducible; feature importance is not macroeconomic causality.",
+    "score_components": {
+      "mechanism": 4,
+      "interaction": 5,
+      "misconception_transfer": 5,
+      "source_fidelity": 4,
+      "feasibility": 4,
+      "collection_value": 4
+    },
+    "score_total": 88,
+    "score_provisional": false,
+    "read_status": "full_text_sections_reviewed",
+    "evidence_pages": [
+      1,
+      2,
+      41
+    ],
+    "review_scope": "Selected physical pages and cited sections only; no assertion of complete appendix review",
+    "evidence_confidence": "medium",
+    "build_readiness": "needs_reproduction_work"
+  },
+  {
+    "ssrn_id": "4390529",
+    "proposed_exhibit_title": "Ask for stocks; discover a portfolio",
+    "experiment_concept": "Build a synthetic recommendation portfolio, then uncover common factor exposures and concentration despite varied company names.",
+    "learning_outcome": "A plausible stock list is not automatically diversified or suitable for a person's constraints.",
+    "caveat": "Full-text protocol and benchmarks still need verification; avoid historical outperformance promises or personalized recommendations.",
+    "score_components": {
+      "mechanism": 4,
+      "interaction": 5,
+      "misconception_transfer": 5,
+      "source_fidelity": 2,
+      "feasibility": 5,
+      "collection_value": 4
+    },
+    "score_total": 84,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4100283",
+    "proposed_exhibit_title": "Teach the trading agent the wrong reward",
+    "experiment_concept": "Choose profit, turnover and cost penalties in a small deterministic trading world; inspect the policy rather than a single winning path.",
+    "learning_outcome": "The reward, observability and market constraints shape what an RL agent learns.",
+    "caveat": "A reduced teaching game does not reproduce TD3 training or the reported Sharpe ratio; freeze random seeds and show out-of-sample regime changes.",
+    "score_components": {
+      "mechanism": 5,
+      "interaction": 5,
+      "misconception_transfer": 5,
+      "source_fidelity": 4,
+      "feasibility": 4,
+      "collection_value": 5
+    },
+    "score_total": 95,
+    "score_provisional": false,
+    "read_status": "full_text_sections_reviewed",
+    "evidence_pages": [
+      1,
+      3,
+      5,
+      8
+    ],
+    "review_scope": "Selected physical pages and cited sections only; no assertion of complete appendix review",
+    "evidence_confidence": "medium",
+    "build_readiness": "needs_reproduction_work"
+  },
+  {
+    "ssrn_id": "4425527",
+    "proposed_exhibit_title": "A shorter report can hide the missing warning",
+    "experiment_concept": "Compare a long fictional disclosure with alternative summaries; restore omitted uncertainty and track whether an investment-relevant fact survives.",
+    "learning_outcome": "Compression, readability and faithful information preservation are different objectives.",
+    "caveat": "Full text is needed to identify the study's specific compression/evaluation protocol; summaries are labeled teaching examples.",
+    "score_components": {
+      "mechanism": 5,
+      "interaction": 5,
+      "misconception_transfer": 5,
+      "source_fidelity": 2,
+      "feasibility": 5,
+      "collection_value": 5
+    },
+    "score_total": 91,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4602452",
+    "proposed_exhibit_title": "The convincing stock picker and the unseen benchmark",
+    "experiment_concept": "Commit to a portfolio selection; reveal a broad benchmark, time split, costs and repeated trials before judging skill.",
+    "learning_outcome": "A plausible narrative and one favorable backtest are weak evidence of forecasting ability.",
+    "caveat": "Do not invent the paper's selection rules or reproduce its results from guessed data; source review is outstanding.",
+    "score_components": {
+      "mechanism": 4,
+      "interaction": 4,
+      "misconception_transfer": 5,
+      "source_fidelity": 1,
+      "feasibility": 5,
+      "collection_value": 4
+    },
+    "score_total": 77,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4376481",
+    "proposed_exhibit_title": "The ensemble vote and the threshold",
+    "experiment_concept": "Let three simple credit classifiers vote; change the approval threshold and show disagreements, recall and rejection costs.",
+    "learning_outcome": "A small gain in aggregate accuracy can conceal consequential changes in which errors occur.",
+    "caveat": "No real borrower data or approval decisions; verify SMOTE and split ordering before any empirical replication.",
+    "score_components": {
+      "mechanism": 4,
+      "interaction": 5,
+      "misconception_transfer": 5,
+      "source_fidelity": 2,
+      "feasibility": 5,
+      "collection_value": 4
+    },
+    "score_total": 84,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4464002",
+    "proposed_exhibit_title": "A news story draws an edge",
+    "experiment_concept": "Reveal a relation in a curated company news card; add/remove the inferred graph edge and trace one message-passing step into stock scores.",
+    "learning_outcome": "Relational structure can change a prediction even when each company's own features stay fixed.",
+    "caveat": "One propagation step is an interpretable teaching model, not a GNN backtest; inferred edges are not proof of causal supply-chain effects.",
+    "score_components": {
+      "mechanism": 5,
+      "interaction": 5,
+      "misconception_transfer": 5,
+      "source_fidelity": 4,
+      "feasibility": 4,
+      "collection_value": 5
+    },
+    "score_total": 95,
+    "score_provisional": false,
+    "read_status": "full_text_sections_reviewed",
+    "evidence_pages": [
+      1,
+      3,
+      6,
+      8
+    ],
+    "review_scope": "Selected physical pages and cited sections only; no assertion of complete appendix review",
+    "evidence_confidence": "medium",
+    "build_readiness": "needs_reproduction_work"
+  },
+  {
+    "ssrn_id": "4359926",
+    "proposed_exhibit_title": "What did the myopia score actually measure?",
+    "experiment_concept": "Compare two fictional MD&A passages, extract a text measure and place it beside financial asset allocation; inspect a possible confounder.",
+    "learning_outcome": "A text-derived managerial measure and an observational allocation association do not justify a causal dial.",
+    "caveat": "Read text construction and identification details; use a separate synthetic confounding model rather than inventing treatment effects.",
+    "score_components": {
+      "mechanism": 4,
+      "interaction": 4,
+      "misconception_transfer": 5,
+      "source_fidelity": 1,
+      "feasibility": 4,
+      "collection_value": 4
+    },
+    "score_total": 75,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4603206",
+    "proposed_exhibit_title": "The financial AI task triage desk",
+    "experiment_concept": "Choose a finance task and identify which errors are arithmetic, factual, temporal or judgmental; match a verification route.",
+    "learning_outcome": "Different financial tasks fail in different ways, so one generic accuracy promise is unhelpful.",
+    "caveat": "Review/commentary source rather than a calibrated predictive model; full-text claims still need checking.",
+    "score_components": {
+      "mechanism": 3,
+      "interaction": 4,
+      "misconception_transfer": 4,
+      "source_fidelity": 1,
+      "feasibility": 5,
+      "collection_value": 3
+    },
+    "score_total": 66,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4640316",
+    "proposed_exhibit_title": "The explanation and the counterfactual are not twins",
+    "experiment_concept": "Inspect a synthetic decision, switch the attribution background and compare it with an actual input intervention.",
+    "learning_outcome": "Post-hoc feature contribution is not necessarily the effect of changing that feature.",
+    "caveat": "Full text is unavailable; do not attach SHAP/LIME method labels until exact algorithms are implemented and verified.",
+    "score_components": {
+      "mechanism": 5,
+      "interaction": 5,
+      "misconception_transfer": 5,
+      "source_fidelity": 1,
+      "feasibility": 4,
+      "collection_value": 5
+    },
+    "score_total": 86,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "5263710",
+    "proposed_exhibit_title": "The architecture tournament with an honest time split",
+    "experiment_concept": "Select memory, attention and preprocessing choices for the same tiny forecasting problem; evaluate across regimes with a fixed baseline.",
+    "learning_outcome": "A model-family leaderboard depends on preprocessing, splits and forecast target.",
+    "caveat": "A survey does not prove a universal winning architecture; pre-proof cover/abstract inspected, detailed review remains provisional.",
+    "score_components": {
+      "mechanism": 4,
+      "interaction": 4,
+      "misconception_transfer": 5,
+      "source_fidelity": 2,
+      "feasibility": 4,
+      "collection_value": 4
+    },
+    "score_total": 78,
+    "score_provisional": true,
+    "read_status": "front_matter_only",
+    "evidence_pages": [
+      1
+    ],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4720591",
+    "proposed_exhibit_title": "Where did the time saving move the error?",
+    "experiment_concept": "Arrange extraction, reconciliation and approval nodes; inject an upstream classification error and observe downstream consequences.",
+    "learning_outcome": "Workflow automation can relocate rather than remove the need for judgment and verification.",
+    "caveat": "Broad narrative review; no calibrated efficiency gains or causal ESG outcomes should be invented.",
+    "score_components": {
+      "mechanism": 3,
+      "interaction": 4,
+      "misconception_transfer": 4,
+      "source_fidelity": 2,
+      "feasibility": 5,
+      "collection_value": 3
+    },
+    "score_total": 69,
+    "score_provisional": true,
+    "read_status": "front_matter_only",
+    "evidence_pages": [
+      1
+    ],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4399406",
+    "proposed_exhibit_title": "The hawk, the dove, and the disagreement",
+    "experiment_concept": "Commit to a policy-stance label, reveal human disagreement, then change negation/context and class prevalence in a confusion matrix.",
+    "learning_outcome": "Context and noisy labels matter; describing policy language is different from identifying an exogenous policy shock.",
+    "caveat": "Use curated original examples or rights-cleared excerpts; historical model labels stay historical and synthetic wording stays labeled.",
+    "score_components": {
+      "mechanism": 5,
+      "interaction": 5,
+      "misconception_transfer": 5,
+      "source_fidelity": 5,
+      "feasibility": 5,
+      "collection_value": 4
+    },
+    "score_total": 98,
+    "score_provisional": false,
+    "read_status": "full_text_sections_reviewed",
+    "evidence_pages": [
+      1,
+      6,
+      14,
+      20,
+      28,
+      30
+    ],
+    "review_scope": "Selected physical pages and cited sections only; no assertion of complete appendix review",
+    "evidence_confidence": "medium",
+    "build_readiness": "needs_reproduction_work"
+  },
+  {
+    "ssrn_id": "4409549",
+    "proposed_exhibit_title": "Change the scoring rule; change the winning forecaster",
+    "experiment_concept": "Compare forecasts across crypto assets, daily/weekly horizons and loss functions, keeping a simple baseline visible.",
+    "learning_outcome": "There need not be one best volatility model across assets, horizons and objectives.",
+    "caveat": "The source abstract explicitly reports model-dependent winners; full text and exact confidence-set calculation remain necessary.",
+    "score_components": {
+      "mechanism": 5,
+      "interaction": 5,
+      "misconception_transfer": 5,
+      "source_fidelity": 2,
+      "feasibility": 4,
+      "collection_value": 4
+    },
+    "score_total": 87,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4033165",
+    "proposed_exhibit_title": "You checked every row. Did you check the right thing?",
+    "experiment_concept": "Explore a complete synthetic ledger with a perfectly scored but omitted variable; compare coverage with error-detection validity.",
+    "learning_outcome": "Full-population testing eliminates sampling uncertainty only for the test actually performed.",
+    "caveat": "Verify the paper's scope before attributing this mechanism; the adversarial ledger is a teaching extension.",
+    "score_components": {
+      "mechanism": 5,
+      "interaction": 5,
+      "misconception_transfer": 5,
+      "source_fidelity": 2,
+      "feasibility": 5,
+      "collection_value": 5
+    },
+    "score_total": 91,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4431202",
+    "proposed_exhibit_title": "A fluent explanation that cannot balance the books",
+    "experiment_concept": "Solve an original accounting case, inspect identities and calculator outputs, then compare explanation quality with numerical correctness.",
+    "learning_outcome": "Explaining an accounting rule and producing correct statements are different capabilities.",
+    "caveat": "Seven-case findings and historical model versions cannot generalize to all models; no copying licensed teaching cases.",
+    "score_components": {
+      "mechanism": 5,
+      "interaction": 5,
+      "misconception_transfer": 5,
+      "source_fidelity": 2,
+      "feasibility": 5,
+      "collection_value": 4
+    },
+    "score_total": 89,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "3977051",
+    "proposed_exhibit_title": "Why did the robo-adviser give that weight?",
+    "experiment_concept": "Move correlated synthetic asset inputs; inspect a small portfolio optimizer and exact coalition attributions of a disclosed surrogate.",
+    "learning_outcome": "Attributing a portfolio weight is different from explaining the economic cause of a good investment.",
+    "caveat": "SSRN initial2021-12 is within window; full text is still needed for the exact surrogate and Shapley definitions.",
+    "score_components": {
+      "mechanism": 5,
+      "interaction": 5,
+      "misconception_transfer": 5,
+      "source_fidelity": 2,
+      "feasibility": 4,
+      "collection_value": 5
+    },
+    "score_total": 89,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4170455",
+    "proposed_exhibit_title": "Local explanation, global mistake",
+    "experiment_concept": "Fit a tiny smooth time-series predictor; move the explanation neighborhood and compare local linear fit with true model response.",
+    "learning_outcome": "A locally plausible explanation can be unstable or miss behavior outside its neighborhood.",
+    "caveat": "The proposed model is a teaching extension; exact preprocessing, LIME setup and empirical findings need full-text verification.",
+    "score_components": {
+      "mechanism": 5,
+      "interaction": 5,
+      "misconception_transfer": 5,
+      "source_fidelity": 1,
+      "feasibility": 4,
+      "collection_value": 4
+    },
+    "score_total": 84,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4855893",
+    "proposed_exhibit_title": "One technology badge, four different promises",
+    "experiment_concept": "Sort AI, deep learning, blockchain and ordinary automation claims by the failure they can actually address.",
+    "learning_outcome": "Combining technology names does not combine their guarantees or establish a measured benefit.",
+    "caveat": "Broad review with no full-text inspection; low-priority orientation map, not a centerpiece experiment.",
+    "score_components": {
+      "mechanism": 2,
+      "interaction": 3,
+      "misconception_transfer": 4,
+      "source_fidelity": 1,
+      "feasibility": 5,
+      "collection_value": 2
+    },
+    "score_total": 55,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4757296",
+    "proposed_exhibit_title": "Who gets the credit for a time-series forecast?",
+    "experiment_concept": "Shift a lagged signal and a correlated contemporaneous proxy; compare sequence-aware and static feature explanations.",
+    "learning_outcome": "Ignoring time dependence can change what an explanation means; predictive relevance is not causality.",
+    "caveat": "Paper abstract is verified; an exact Shapley-Lorenz implementation needs equations/full-text reading and ordering conventions.",
+    "score_components": {
+      "mechanism": 5,
+      "interaction": 5,
+      "misconception_transfer": 5,
+      "source_fidelity": 2,
+      "feasibility": 4,
+      "collection_value": 5
+    },
+    "score_total": 89,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4589203",
+    "proposed_exhibit_title": "Who is accountable when the financial robot fails?",
+    "experiment_concept": "Route the same fictional incident through customer, designer, firm and regulator responsibilities; change AI agency and consequence severity.",
+    "learning_outcome": "An explanation and a legal/ethical responsibility allocation answer different questions.",
+    "caveat": "Normative framework with context-dependent judgments; no invented legal conclusions or causal loss estimates.",
+    "score_components": {
+      "mechanism": 3,
+      "interaction": 4,
+      "misconception_transfer": 5,
+      "source_fidelity": 2,
+      "feasibility": 5,
+      "collection_value": 4
+    },
+    "score_total": 75,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "5329963",
+    "proposed_exhibit_title": "Read the dates before the optimization frontier",
+    "experiment_concept": "Compare the paper's printed2023 date with its stated review coverage through2024, then inspect what evidence would resolve the chronology.",
+    "learning_outcome": "Citation volume is not a substitute for source consistency or a reconstructable mechanism.",
+    "caveat": "The inspected front page contains a chronology inconsistency; hold this source for verification and do not build from its quantitative review claims.",
+    "score_components": {
+      "mechanism": 2,
+      "interaction": 3,
+      "misconception_transfer": 4,
+      "source_fidelity": 1,
+      "feasibility": 3,
+      "collection_value": 2
+    },
+    "score_total": 51,
+    "score_provisional": true,
+    "read_status": "front_matter_only",
+    "evidence_pages": [
+      1
+    ],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4450752",
+    "proposed_exhibit_title": "The invoice knows something the company rating misses",
+    "experiment_concept": "Distribute synthetic invoice records across three firms; compare firm-level risk, local learning and federated updates under unequal sample sizes.",
+    "learning_outcome": "Order-level targets and firm-level labels differ; combining data can help a sparse firm while disturbing a richer local model.",
+    "caveat": "Federated learning alone is not a formal privacy guarantee; paper's aerospace case is not evidence of universal default prediction improvements.",
+    "score_components": {
+      "mechanism": 5,
+      "interaction": 5,
+      "misconception_transfer": 5,
+      "source_fidelity": 4,
+      "feasibility": 4,
+      "collection_value": 5
+    },
+    "score_total": 95,
+    "score_provisional": false,
+    "read_status": "full_text_sections_reviewed",
+    "evidence_pages": [
+      1,
+      11
+    ],
+    "review_scope": "Selected physical pages and cited sections only; no assertion of complete appendix review",
+    "evidence_confidence": "medium",
+    "build_readiness": "needs_reproduction_work"
+  },
+  {
+    "ssrn_id": "4686248",
+    "proposed_exhibit_title": "A digital bank's alert budget",
+    "experiment_concept": "Allocate review capacity across synthetic anomalous login/transaction signals; compare detection coverage, false alarms and explainability.",
+    "learning_outcome": "A detector is one part of a security process; a method catalog does not prove bank-wide safety.",
+    "caveat": "This paper's overview is not a validated intrusion detector; keep all samples inert and no real security testing.",
+    "score_components": {
+      "mechanism": 3,
+      "interaction": 4,
+      "misconception_transfer": 4,
+      "source_fidelity": 2,
+      "feasibility": 5,
+      "collection_value": 3
+    },
+    "score_total": 69,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4403372",
+    "proposed_exhibit_title": "The promise-to-evidence sorting room",
+    "experiment_concept": "Choose a proposed financial use of ChatGPT and identify a falsifiable success measure, benchmark and failure condition.",
+    "learning_outcome": "Potential applications and demonstrated results should remain visibly different.",
+    "caveat": "Survey/commentary cannot support a live-advice or universal-efficiency claim; selected overview only.",
+    "score_components": {
+      "mechanism": 3,
+      "interaction": 3,
+      "misconception_transfer": 4,
+      "source_fidelity": 3,
+      "feasibility": 5,
+      "collection_value": 3
+    },
+    "score_total": 68,
+    "score_provisional": false,
+    "read_status": "full_text_sections_reviewed",
+    "evidence_pages": [
+      1,
+      2
+    ],
+    "review_scope": "Selected physical pages and cited sections only; no assertion of complete appendix review",
+    "evidence_confidence": "medium",
+    "build_readiness": "needs_reproduction_work"
+  },
+  {
+    "ssrn_id": "4516765",
+    "proposed_exhibit_title": "A topic label is a lens, not the text",
+    "experiment_concept": "Move disclosure snippets among small semantic clusters and compare alternative topic names.",
+    "learning_outcome": "Topic modeling helps organize text but its interpretation needs human validation.",
+    "caveat": "Metadata-based concept until full-text methods are inspected; do not present manually assigned clusters as the paper's learned topics.",
+    "score_components": {
+      "mechanism": 4,
+      "interaction": 4,
+      "misconception_transfer": 4,
+      "source_fidelity": 1,
+      "feasibility": 5,
+      "collection_value": 4
+    },
+    "score_total": 73,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  },
+  {
+    "ssrn_id": "4826002",
+    "proposed_exhibit_title": "A central bank reacted. Was it a shock?",
+    "experiment_concept": "Place a policy sentence next to preceding economic information; sort an anticipated response from an independent policy disturbance.",
+    "learning_outcome": "Language stance and causal monetary-policy identification are distinct estimands.",
+    "caveat": "The exact narrative identification and time controls need full text; causal sliders are explicitly synthetic counterexamples.",
+    "score_components": {
+      "mechanism": 5,
+      "interaction": 5,
+      "misconception_transfer": 5,
+      "source_fidelity": 2,
+      "feasibility": 4,
+      "collection_value": 5
+    },
+    "score_total": 89,
+    "score_provisional": true,
+    "read_status": "abstract_or_metadata_only",
+    "evidence_pages": [],
+    "review_scope": "Concept is a research hypothesis pending full-text method verification",
+    "evidence_confidence": "low",
+    "build_readiness": "needs_full_text"
+  }
+]

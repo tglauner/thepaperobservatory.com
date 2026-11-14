@@ -1,0 +1,103 @@
+{
+  "run_id": "finance-ai-2026-11-14",
+  "reading_is_separate_from_acquisition": true,
+  "sources": [
+    {
+      "ssrn_id": "4029950",
+      "title": "Textual Analysis in Accounting: What's Next?*",
+      "openalex_id": "https://openalex.org/W4296232960",
+      "reading_status": "not_read",
+      "attempts": [
+        {
+          "url": "https://bear.warrington.ufl.edu/tucker/2023%20CAR%20Textual%20Analysis%20in%20Accounting%20Whats%20Next.pdf",
+          "failure": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'bear.warrington.ufl.edu'. (_ssl.c:1028)>"
+        }
+      ],
+      "acquisition_status": "fulltext_unavailable"
+    },
+    {
+      "ssrn_id": "4528225",
+      "title": "From Fiction to Fact: The Growing Role of Generative AI in Business and Finance",
+      "openalex_id": "https://openalex.org/W4385738962",
+      "reading_status": "not_read",
+      "attempts": [
+        {
+          "url": "https://www.research.ed.ac.uk/files/374019625/ChenEtal2023JCEBSFromFictionToFact.pdf",
+          "failure": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "acquisition_status": "fulltext_unavailable"
+    },
+    {
+      "ssrn_id": "4452175",
+      "title": "Is it all hype? ChatGPT’s performance and disruptive potential in the accounting and auditing industries",
+      "openalex_id": "https://openalex.org/W4400091704",
+      "reading_status": "not_read",
+      "attempts": [],
+      "source_url": "https://www.econstor.eu/bitstream/10419/315410/1/11142_2024_Article_9833.pdf",
+      "resolved_url": "https://www.econstor.eu/bitstream/10419/315410/1/11142_2024_Article_9833.pdf",
+      "sha256": "c88c64f78be10da2f795115c20193543559f6cd1cdd903127159a64a2e045914",
+      "bytes": 1170014,
+      "acquisition_status": "text_extracted",
+      "physical_page_count": 33,
+      "extracted_characters": 108327
+    },
+    {
+      "ssrn_id": "4362034",
+      "title": "SAFE Artificial Intelligence in finance",
+      "openalex_id": "https://openalex.org/W4380758004",
+      "reading_status": "not_read",
+      "attempts": [
+        {
+          "url": "https://iris.unipv.it/retrieve/handle/11571/1496778.4/672526/SAFE_Artificial_Intelligence_in%20finance_FINANCE_RESEARCH_LETTERS_2023.pdf",
+          "failure": "response is not a valid PDF copy (HTML/challenge is not a paper)"
+        },
+        {
+          "url": "https://iris.unipv.it/retrieve/handle/11571/1496778.4/653116/FINANCE_RESEARCH_LETTERS_2023.pdf",
+          "failure": "response is not a valid PDF copy (HTML/challenge is not a paper)"
+        }
+      ],
+      "acquisition_status": "fulltext_unavailable"
+    },
+    {
+      "ssrn_id": "4408511",
+      "title": "Does artificial intelligence (AI) boost digital banking user satisfaction? Integration of expectation confirmation model and antecedents of artificial intelligence enabled digital banking",
+      "openalex_id": "https://openalex.org/W4385579627",
+      "reading_status": "not_read",
+      "attempts": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10432696/pdf/main.pdf",
+          "failure": "response is not a valid PDF copy (HTML/challenge is not a paper)"
+        }
+      ],
+      "acquisition_status": "fulltext_unavailable"
+    },
+    {
+      "ssrn_id": "4790321",
+      "title": "Artificial Intelligence in Auditing: A Conceptual Framework for Auditing Practices",
+      "openalex_id": "https://openalex.org/W4402994544",
+      "reading_status": "not_read",
+      "attempts": [],
+      "source_url": "https://academiamilitar.pt/images/site_images/noticias/Science/ssrn-4790321.pdf",
+      "resolved_url": "https://academiamilitar.pt/images/site_images/noticias/Science/ssrn-4790321.pdf",
+      "sha256": "69d7bf8d78217938d22f0105f8c729488b24ff6ab593eb5de848b30e91fa1071",
+      "bytes": 401933,
+      "acquisition_status": "text_extracted",
+      "physical_page_count": 21,
+      "extracted_characters": 114087
+    },
+    {
+      "ssrn_id": "3974946",
+      "title": "How do financial executives respond to the use of artificial intelligence in financial reporting and auditing?",
+      "openalex_id": "https://openalex.org/W4367603134",
+      "reading_status": "not_read",
+      "attempts": [
+        {
+          "url": "https://link.springer.com/content/pdf/10.1007/s11142-023-09771-y.pdf",
+          "failure": "response is not a valid PDF copy (HTML/challenge is not a paper)"
+        }
+      ],
+      "acquisition_status": "fulltext_unavailable"
+    }
+  ]
+}

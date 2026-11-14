@@ -67,6 +67,14 @@ For isolated local verification, use a local D1 database, run Wrangler dev with 
 
 ## Rollback and future rounds
 
+Verified release on 2026-11-14:
+
+- Website source `e03cd5467d84d9f58c7951aef371fb1af9cb1a78`; successful cloud CI run `43601912132`; Pages deployment `bcd141fc-b053-4e70-b1cd-19221b92f030` (`https://bcd141fc.thepaperobservatory.pages.dev`).
+- Worker version `e9f1a5c9-d1de-450e-8b49-9169c7db503b`.
+- All 150 native tests passed (46 collection/shared, 56 risk, 48 flow); all three production builds and the 153-file publication scan passed.
+- Real canonical-domain browser checks passed for saving three choices, preventing a fourth, restoring after reload, withdrawing, mobile layout, deep links, archive search/pagination and copying the share link. Production test ballots were withdrawn; no verification votes remain counted.
+- The library correlation experiment and controls in both existing companions changed their visible outputs in production.
+
 Keep the previous Pages release **575361ab-bbad-4762-9a9b-ddceafd49b79** available. Restore it through Cloudflare Pages rollback if the new website fails. The voting API is additive and independent; rolling back the static website does not require deleting ballots or the database. Use Worker deployment/version rollback for an API regression and preserve D1 data. Never "roll back" by dropping the database.
 
 For a new round, deliberately change the round ID, browser namespace and curated IDs in the shared definition, deploy the API and matching static artifact together, and retain or retire the previous round according to the stated retention policy. Do not silently change the meaning of an existing paper ID while retaining its votes.

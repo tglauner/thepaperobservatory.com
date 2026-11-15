@@ -14,9 +14,27 @@
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://thepaperobservatory.com/risk-on-off/" />
     <title>The Risk Observatory — See the bets beneath the assets</title>
+<style>
+.public-reading { max-width: 70rem; margin: 3rem auto; padding: 2rem clamp(1rem, 4vw, 3rem); background: #faf7ef; color: #193934; border-top: 3px solid #347d70; font: 1rem/1.75 Georgia, serif; overflow-wrap: anywhere; }
+.public-reading h2, .public-reading h3 { line-height: 1.3; color: #173b3a; }
+.public-reading h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
+.public-reading a { color: #095e66; text-decoration: underline; text-underline-offset: .18em; }
+.public-reading li { margin: .4rem 0; }
+</style>
   </head>
   <body>
     <div id="root"></div>
+<section class="public-reading" aria-labelledby="risk-reading-title">
+<h2 id="risk-reading-title">Portfolio risk, principal components and diversification</h2>
+<p>This educational companion explores <cite>Managing Risks in a Risk-On/Risk-Off Environment</cite>, a presentation by Marcos López de Prado. Its central distinction is between the amount of estimated portfolio variance and the distribution of that variance across underlying components. Holding several assets does not necessarily mean holding several independent sources of risk.</p>
+<h3>From asset weights to component risk</h3>
+<p>A covariance matrix describes the estimated variances of assets and how their returns move together. Principal-component analysis rotates that matrix into orthogonal directions. The variance of a portfolio can then be expressed as the sum of component contributions: each eigenvalue multiplied by the square of the portfolio's loading on that component. Under the chosen covariance model those component returns are uncorrelated; uncorrelated does not generally mean independent.</p>
+<p>Component shares of variance are nonnegative and sum to one when portfolio variance is positive. Their entropy can describe how concentrated the estimated risk is. The effective number of component bets is the exponential of that entropy. This measures the distribution of modeled variance, rather than the probability of a profit, a loss or a market crash.</p>
+<h3>Reading the experiments</h3>
+<p>The interactive labs let you inspect correlation geometry, component exposures and a shock to a selected component. Doubling a component's volatility quadruples its variance. Keep the portfolio normalization and the units of a shock explicit when comparing scenarios. A portfolio with lower baseline variance and one with more evenly distributed component risk answer different questions.</p>
+<p>The presentation is a conceptual framework for second-moment risk decomposition and scenario analysis. The site's visual experiments are educational reconstructions, not a live regime detector, return forecast, trading recommendation or out-of-sample performance claim. Estimated covariance and its eigenvectors can change over time.</p>
+<p>Read the <a href="https://ssrn.com/abstract=2150877">original research presentation on SSRN</a>. Continue with the <a href="/stochastic-flow-diagrams/">shock-propagation companion</a>, visit the <a href="/">paper library</a>, or explore <a href="/learn/">related learning resources</a>. This companion is AI-generated; source claims, teaching constructions and limitations are distinguished in the interactive notes.</p>
+</section>
     <script type="module" src="./src/main.jsx"></script>
   </body>
 </html>

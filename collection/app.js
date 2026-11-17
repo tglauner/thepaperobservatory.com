@@ -7,54 +7,36 @@ function element(tag, className, text) {
   return node;
 }
 
-// The first two entries have bespoke covers; later registry entries join the same collection.
+// Newly registered papers inherit the same compact navigation and source disclosure.
 const listedSlugs = new Set([...document.querySelectorAll('[data-paper]')].map(paper => paper.querySelector('a').getAttribute('href').split('/')[1]));
-for (const [index, paper] of catalog.entries()) {
+for (const paper of catalog) {
   if (listedSlugs.has(paper.slug)) continue;
   const subjects = [];
   if (paper.tags.some(tag => /finance|portfolio|risk|economics/i.test(tag))) subjects.push('finance');
   else subjects.push('beyond');
   if (paper.tags.some(tag => /mathemat|foundation|linear algebra|dynamic system|statistics/i.test(tag))) subjects.push('foundations');
-  const card = element('article', 'paper-card paper-generic');
+  const card = element('article', 'paper-card');
   card.dataset.paper = '';
   card.dataset.subjects = subjects.join(' ');
-  card.dataset.search = [paper.title, paper.paperTitle, paper.authors, paper.summary, paper.ssrnId, ...paper.tags].join(' ');
-  const visual = element('a', 'card-visual generic-visual');
-  visual.href = `/${paper.slug}/`;
-  visual.setAttribute('aria-label', `Explore ${paper.paperTitle}`);
-  const label = element('span', 'visual-label', String(index + 1).padStart(3, '0'));
-  label.append(element('span', '', 'A NEW PERSPECTIVE'));
-  visual.append(label);
-  const diagram = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-  diagram.setAttribute('viewBox', '0 0 560 300');
-  diagram.setAttribute('aria-hidden', 'true');
-  const paths = [['ellipse', { cx: 280, cy: 150, rx: 155, ry: 65 }], ['ellipse', { cx: 280, cy: 150, rx: 65, ry: 115 }], ['circle', { cx: 280, cy: 150, r: 115 }], ['path', { d: 'M85 150H475M280 32V268' }], ['circle', { cx: 280, cy: 150, r: 5 }]];
-  for (const [tag, attributes] of paths) {
-    const shape = document.createElementNS('http://www.w3.org/2000/svg', tag);
-    for (const [key, value] of Object.entries(attributes)) shape.setAttribute(key, value);
-    diagram.append(shape);
-  }
-  visual.append(diagram, element('span', 'visual-caption', 'RESEARCH, MADE EXPLORABLE.'), element('span', 'visual-arrow', '↗'));
-  const body = element('div', 'card-body');
-  const tags = element('div', 'card-tags');
-  for (const tag of paper.tags.slice(0, 2)) tags.append(element('span', '', tag.toUpperCase()));
-  tags.append(element('span', '', `${paper.labs} LABS`));
-  const heading = element('h3');
-  const titleLink = element('a', '', paper.paperTitle);
-  titleLink.href = `/${paper.slug}/`;
-  heading.append(titleLink);
-  const source = element('div', 'paper-source');
-  source.append(element('span', 'source-eyebrow', 'BASED ON THE RESEARCH'), element('strong', '', paper.paperTitle), element('span', '', `${paper.authors}${paper.year ? ` · ${paper.year}` : ''}`));
-  const footer = element('div', 'card-footer');
-  const explore = element('a', 'explore', `Enter ${paper.title.replace(/^The /, 'the ')} `);
-  explore.href = `/${paper.slug}/`;
-  explore.append(element('span', '', '↗'));
-  const original = element('a', 'source-link', `SSRN ${paper.ssrnId} ↗`);
+  card.dataset.search = [paper.title, paper.paperTitle, paper.authors, paper.summary, paper.sourceRef, ...paper.tags].join(' ');
+  const link = element('a', 'model-link');
+  link.href = `/${paper.slug}/`;
+  const code = element('span', 'model-code', 'NEW');
+  code.setAttribute('aria-hidden', 'true');
+  const copy = element('span', 'model-copy');
+  copy.append(element('strong', '', paper.title.replace(/^The /, '').replace(/ Observatory$/, '')), element('span', '', paper.summary));
+  const arrow = element('span', 'model-arrow', '↗');
+  arrow.setAttribute('aria-hidden', 'true');
+  link.append(code, copy, arrow);
+  const source = element('details', 'paper-source');
+  const summary = element('summary');
+  summary.append(element('span', 'sr-only', `${paper.paperTitle} paper `), document.createTextNode('Source'));
+  const citation = element('div');
+  const original = element('a', '', `${paper.sourceLabel} · Original source ↗`);
   original.href = sourceUrl(paper.slug);
-  original.setAttribute('aria-label', `Original ${paper.paperTitle} on SSRN`);
-  footer.append(explore, original);
-  body.append(tags, heading, element('p', '', paper.summary), source, footer);
-  card.append(visual, body);
+  citation.append(element('p', '', paper.summary), element('strong', '', paper.paperTitle), element('p', '', `${paper.authors}${paper.year ? ` · ${paper.year}` : ''}`), original);
+  source.append(summary, citation);
+  card.append(link, source);
   document.querySelector('.paper-grid').append(card);
 }
 
@@ -64,6 +46,8 @@ const papers = [...document.querySelectorAll('[data-paper]')];
 const resultCount = document.querySelector('[data-result-count]');
 const emptyState = document.querySelector('[data-empty-state]');
 const emptyDescription = document.querySelector('[data-empty-description]');
+const filterDisclosure = document.querySelector('.filter-disclosure');
+const subjectLabels = { all: 'Filter', finance: 'Finance', foundations: 'Foundations', beyond: 'Beyond finance' };
 let activeSubject = 'all';
 document.querySelector('[data-filter="all"] span').textContent = String(papers.length).padStart(2, '0');
 
@@ -82,6 +66,7 @@ function updateCatalog() {
     if (matches) count += 1;
   }
   resultCount.textContent = `${count} ${count === 1 ? 'paper' : 'papers'}`;
+  filterDisclosure.querySelector('summary').textContent = activeSubject === 'all' ? 'Filter' : `Filter: ${subjectLabels[activeSubject]}`;
   emptyState.hidden = count !== 0;
   emptyDescription.textContent = activeSubject === 'beyond' && terms.length === 0
     ? 'The collection begins with finance and mathematical foundations. Exceptional visual research from other fields will have a home here as the collection grows.'
@@ -98,6 +83,8 @@ for (const filter of filters) {
   filter.addEventListener('click', () => {
     activeSubject = filter.dataset.filter;
     updateCatalog();
+    document.querySelector('.filter-disclosure').open = false;
+    document.querySelector('.filter-disclosure > summary').focus();
   });
 }
 document.querySelector('[data-clear-filters]').addEventListener('click', () => {
@@ -105,6 +92,13 @@ document.querySelector('[data-clear-filters]').addEventListener('click', () => {
   search.value = '';
   updateCatalog();
   search.focus({ preventScroll: true });
+});
+
+filterDisclosure.addEventListener('keydown', event => {
+  if (event.key === 'Escape') {
+    filterDisclosure.open = false;
+    filterDisclosure.querySelector('summary').focus();
+  }
 });
 
 const correlation = document.querySelector('#hero-correlation');

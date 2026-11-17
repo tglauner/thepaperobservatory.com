@@ -33,7 +33,7 @@ export function PaperContinuation({ slug }) {
     catch { setManualLink(true); setShareStatus("Select and copy the link below."); }
   }
   return <section className="observatory-continuation" aria-label="Continue learning">
-    <div className="observatory-provenance"><span>AI-GENERATED · SOURCE-LINKED</span><p>An original educational companion to <em>{paper.paperTitle}</em> by {paper.authors}. Read the <a href={sourceUrl(slug)} target="_blank" rel="noreferrer">original on SSRN</a> and the <a href="/about/#method">generation method</a>.</p></div>
+    <div className="observatory-provenance"><span>AI-GENERATED · SOURCE-LINKED</span><p>An original educational companion to <em>{paper.paperTitle}</em> by {paper.authors}. Read the <a href={sourceUrl(slug)} target="_blank" rel="noreferrer">original source</a> and the <a href="/about/#method">generation method</a>.</p></div>
     <div className="observatory-next-grid">
       {related && <a className="observatory-next-card" href={`/${related.slug}/`}><span>EXPLORE ANOTHER PAPER</span><h2>{related.title} <b aria-hidden="true">↗</b></h2><p>{related.summary}</p><small>{related.labs} interactive experiments · Foundation + Advanced</small></a>}
       {course && <div className="observatory-course-card"><span>CONTINUE WITH A PAID COURSE</span><h2>{course.title}</h2><p>{course.description}</p><a href={campaignUrl(course.url, { campaign: slug, content: "paper-footer" })} rel="sponsored noopener" target="_blank">Explore the course ↗</a><small>Offered by this site's publisher, TG Investments and Research. Enrollment is optional.</small></div>}

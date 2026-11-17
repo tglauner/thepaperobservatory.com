@@ -1,0 +1,18 @@
+{
+  "revision": 1,
+  "hook": "Price comes from replication, not a stock forecast.",
+  "narration": "How do you price an option without guessing which way the stock will go? In Black and Scholes' idealized model, build the call from shares and borrowing. Delta tells you how many shares to hold, and you adjust that position as the stock moves. The expected stock return drops out of the price; volatility does not. Try the same synthetic path with different hedge frequencies. Replication improves in the continuous-trading limit, but one path's error need not fall at every step. Then see the same payoff inside a firm: equity is a call on its assets, with debt face value as the strike.",
+  "shots": [
+    { "seconds": 6, "view": "#pricing", "cue": "Raise volatility and show the call value and delta updating." },
+    { "seconds": 7, "view": "#pricing", "cue": "Point to the shares plus cash replication identity." },
+    { "seconds": 9, "view": "#hedging", "cue": "Compare four and 256 hedge intervals on the same path, then the ensemble RMS error; qualify single-path behavior." },
+    { "seconds": 7, "view": "#liabilities", "cue": "Lower firm assets below the debt face value. Equity goes to zero and debt absorbs the remaining assets." }
+  ],
+  "carousel": [
+    "A stock forecast is absent from the Black-Scholes call formula.",
+    "Shares plus borrowing replicate the option under idealized assumptions.",
+    "A discrete hedge still has error; continuous trading is a limit, not a real-world trading schedule.",
+    "Equity is a call on firm assets in the paper's simple debt structure."
+  ],
+  "hashtags": ["BlackScholes", "Options", "DeltaHedging", "QuantFinance"]
+}

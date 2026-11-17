@@ -1,0 +1,99 @@
+{
+  "job_id": "black-scholes-1973-local-20261117",
+  "type": "paper-companion",
+  "status": "validated-local",
+  "source_acquired_at": "2026-11-17T22:31:21.140Z",
+  "validated_at": "2026-11-17T22:45:12.181Z",
+  "error": null,
+  "logs_path": "papers/black-scholes/output/",
+  "paper": {
+    "slug": "black-scholes",
+    "doi": "10.1086/260062",
+    "ssrn_id": null,
+    "publication": "Journal of Political Economy 81(3), 637–654 (1973)",
+    "source_url": "https://www.sfu.ca/~kkasa/BlackScholes_73.pdf",
+    "source_sha256": "5330ad899867327efd228ad4364a31f804ccdccb84527db29bc367859d6bce9f",
+    "physical_pages": 19,
+    "printed_page_offset": 635,
+    "redistribution": "not established; private source excluded from public Git and artifact"
+  },
+  "generation": {
+    "execution": "shared Mac workspace for requested local owner review",
+    "initial_design_agent_configuration": {
+      "model": "gpt-6.1-sol",
+      "reasoning": "ultra",
+      "spawn_succeeded": true,
+      "runtime_independently_attested": false
+    },
+    "implementation_runtime": "current Codex session; exact host model/reasoning identifier not exposed",
+    "base_commit": "a16d7cb54a8583e4de6952641680a571220f84fe",
+    "worktree": "uncommitted changes, including preserved pre-existing work",
+    "cloud_ci": null,
+    "published": false
+  },
+  "validation": {
+    "native": {
+      "command": "npm test",
+      "passed": 194,
+      "failed": 0
+    },
+    "build": {
+      "command": "npm run build",
+      "paper_workspaces": 5,
+      "collection": true,
+      "status": "passed"
+    },
+    "publication": {
+      "command": "npm run cloud:verify",
+      "files": 167,
+      "status": "passed"
+    },
+    "browser": {
+      "new_exhibit_checks": 30,
+      "status": "passed",
+      "coverage": [
+        "pricing controls and reset",
+        "zero volatility and expiry",
+        "keyboard focus",
+        "same path across hedge frequencies",
+        "new seed and drift",
+        "liability allocation and reset",
+        "quiz feedback and reset",
+        "independent Foundation/Advanced persistence",
+        "390px mobile viewport",
+        "reduced motion",
+        "library search and entry",
+        "no browser exceptions or console errors"
+      ],
+      "existing_exhibit_regressions": {
+        "status": "passed",
+        "routes": [
+          "risk-on-off/#geometry",
+          "stochastic-flow-diagrams/#impulse",
+          "sabr-smile-risk/",
+          "hjm/"
+        ],
+        "checks": [
+          "HTTP and rendered headings",
+          "interactive slider responds",
+          "390px viewport without horizontal overflow",
+          "no browser exceptions"
+        ]
+      },
+      "no_javascript_reading_guide": "passed",
+      "final_legend_and_replication_display": "passed"
+    }
+  },
+  "artifacts": {
+    "paths_relative_to": "repository root",
+    "paper_build": "papers/black-scholes/dist/",
+    "collection_build": "dist/",
+    "screenshots": "papers/black-scholes/output/playwright/",
+    "preview": "http://127.0.0.1:4173/black-scholes/"
+  },
+  "limits": [
+    "Synthetic educational reconstructions, not market calibration",
+    "Continuous trading is a model limit; discrete path errors need not be monotone",
+    "No public PDF redistribution or production publication"
+  ]
+}

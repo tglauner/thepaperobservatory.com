@@ -17,20 +17,28 @@ test('the site identity pins cloud design without claiming a fallback model', ()
   assert.equal(new URL(site.repository).hostname, 'github.com');
 });
 test('catalog identifiers, namespaces and ports cannot collide', () => {
-  for (const key of ['slug','ssrnId','devPort','previewPort']) assert.equal(new Set(papers.map(p => p[key])).size, papers.length, key);
+  for (const key of ['slug','sourceRef','devPort','previewPort']) assert.equal(new Set(papers.map(p => p[key])).size, papers.length, key);
   for (const paper of papers) {
     assert.match(paper.slug,/^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$/);
     assert.match(paper.sourceHash,/^[a-f0-9]{64}$/);
+    assert.ok(paper.sourceLabel && paper.canonicalSourceUrl);
     assert.ok(!['learn','channels','privacy','about','assets','next'].includes(paper.slug));
     assert.ok(paper.sourcePages > 0 && paper.labs > 0);
   }
 });
-test('public source links point to the exact SSRN record without redistributing PDFs', () => {
+test('public source links use each paper’s canonical record without redistributing source PDFs', () => {
   for (const paper of papers) {
-    const url = new URL(sourceUrl(paper.slug, paper.sourcePages));
-    assert.equal(url.hostname,'papers.ssrn.com');
-    assert.equal(url.searchParams.get('abstract_id'),paper.ssrnId);
-    assert.ok(!url.pathname.endsWith('.pdf'));
+    const url = new URL(sourceUrl(paper.slug));
+    assert.equal(url.href,paper.canonicalSourceUrl);
+    if (paper.ssrnId) {
+      assert.equal(url.hostname,'papers.ssrn.com');
+      assert.equal(url.searchParams.get('abstract_id'),paper.ssrnId);
+      assert.ok(!url.pathname.endsWith('.pdf'));
+    }
+    const pageUrl = new URL(sourceUrl(paper.slug, paper.sourcePages));
+    if (url.pathname.toLowerCase().endsWith('.pdf'))
+      assert.equal(pageUrl.hash,`#page=${paper.sourcePages}`);
+    else assert.equal(pageUrl.href,url.href);
   }
 });
 test('local reading links retain physical PDF page numbers', () => {
@@ -75,9 +83,9 @@ test('social packs are deterministic source-attributed drafts with channel-speci
     const pack=socialPack(paper);
     assert.deepEqual(pack,socialPack(paper));
     assert.equal(pack.source_hash,paper.sourceHash);
-    assert.equal(pack.source_doc_ref,`SSRN:${paper.ssrnId}`);
+    assert.equal(pack.source_doc_ref,paper.sourceRef);
     assert.equal(pack.status,'draft');
-    assert.match(pack.asset_id,/^social-\d+-[a-f0-9]{12}$/);
+    assert.match(pack.asset_id,new RegExp(`^social-${paper.slug}-[a-f0-9]{12}$`));
     for (const [channel,item] of Object.entries(pack.channels)) {
       const url=new URL(item.url);
       assert.equal(url.origin,site.origin);

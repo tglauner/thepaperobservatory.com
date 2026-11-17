@@ -1,0 +1,18 @@
+{
+  "revision": 1,
+  "hook": "Choose the forward-rate volatility. No-arbitrage then constrains the curve's drift.",
+  "narration": "In many short-rate models, one number has to generate an entire yield curve. Heath, Jarrow, and Morton flipped the starting point: model the whole forward curve across maturities. Once you choose how its volatility factors move, no-arbitrage constrains the risk-neutral drift. The HJM framework is foundational to modern arbitrage-free forward-rate models; the late-1990s LIBOR Market Model is a direct descendant, though not every stochastic-rate model comes from HJM. This interactive curve uses synthetic loadings and shocks, not market calibration.",
+  "shots": [
+    { "seconds": 5, "view": "#experiment", "cue": "Show the editable forward curve and explain that each point is a maturity." },
+    { "seconds": 7, "view": "#experiment", "cue": "Change the volatility shape, then compare the one-factor and two-factor paths." },
+    { "seconds": 6, "view": "#experiment", "cue": "Send a synthetic shock to the five-year forward and watch the curve respond." },
+    { "seconds": 6, "view": "#source", "cue": "Show the risk-neutral drift condition and clarify that HJM does not determine volatility or absorb every short-rate model." }
+  ],
+  "carousel": [
+    "A short rate is one number; a forward curve is a whole maturity structure.",
+    "HJM models that whole curve directly.",
+    "Choose the volatility factors, and the risk-neutral no-arbitrage condition constrains the drift.",
+    "HJM is foundational to the modern arbitrage-free forward-rate framework; BGM/LMM is a direct descendant, not proof that every rate model is HJM-derived."
+  ],
+  "hashtags": ["HJM", "InterestRates", "FixedIncome", "QuantFinance"]
+}

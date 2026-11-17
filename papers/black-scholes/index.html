@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f6f3e9" />
+  <meta name="description" content="Explore Black and Scholes (1973): price an option through replication, rebalance a delta hedge and see why equity is a call on the firm." />
+  <link rel="icon" href="/black-scholes/favicon.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://thepaperobservatory.com/black-scholes/" />
+  <title>The Black–Scholes Observatory — Replicate. Don’t Predict.</title>
+</head>
+<body>
+  <div id="root"></div>
+  <section class="public-reading" aria-labelledby="reading-title">
+    <details>
+      <summary id="reading-title">Reading guide to the original Black–Scholes paper</summary>
+      <h2>The Pricing of Options and Corporate Liabilities</h2>
+      <p>Fischer Black and Myron Scholes, <em>Journal of Political Economy</em> 81(3), 1973, pp. 637–654. <a href="https://doi.org/10.1086/260062">Publisher record and DOI</a> · <a href="https://www.sfu.ca/~kkasa/BlackScholes_73.pdf">University-hosted reading copy</a> · <a href="/">Return to the paper library</a>.</p>
+      <p>The central mechanism is replication. Under the paper’s idealized assumptions, a continuously adjusted stock position and a cash account can reproduce a European option. No arbitrage then ties the option’s value to the cost of that strategy. The stock’s expected return disappears from the pricing equation; its volatility remains an essential input. The result depends on the model, rather than on a claim that all real-world options have one observable market price.</p>
+      <p>Read the market assumptions on printed page 640, then the hedge and differential equation on pages 641–643. The closed-form call formula appears on page 644, with the hedge ratio on page 645. The formula uses a stock paying no dividends, constant volatility, a constant risk-free rate, continuous stock paths, frictionless trading and the ability to borrow and sell short. European put–call parity appears on page 647.</p>
+      <p>The second half connects corporate liabilities to options. For a firm with one zero-coupon debt issue, equity pays the assets remaining after debt is repaid. That is the payoff of a call on firm assets, with debt face value as the strike. Debt receives the smaller of firm assets and its face value. Read pages 649–650, then the qualifications for more complicated liabilities on pages 651–652.</p>
+      <p>This PDF has a cover page: printed page 637 is physical PDF page 2. Add the cover when following page references. The interactive diagrams and seeded delta-hedging paths above are new educational reconstructions. More frequent rebalancing illustrates convergence under the model; it does not guarantee a smaller absolute error on every individual path. The original PDF is preserved privately and is not included in the public site artifact.</p>
+    </details>
+  </section>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>

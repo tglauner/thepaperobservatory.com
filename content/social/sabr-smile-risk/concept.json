@@ -1,0 +1,18 @@
+{
+  "revision": 1,
+  "hook": "A volatility smile can fit today and still move the wrong way tomorrow.",
+  "narration": "In 2002, Hagan and coauthors introduced SABR as a way to think about both the shape of an option smile and how it moves when a forward rate changes. Move alpha, beta, rho, and nu, then shock the forward. In the paper's comparison, local-volatility dynamics shift the smile opposite to observed behavior, while correlated stochastic volatility gives SABR a different motion. This is a qualitative teaching experiment, not a market calibration or a Dupire repricing.",
+  "shots": [
+    { "seconds": 5, "view": "#experiment", "cue": "Show the starting smile and the four named parameter controls." },
+    { "seconds": 7, "view": "#experiment", "cue": "Send the forward down one standard deviation; keep both model curves on the same strike axis." },
+    { "seconds": 6, "view": "#source", "cue": "Contrast the qualitative local-volatility direction with the correlated SABR smile." },
+    { "seconds": 5, "view": "#source", "cue": "State that the local-volatility curve is a directional sketch, not a PDE repricing." }
+  ],
+  "carousel": [
+    "A smile is a curve of implied volatility across option strikes.",
+    "Matching that curve today does not guarantee plausible movement tomorrow.",
+    "SABR lets the forward and its volatility factor move together.",
+    "The paper's local-volatility comparison is about dynamics and hedging—not a universal rejection of local volatility."
+  ],
+  "hashtags": ["SABR", "InterestRates", "Options", "QuantFinance"]
+}

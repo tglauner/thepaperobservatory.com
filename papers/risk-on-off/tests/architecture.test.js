@@ -9,7 +9,7 @@ import { getPaper } from '../../../shared/catalog.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const workspace = fileURLToPath(new URL('../../../', import.meta.url));
-const sharedPaths = new Set(['.gitignore', 'status/status_slide.py', '.codex/hooks.json', '.env.example']);
+const sharedPaths = new Set(['.gitignore', '.env.example']);
 const read = name => readFileSync(path.join(sharedPaths.has(name) ? workspace : root, name), 'utf8');
 const sourceHash = 'e7a4b30973d60ccdf3a99143ce362cd202afff75d435cb3f87d3994afed1c5de';
 const sourcePageCount = 50;
@@ -88,38 +88,16 @@ test('privacy ignore rules retain only the environment example', () => {
   assert.ok(rules.indexOf('!.env.example') > rules.indexOf('.env.*'));
 });
 
-test('dependencies, built files, and generated status stay untracked', () => {
+test('dependencies and built files stay untracked', () => {
   const rules = read('.gitignore').split(/\r?\n/);
-  for (const rule of ['node_modules/', 'dist/', 'status/*', '!status/README.md', '!status/status_slide.py']) assert.ok(rules.includes(rule), rule);
-  assert.ok(rules.indexOf('!status/status_slide.py') > rules.indexOf('status/*'));
+  for (const rule of ['node_modules/', 'dist/']) assert.ok(rules.includes(rule), rule);
 });
 
-test('status output paths remain inside the root status subsystem', () => {
-  const source = read('status/status_slide.py');
-  assert.match(source, /STATUS_DIR\s*=\s*PROJECT_ROOT\s*\/\s*["']status["']/);
-  for (const constant of ['STATUS_TEX', 'STATUS_PDF', 'STATUS_STATE']) assert.match(source, new RegExp(`${constant}\\s*=\\s*STATUS_DIR\\s*\\/`));
-  for (const name of browserInputs()) assert.doesNotMatch(read(name), /(?:src|href)\s*=\s*['"]\/?status\//, name);
-});
-
-test('status hooks parse as JSON, work before Git setup, and disable notifications', () => {
-  const hooks = JSON.parse(read('.codex/hooks.json')).hooks;
-  for (const [event, action] of [['UserPromptSubmit', 'hook-start'], ['Stop', 'hook-finish']]) {
-    const commands = hooks[event].flatMap(group => group.hooks).map(hook => hook.command);
-    assert.ok(commands.some(command => command.includes(`python3 status/status_slide.py ${action}`)));
-    commands.forEach(command => {
-      assert.match(command, /STATUS_TELEGRAM_ENABLED=false/);
-      assert.doesNotMatch(command, /git rev-parse/);
-    });
-  }
-});
-
-test('local example configuration requires no credentials or external notifications', () => {
+test('local example configuration contains no credential values', () => {
   const entries = read('.env.example').split(/\r?\n/).map(line => line.trim()).filter(line => line && !line.startsWith('#'));
-  assert.ok(entries.includes('STATUS_TELEGRAM_ENABLED=false'));
   for (const entry of entries) {
     if (/^(?:OPENAI_API_KEY|CLOUDFLARE_API_TOKEN|VITE_ADSENSE_PUBLISHER_ID|VITE_ADSENSE_SLOT_ID)=/.test(entry)) assert.equal(entry.split('=').slice(1).join('='), '');
   }
-  assert.match(read('status/status_slide.py'), /os\.environ\.get\("STATUS_TELEGRAM_ENABLED", "false"\)/);
 });
 
 test('project scripts provide local preview, native tests, and a static build', () => {

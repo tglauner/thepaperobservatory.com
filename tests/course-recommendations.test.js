@@ -15,8 +15,12 @@ test('the risk paper recommends FRTB independently of catalog order', () => {
   }
 });
 
-test('the flow paper and unassigned papers do not receive a forced recommendation', () => {
+test('the flow paper remains unassigned while SABR and HJM recommend the rates course', () => {
   assert.equal(recommendedCourseForPaper('stochastic-flow-diagrams'), null);
+  assert.equal(recommendedCourseForPaper('sabr-smile-risk').id, 'rates');
+  assert.equal(recommendedCourseForPaper('sabr-smile-risk').url, 'https://tglauner.com/mastering_interest_rate_derivatives/');
+  assert.equal(recommendedCourseForPaper('hjm').id, 'rates');
+  assert.equal(recommendedCourseForPaper('black-scholes').id, 'rates');
   assert.equal(recommendedCourseForPaper('future-paper'), null);
   assert.equal(recommendedCourseForPaper('constructor'), null);
 });

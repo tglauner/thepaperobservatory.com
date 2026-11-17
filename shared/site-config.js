@@ -18,6 +18,9 @@ export const courses = Object.freeze([
 const recommendedCourses = Object.freeze({
   "risk-on-off": "frtb",
   "stochastic-flow-diagrams": null,
+  "sabr-smile-risk": "rates",
+  "hjm": "rates",
+  "black-scholes": "rates",
 });
 
 export function recommendedCourseForPaper(slug, catalog = courses) {

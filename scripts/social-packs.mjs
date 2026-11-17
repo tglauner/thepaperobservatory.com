@@ -9,7 +9,7 @@ export function socialPack(paper) {
   if (!concept) throw new Error(`No source-grounded social concept registered for ${paper.slug}.`);
   const base = `${site.origin}/${paper.slug}/`;
   const draft = {
-    paper: paper.slug, source_doc_ref: `SSRN:${paper.ssrnId}`, source_hash: paper.sourceHash,
+    paper: paper.slug, source_doc_ref: paper.sourceRef, source_hash: paper.sourceHash,
     title: concept.hook, status: "draft", disclosure: "AI-generated educational explanation; synthetic or reconstructed models; no investment recommendations.",
     format: { video: "9:16 MP4, H.264 + AAC", thumbnail: "PNG", captions: "SRT or VTT" },
     narration: concept.narration, shots: concept.shots, carousel: concept.carousel,
@@ -21,7 +21,7 @@ export function socialPack(paper) {
     publication: "Not posted. Review the source claims and captions before publishing through the owner's account.",
   };
   const hash = createHash("sha256").update(JSON.stringify(draft)).digest("hex");
-  return { asset_id: `social-${paper.ssrnId}-${hash.slice(0, 12)}`, type: "social-draft-pack", revision: concept.revision, hash, ...draft };
+  return { asset_id: `social-${paper.slug}-${hash.slice(0, 12)}`, type: "social-draft-pack", revision: concept.revision, hash, ...draft };
 }
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   for (const directory of ["content/social", "collection/public/share-packs"]) mkdirSync(new URL(`../${directory}/`, import.meta.url), { recursive: true });

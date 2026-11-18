@@ -13,7 +13,7 @@
       "priority": 2,
       "status": "pending",
       "outcome": "Verify the three course destinations and onward enrollment links, current offers and a tagged Risk-to-FRTB journey. Separate observed clicks from unverified purchases.",
-      "evidence": "2026-11-12: Cloud browser verified the live Risk footer opens the matching FRTB page with outbound campaign parameters, and the live Flow footer has no course recommendation. Three TGIR pages and matching Udemy destinations opened on 2026-11-11. Tagged inbound attribution, coupon validity and retained earnings remain unverified."
+      "evidence": "2026-11-12: Cloud browser verified the live Risk footer opens the matching FRTB page with outbound campaign parameters, and the live Flow footer has no course recommendation. Three TGIR pages and matching Udemy destinations opened on 2026-11-11. Tagged inbound attribution, coupon validity and retained earnings remain unverified. 2026-11-15: Added an explicitly disclosed FRTB continuation to the Risk static reading guide, with a distinct placement tag; pending CI and browser verification."
     },
     {
       "id": "funnel-measurement",

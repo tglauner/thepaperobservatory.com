@@ -31,8 +31,9 @@
     {
       "id": "search-discovery",
       "priority": 5,
-      "status": "pending",
-      "outcome": "Improve learner-question discovery and verify canonical URLs, crawlable explanations and sitemap consistency. Check Search Console only if its account is connected."
+      "status": "in_progress",
+      "outcome": "Improve learner-question discovery and verify canonical URLs, crawlable explanations and sitemap consistency. Check Search Console only if its account is connected.",
+      "evidence": "2026-11-19: Added a source-grounded, crawlable HJM reading guide with educational limitations and course-library link on agent/growth-2026-11-19; build, browser checks, PR and deployment remain pending. Canonical and sitemap verification remains open."
     },
     {
       "id": "demand-review",

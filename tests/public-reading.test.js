@@ -18,6 +18,7 @@ test('hjm: reading guide remains available without JavaScript and explains its l
   const html = readFileSync(new URL('../papers/hjm/index.html', import.meta.url), 'utf8');
   const guide = html.match(/<section aria-labelledby="hjm-reading-guide"[\s\S]*?<\/section>/)?.[0];
   assert.ok(guide, 'static reading guide is present');
+  assert.match(html, /<link rel="canonical" href="https:\/\/thepaperobservatory\.com\/hjm\/"\s*\/>/);
   assert.match(html, /<div id="root"><\/div>\s*<section aria-labelledby="hjm-reading-guide"/);
   assert.doesNotMatch(guide, /<noscript|hidden|display:\s*none|<script/i);
   assert.match(guide, /risk-neutral measure/i);

@@ -31,8 +31,9 @@
     {
       "id": "search-discovery",
       "priority": 5,
-      "status": "pending",
-      "outcome": "Improve learner-question discovery and verify canonical URLs, crawlable explanations and sitemap consistency. Check Search Console only if its account is connected."
+      "status": "in_progress",
+      "outcome": "Improve learner-question discovery and verify canonical URLs, crawlable explanations and sitemap consistency. Check Search Console only if its account is connected.",
+      "evidence": "2026-11-19: Added a source-grounded, crawlable HJM reading guide with educational limitations and course-library link on agent/growth-2026-11-19; build, browser checks, PR and deployment remain pending. Canonical and sitemap verification remains open. 2026-11-20: Added an HJM source/privacy and JavaScript-independent reading-guide check; all three public-reading tests passed locally (a7922791d57175368d11e072a17b8ec0452544e0). Full build, publication scan and visual checks remain unverified. 2026-11-21: Added canonical HJM URL, consistent with generated sitemap; seven focused public-reading and course-scope tests passed locally (source b3f9f0a7f2b99027f4aa334f6322ba9c1862f573; test 860ca116ea0027c211c7f06d4eb4abcb02a89cba). Full build, artifact scan, visual checks and PR remain pending."
     },
     {
       "id": "demand-review",

@@ -8,6 +8,7 @@ The owner requested independent monetization work and a daily email on 2026-11-1
 - Active cloud schedule: **Paper Observatory growth agent**, daily at **09:00 America/New_York**, first scheduled run **2026-11-11**. The Mac is not required.
 - Report: the connected owner's Gmail address; one email per reporting date.
 - Approved additional spending ceiling: **$10 per calendar month** for model and automation charges; prefer included access. Verify current charges and the next run's maximum cost before billable work. Unknown cost means no new billable work.
+- Billing: checked by Tim himself at github.com/settings/billing; the daily email states that standing assignment in its Cost section instead of reporting billing as unavailable or as an error.
 - Course scope: Interest Rate Derivatives, MBS/ABS and FRTB; VaR is excluded.
 - Routine work: implement bounded improvements, verify through tests/build/CI/browser checks, complete useful distribution drafts and maintain the backlog. Merge/publish only when the required access and verification actually exist.
 
@@ -37,4 +38,4 @@ npm run build
 npm run cloud:verify
 ```
 
-Reports distinguish drafts, commits, merges and live deployments. They must label missing traffic/revenue/cost data as unavailable. Publication uses the existing [cloud runbook](cloud-publishing.md), with the previous Cloudflare release retained for rollback. Pause the task before changing its operating scope or replacing its connected accounts.
+Reports distinguish drafts, commits, merges and live deployments. They must label missing traffic/revenue data as unavailable. Billing is the exception: Tim checks it himself, so the Cost section states that standing assignment in every email until he reports the numbers — never label billing as unavailable or as an error. Publication uses the existing [cloud runbook](cloud-publishing.md), with the previous Cloudflare release retained for rollback. Pause the task before changing its operating scope or replacing its connected accounts.

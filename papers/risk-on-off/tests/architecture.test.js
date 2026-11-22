@@ -63,7 +63,7 @@ test('browser inputs do not import private material or expose workstation paths'
 });
 
 test('runtime assets are local apart from the approved Clarity loader', () => {
-  const clarityLoader = '<script src="https://tglauner.com/js/clarity.js?v=20261121" defer data-vite-ignore></script>';
+  const clarityLoader = '<script src="https://tglauner.com/js/clarity.js?v=20261121" defer data-tg-consent data-vite-ignore></script>';
   for (const name of browserInputs()) {
     const source = name === 'index.html' ? read(name).replace(clarityLoader, '') : read(name);
     assert.doesNotMatch(source, /(?:src\s*=\s*['"]|url\(\s*['"]?|@import\s+['"]|(?:import|export)[^\n;]*\bfrom\s*['"]|import\s*['"]|import\(\s*['"])(?:https?:)?\/\//i, name);

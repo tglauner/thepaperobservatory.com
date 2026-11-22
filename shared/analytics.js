@@ -29,7 +29,7 @@ export function analyticsSettings(environment = {}, command = 'serve') {
 export function analyticsTags(settings) {
   if (!settings) return [];
   // JSON encoding plus '<' escaping prevents configuration from ending the script tag.
-  const config = JSON.stringify({ collector: settings.collector, appId: settings.appId }).replace(/</g, '\\u003c').replace(/\u2028/g, '\\u2028').replace(/\u2029/g, '\\u2029');
+  const config = JSON.stringify({ collector: settings.collector, appId: settings.appId, requireConsent: true }).replace(/</g, '\\u003c').replace(/\u2028/g, '\\u2028').replace(/\u2029/g, '\\u2029');
   return [
     { tag: 'script', attrs: { id: 'tg-analytics-config' }, children: `window.tgAnalyticsConfig = ${config};`, injectTo: 'body' },
     { tag: 'script', attrs: { id: 'tg-analytics-script', src: settings.script, defer: true }, injectTo: 'body' },
